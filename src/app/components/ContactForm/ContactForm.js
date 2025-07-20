@@ -94,7 +94,7 @@ export default function ContactForm() {
         </h2>
         <div className="grid md:grid-cols-2 gap-12">
           {/* The form now has an onSubmit handler */}
-          <form onSubmit={handleSubmit} className="space-y-6 max-[768px]:w-[90%] max-[768px]:m-auto">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label
                 htmlFor="name"

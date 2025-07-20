@@ -136,7 +136,7 @@ export default function LandingPage() {
                 1.099
               </span>
             </div>
-            <p className="text-[12px] text-center max-w-md text-shadow-lg max-[768px]:max-w-[300px]">
+            <p className="text-[12px] mt-4 text-center max-w-md text-shadow-lg max-[768px]:max-w-[300px]">
               Valores referentes somente as partes moduladas de um apartamento de 49m²
             </p>
             <div className="mt-12 text-center w-full min-[768px]:w-auto flex flex-col min-[768px]:flex-row items-center justify-center min-[768px]:space-x-4">
@@ -174,18 +174,6 @@ export default function LandingPage() {
                       "https://placehold.co/600x700/333333/ffffff?text=Ambiente+Moderno";
                   }}
                 />
-                {/* Overlapping Text Box */}
-                <div className="absolute min-[320px]:top-1/18 min-[768px]:top-1/2 -translate-y-1/2 left-0 md:-left-12 bg-zinc-800 bg-opacity-90 text-white p-6 rounded-lg shadow-lg w-full max-w-sm z-50">
-                  <h2 className="min-[320px]:text-[16px] min-[768px]:text-[18px] font-bold mb-3">
-                    Especialistas em transformar espaços com criatividade e
-                    precisão
-                  </h2>
-                  <p className="min-[320px]:text-[12px] min-[768px]:text-[12px] text-zinc-300 leading-relaxed">
-                    Cada ambiente é pensado para refletir a essência de quem
-                    vive ou trabalha nele. Unimos visão artística, técnica e
-                    funcionalidade em cada projeto.
-                  </p>
-                </div>
               </div>
 
               {/* Right Column: Content */}
@@ -206,22 +194,6 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
                 <p className="text-zinc-600 mb-6">
                   Somos uma loja de bairro com clima acolhedor, localizada em uma área tranquila e de fácil acesso, com várias vagas de estacionamento na rua — ideal para quem busca qualidade, praticidade e bom atendimento.
                 </p>
-
-                {/* Feature Box */}
-                <div className="flex items-start bg-zinc-50 p-6 rounded-lg mb-8">
-                  <div className="bg-red-600 p-3 rounded-full mr-5 mt-1">
-                    <Home className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-zinc-800 mb-1">
-                      Projetos exclusivos para pessoas e empresas únicas
-                    </h3>
-                    <p className="text-zinc-600 text-sm">
-                      Atendimento consultivo, execução estratégica e atenção aos
-                      mínimos detalhes é assim que a Akai Móveis entrega experiências.
-                    </p>
-                  </div>
-                </div>
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row flex-wrap gap-4">
