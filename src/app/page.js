@@ -176,7 +176,7 @@ export default function LandingPage() {
                 />
                 {/* Overlapping Text Box */}
                 <div className="absolute min-[320px]:top-1/18 min-[768px]:top-1/2 -translate-y-1/2 left-0 md:-left-12 bg-zinc-800 bg-opacity-90 text-white p-6 rounded-lg shadow-lg w-full max-w-sm z-50">
-                  <h2 className="min-[320px]:text-[16px] min-[768px]:text-[18px]font-bold mb-3">
+                  <h2 className="min-[320px]:text-[16px] min-[768px]:text-[18px] font-bold mb-3">
                     Especialistas em transformar espaços com criatividade e
                     precisão
                   </h2>
