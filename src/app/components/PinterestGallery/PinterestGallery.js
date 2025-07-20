@@ -66,6 +66,14 @@ export default function PinterestGallery() {
       imgSrc: "https://i.pinimg.com/736x/ed/f0/af/edf0af40567f9674f6c3f3543abf6e13.jpg",
       pinterestUrl: "https://pin.it/sgD8IHbRL",
     },
+    {
+      imgSrc: "https://i.pinimg.com/736x/cc/2d/1c/cc2d1c58c443b7296b4d659d35e6a24b.jpg",
+      pinterestUrl: "https://pin.it/6Yi7vmKjh",
+    },
+    {
+      imgSrc: "https://i.pinimg.com/736x/2f/94/f5/2f94f5f8ef3b372d481dde9c21512997.jpg",
+      pinterestUrl: "https://pin.it/52XBkoTIc",
+    }
   ];
 
   return (
@@ -77,9 +85,6 @@ export default function PinterestGallery() {
           <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
             Nossos Projetos
           </h2>
-          <p className="text-gray-600 leading-relaxed">
-            Para ver imagens dos nossos projetos já finalizados, acesse nosso portfólio no Pinterest. Lá você encontra ambientes reais, executados pela equipe da Noms Decor, com toda a qualidade, cuidado nos acabamentos e estilo personalizado que entregamos a cada cliente. Todos os projetos estão organizados por ambiente, facilitando sua navegação e inspiração dentro do nosso catálogo.
-          </p>
         </div>
 
         {/* Pinterest Showcase Card */}
@@ -137,7 +142,7 @@ export default function PinterestGallery() {
 
         {/* Call to Action Button */}
         <div>
-          <a className="bg-zinc-800 text-white font-bold py-3 px-8 rounded-lg hover:bg-zinc-700 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
+          <a className="bg-zinc-800 text-sm whitespace-nowrap max-[768px]:w-90 max-[768px]:m-auto text-white font-bold py-3 px-8 rounded-lg hover:bg-zinc-700 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
             QUERO UM PROJETO PERSONALIZADO
           </a>
         </div>

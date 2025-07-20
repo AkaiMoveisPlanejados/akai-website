@@ -92,7 +92,7 @@ export default function ContactForm() {
         </h2>
         <div className="grid md:grid-cols-2 gap-12">
           {/* The form now has an onSubmit handler */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6 max-[768px]:w-[90%] max-[768px]:m-auto">
             <div>
               <label
                 htmlFor="name"
@@ -142,6 +142,23 @@ export default function ContactForm() {
                 onChange={handleChange}
                 maxLength="15" 
                 required
+                className="mt-1 block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-600 focus:border-red-600"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-zinc-700"
+              >
+                Cidade/Estado
+              </label>
+              <input
+                type="text"
+                id="city"
+                placeholder="Sua cidade/estado"
+                value={formData.city}
+                onChange={handleChange}
+                required
                 className="mt-1 block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400"
               />
             </div>
@@ -172,7 +189,7 @@ export default function ContactForm() {
             </div>
             <button
               type="submit"
-              className="cursor-pointer w-full bg-red-400 text-white font-bold py-3 px-6 rounded-md hover:bg-red-600 transition-colors"
+              className="cursor-pointer w-full bg-red-600 text-white font-bold py-3 px-6 rounded-md hover:bg-red-900 transition-colors"
             >
               Enviar Mensagem
             </button>
@@ -182,8 +199,8 @@ export default function ContactForm() {
           {/* The contact details and map remain on the right side */}
           <div className="space-y-6">
             <div className="flex items-start space-x-4">
-              <div className="bg-red-100 p-3 rounded-full">
-                <Phone className="text-red-600" size={24} />
+              <div className="bg-red-600 p-3 rounded-full">
+                <Phone className="text-white" size={24} />
               </div>
               <div>
                 <h3 className="text-lg font-semibold">Telefone</h3>
@@ -191,19 +208,19 @@ export default function ContactForm() {
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="bg-red-100 p-3 rounded-full">
-                <Mail className="text-red-600" size={24} />
+              <div className="bg-red-600 p-3 rounded-full">
+                <Mail className="text-white" size={24} />
               </div>
               <div>
                 <h3 className="text-lg font-semibold">Email</h3>
-                <p className="text-zinc-600">
+                <p className="text-zinc-600 max-w-[250px] max-[768px]:truncate">
                   akaimoveiseplanejados@gmail.com.br
                 </p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="bg-red-100 p-3 rounded-full">
-                <MapPin className="text-red-600" size={24} />
+              <div className="bg-red-600 p-3 rounded-full">
+                <MapPin className="text-white" size={24} />
               </div>
               <div>
                 <h3 className="text-lg font-semibold">Endereço</h3>

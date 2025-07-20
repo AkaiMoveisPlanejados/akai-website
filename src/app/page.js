@@ -58,107 +58,12 @@ const projects = [
   },
 ];
 
-const CheckIcon = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-    <polyline points="22 4 12 14.01 9 11.01" />
+// WhatsApp Icon Component
+const WhatsAppIcon = ({ size }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width={size} height={size}>
+    <path fill="#FFF" d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"/>
   </svg>
 );
-
-// Icon components for a cleaner look
-const PlusIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1.5}
-    stroke="currentColor"
-    className="h-6 w-6"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M12 4.5v15m7.5-7.5h-15"
-    />
-  </svg>
-);
-
-const MinusIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1.5}
-    stroke="currentColor"
-    className="h-6 w-6"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
-  </svg>
-);
-
-const features = [
-  "Projeto 100% vendido para cada cliente",
-  "Atendimento consultivo e personalizado",
-  "Parcelamento em até 48x via Sicredi",
-  "Garantia de 5 anos nos planejados",
-  "Entrega rápida: em até 30 dias",
-  "Acompanhamento técnico durante a execução",
-  "Materiais certificados e acabamento premium",
-  "Equipe especializada do início ao fim",
-];
-
-const colors = {
-  primary: "#1a1a1a", // A dark zinc, almost black
-  secondary: "#f0f0f0", // A light zinc for the button
-  text: {
-    primary: "#333333",
-    secondary: "#ffffff",
-    subtle: "#9ca3af",
-  },
-};
-
-// Data for the FAQ section
-const faqData = [
-  {
-    question:
-      "Qual é o prazo de entrega dos projetos da Akai Móveis Ambientes Planejados?",
-    answer:
-      "Todos os nossos projetos são entregues em até 30 dias após a aprovação final do cliente. Trabalhamos com prazos curtos sem abrir mão da qualidade e do acabamento.",
-  },
-  {
-    question: "Posso parcelar o valor do projeto?",
-    answer:
-      "Sim! Oferecemos opções flexíveis de parcelamento para se adequar ao seu orçamento. Entre em contato com nossa equipe para saber mais sobre os planos disponíveis.",
-  },
-  {
-    question:
-      "A Akai Móveis Ambientes Planejados atende projetos comerciais e corporativos?",
-    answer:
-      "Com certeza. Além de projetos residenciais, temos vasta experiência na criação de ambientes comerciais e corporativos, como escritórios, lojas e consultórios, sempre com foco em funcionalidade e design.",
-  },
-  {
-    question:
-      "Qual o diferencial da Akai Móveis Ambientes Planejados em relação a outras empresas?",
-    answer:
-      "Nosso diferencial está na combinação de design exclusivo, materiais de alta qualidade e um atendimento ao cliente personalizado. Cada projeto é único e desenvolvido para refletir a personalidade e as necessidades de cada cliente.",
-  },
-  {
-    question: "Os móveis têm garantia?",
-    answer:
-      "Sim, todos os nossos móveis planejados possuem garantia completa contra defeitos de fabricação. A sua tranquilidade e satisfação são nossa prioridade.",
-  },
-];
 
 // Main App Component
 export default function LandingPage() {
@@ -208,8 +113,8 @@ export default function LandingPage() {
             <h1 className="min-[320px]:text-[26px] min-[768px]:text-[58px] font-bold text-shadow-lg text-center">
               APARTAMENTO COMPLETO
             </h1>
-            <p className="min-[320px]:text-[10px] min-[768px]:text-lg text-shadow-lg">
-              Cozinha + Quarto Casal + Quarto Solteiro + Lavanderia + Home +
+            <p className="min-[320px]:text-[10px] min-[768px]:text-lg max-[768px]:max-w-[300px] text-center text-shadow-lg">
+              Cozinha (lavanderia acoplada) + Quarto Casal + Quarto Solteiro + Lavanderia + Home +
               Banheiro
             </p>
             <h2 className="mt-2 min-[320px]:text-[18px] min-[768px]:text-[38px] font-bold text-shadow-lg">
@@ -219,7 +124,7 @@ export default function LandingPage() {
               <span className="self-start text-sm min-[768px]:text-lg font-regular text-shadow-lg">
                 A partir de R$
               </span>
-              <span className="text-4xl min-[768px]:text-5xl self-center font-bold text-red-400 text-shadow-lg">
+              <span className="text-4xl min-[768px]:text-5xl self-center font-bold text-red-600 text-shadow-lg">
                 {" "}
                 18.500
               </span>
@@ -227,16 +132,27 @@ export default function LandingPage() {
             </div>
             <div className="min-[320px]:mt-6 min-[768px]:mt-6 flex items-center justify-center space-x-1">
               <span className="text-sm self-start font-bold">ou 18x de R$</span>
-              <span className="self-center text-4xl font-bold text-red-400 text-shadow-lg">
+              <span className="self-center text-4xl font-bold text-red-600 text-shadow-lg">
                 1.099
               </span>
             </div>
-            <p className="text-[12px] text-center max-w-md text-shadow-lg">
-              Valores referentes somente a parte modulada e planejada
+            <p className="text-[12px] text-center max-w-md text-shadow-lg max-[768px]:max-w-[300px]">
+              Valores referentes somente as partes moduladas de um apartamento de 49m²
             </p>
-            <div className="mt-12 center">
-              <a className="bg-white text-zinc-800 font-bold py-3 px-8 rounded-lg hover:bg-gray-200 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
+            <div className="mt-12 text-center w-full min-[768px]:w-auto flex flex-col min-[768px]:flex-row items-center justify-center min-[768px]:space-x-4">
+              <a className="bg-white text-center text-center max-[768px]:w-[90%] max-[768px]:m-auto max-[768px]:mb-4 w-full min-[768px]:w-auto text-sm text-zinc-800 font-bold py-3 px-8 rounded-lg hover:bg-gray-200 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
                 SOLICITAR ORÇAMENTO
+              </a>
+              <a
+                className="flex justify-center align-center text-center max-[768px]:w-[90%] max-[768px]:m-auto min-[768px]:w-auto bg-zinc-800 text-center text-sm text-white font-bold py-3 px-8 rounded-lg hover:bg-zinc-700 transition-colors duration-300 shadow-md cursor-pointer"
+                href="https://wa.me/5551981150097?text=Quero%20conhecer%20os%20projetos%20do%20apartamento%20completo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CONHECER PROJETOS
+                <div className="ml-2">
+                  <WhatsAppIcon size="20px" />
+                </div>
               </a>
             </div>
           </div>
@@ -259,8 +175,8 @@ export default function LandingPage() {
                   }}
                 />
                 {/* Overlapping Text Box */}
-                <div className="absolute min-[320px]:top-1/18 min-[768px]:top-1/2 -translate-y-1/2 left-0 md:-left-12 bg-zinc-800 bg-opacity-90 text-white p-6 rounded-lg shadow-lg w-full max-w-sm">
-                  <h2 className="min-[320px]:text-[16px] min-[768px]:text-[18px] font-bold mb-3">
+                <div className="absolute min-[320px]:top-1/18 min-[768px]:top-1/2 -translate-y-1/2 left-0 md:-left-12 bg-zinc-800 bg-opacity-90 text-white p-6 rounded-lg shadow-lg w-full max-w-sm z-50">
+                  <h2 className="min-[320px]:text-[16px] min-[768px]:text-[18px]font-bold mb-3">
                     Especialistas em transformar espaços com criatividade e
                     precisão
                   </h2>
@@ -309,10 +225,10 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-                  <a className="bg-zinc-800 text-white font-bold py-3 px-8 rounded-lg hover:bg-zinc-700 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
+                  <a className="bg-zinc-800 text-sm text-center text-white font-bold py-3 px-8 rounded-lg hover:bg-zinc-700 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
                     SOLICITAR ORÇAMENTO
                   </a>
-                  <a className="bg-white text-zinc-800 font-bold py-3 px-8 rounded-lg border-2 border-zinc-300 hover:bg-zinc-100 hover:border-zinc-400 transition-colors duration-300 cursor-pointer" href="#projetos">
+                  <a className="bg-white text-sm text-center text-zinc-800 font-bold py-3 px-8 rounded-lg border-2 border-zinc-300 hover:bg-zinc-100 hover:border-zinc-400 transition-colors duration-300 cursor-pointer" href="#projetos">
                     CONHECER PROJETOS
                   </a>
                 </div>
@@ -363,7 +279,7 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
                   <Phone size={16} className="mr-2" /> (051) 981150097
                 </li>
                 <li className="flex items-center">
-                  <Mail size={16} className="mr-2" /> akaimoveiseplanejados@gmail.com.br
+                  <Mail size={16} className="mr-2" /> akaimoveiseplanejados@gmail.com
                 </li>
                 <li className="flex items-center">
                   <MapPin size={16} className="mr-2" /> Sapucaia do Sul, RS
@@ -393,6 +309,16 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
           </div>
         </div>
       </footer>
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/5551981150097"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform duration-300 ease-in-out transform hover:scale-110 z-50"
+        aria-label="Fale conosco no WhatsApp"
+      >
+        <WhatsAppIcon size="40px" className="h-8 w-8" />
+      </a>
     </div>
   );
 }

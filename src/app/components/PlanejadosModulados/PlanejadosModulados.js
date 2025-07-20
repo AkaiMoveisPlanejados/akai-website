@@ -18,21 +18,21 @@ const ComparisonCard = ({ title, features }) => (
 
 export default function PlanejadosModulados() {
   const plannedFeatures = [
-    "Medidas 100% personalizadas",
-    "Mais caros",
-    "Prazo de produção maior",
-    "Aproveitamento total do ambiente",
-    "Mais liberdade de design",
-    "Ideal para quem quer exclusividade e encaixe perfeito",
+    "Medidas totalmente personalizadas",
+    "Produção sob medida, com atenção a cada detalhe",
+    "Máximo aproveitamento do espaço disponível",
+    "Liberdade total para criar seu design ideal",
+    "Resultado exclusivo com encaixe perfeito",
+    "Ideal para quem busca sofisticação e um projeto único",
   ];
 
   const modulatedFeatures = [
-    "Medidas padronizadas",
-    "Mais baratos",
+    "Medidas padronizadas com boa adaptação",
+    "Excelente custo-benefício",
     "Entrega mais rápida",
-    "Menor aproveitamento de espaço",
-    "Algumas opções de personalização (largura, puxadores, cores)",
-    "Ideal para quem quer economia e agilidade",
+    "Algumas possibilidades de personalização (largura, puxadores, cores)",
+    "Praticidade com agilidade na montagem",
+    "Ideal para quem quer economia e rapidez",
   ];
 
   return (
