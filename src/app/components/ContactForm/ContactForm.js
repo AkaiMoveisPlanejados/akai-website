@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
 
 // Mock data for the dropdown. You can change this later.
 const subjects = [
@@ -150,21 +150,25 @@ export default function ContactForm() {
                 htmlFor="subject"
                 className="block text-sm font-medium text-zinc-700"
               >
-                Previsão de Investimento
+                Previsão de investimento
               </label>
-              {/* This is the new dropdown, replacing the textarea */}
-              <select
-                id="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                className="mt-1 block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400 bg-white"
-              >
-                {subjects.map((subject) => (
-                  <option key={subject} value={subject}>
-                    {subject}
-                  </option>
-                ))}
-              </select>
+              <div className="relative mt-1">
+                <select
+                  id="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="appearance-none block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400 bg-white pr-10"
+                >
+                  {subjects.map((subject) => (
+                    <option key={subject} value={subject}>
+                      {subject}
+                    </option>
+                  ))}
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3">
+                  <ChevronDown className="h-5 w-5 text-zinc-500" />
+                </div>
+              </div>
             </div>
             <button
               type="submit"

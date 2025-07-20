@@ -164,7 +164,7 @@ export default function GoogleReviews() {
         <div
           ref={carouselRef}
           className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth px-[calc(50%-140px)] min-[768px]:px-4"
-          style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none' }}
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {reviews.map((review, index) => (
             <ReviewCard key={index} review={review} />
