@@ -188,7 +188,7 @@ export default function LandingPage() {
         <section
           className="relative h-screen bg-cover bg-top"
           style={{
-            backgroundImage: `linear-gradient(0deg, rgb(112, 112, 112) 0%, rgba(255, 255, 255, 0) 99%, rgba(237, 221, 83, 0) 100%),
+            backgroundImage: `linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 99%, rgba(237, 221, 83, 0) 100%),
     url('/images/hero.jpeg')`,
           }}
           id="início"
