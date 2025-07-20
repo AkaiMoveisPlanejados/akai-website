@@ -8,7 +8,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { name, email, phone, city, subject } = body;
+    const { name, email, phone, city, message, subject } = body;
 
     // Use Resend to send the email
     const { data, error } = await resend.emails.send({
@@ -16,9 +16,9 @@ export async function POST(request) {
       from: 'onboarding@resend.dev', 
       // This is the email address that will receive the contact form submissions
       to: ['akaimoveiseplanejados@gmail.com'], 
-      subject: `Novo Contato: ${subject}`,
+      subject: `Novo Contato: ${name} - ${subject}`,
       // Pass the form data to your email template component
-      react: EmailTemplate({ name, email, phone, city, subject }),
+      react: EmailTemplate({ name, email, phone, city, message, subject }),
     });
 
     // Handle potential errors from the Resend API

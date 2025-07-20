@@ -144,7 +144,7 @@ export default function LandingPage() {
                 SOLICITAR ORÇAMENTO
               </a>
               <a
-                className="flex justify-center align-center text-center max-[768px]:w-[90%] max-[768px]:m-auto min-[768px]:w-auto bg-zinc-800 text-center text-sm text-white font-bold py-3 px-8 rounded-lg hover:bg-zinc-700 transition-colors duration-300 shadow-md cursor-pointer"
+                className="flex justify-center align-center text-center max-[768px]:w-[90%] max-[768px]:m-auto min-[768px]:w-auto bg-red-600 text-center text-sm text-white font-bold py-3 px-8 rounded-lg hover:bg-red-700 transition-colors duration-300 shadow-md cursor-pointer"
                 href="https://wa.me/5551981150097?text=Quero%20conhecer%20os%20projetos%20do%20apartamento%20completo"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -209,7 +209,7 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
 
                 {/* Feature Box */}
                 <div className="flex items-start bg-zinc-50 p-6 rounded-lg mb-8">
-                  <div className="bg-zinc-800 p-3 rounded-full mr-5 mt-1">
+                  <div className="bg-red-600 p-3 rounded-full mr-5 mt-1">
                     <Home className="text-white" size={24} />
                   </div>
                   <div>
@@ -225,7 +225,7 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-                  <a className="bg-zinc-800 text-sm text-center text-white font-bold py-3 px-8 rounded-lg hover:bg-zinc-700 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
+                  <a className="bg-red-600 text-sm text-center text-white font-bold py-3 px-8 rounded-lg hover:bg-red-700 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
                     SOLICITAR ORÇAMENTO
                   </a>
                   <a className="bg-white text-sm text-center text-zinc-800 font-bold py-3 px-8 rounded-lg border-2 border-zinc-300 hover:bg-zinc-100 hover:border-zinc-400 transition-colors duration-300 cursor-pointer" href="#projetos">

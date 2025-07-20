@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export const EmailTemplate = ({ name, email, phone, city, subject }) => (
+export const EmailTemplate = ({ name, email, phone, city, message, subject }) => (
   <div style={{ fontFamily: 'sans-serif', padding: '20px', backgroundColor: '#f9f9f9' }}>
     <div style={{ maxWidth: '600px', margin: 'auto', backgroundColor: 'white', border: '1px solid #ddd', borderRadius: '8px', padding: '30px' }}>
       <h1 style={{ color: '#333', borderBottom: '1px solid #ddd', paddingBottom: '10px' }}>
@@ -15,6 +15,7 @@ export const EmailTemplate = ({ name, email, phone, city, subject }) => (
         <p><strong>Cidade/Estado:</strong> {city}</p>
         <p><strong>Email:</strong> {email}</p>
         <p><strong>Telefone:</strong> {phone}</p>
+        <p><strong>Mensagem:</strong> {message}</p>
       </div>
       <p style={{ marginTop: '30px', fontSize: '12px', color: '#999', borderTop: '1px solid #ddd', paddingTop: '20px' }}>
         Esta é uma mensagem automática enviada pelo seu site.

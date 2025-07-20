@@ -18,6 +18,8 @@ export default function ContactForm() {
     name: '',
     email: '',
     phone: '',
+    message: '',
+    city: '',
     subject: subjects[0], // Set a default value for the dropdown
   });
 
@@ -98,7 +100,7 @@ export default function ContactForm() {
                 htmlFor="name"
                 className="block text-sm font-medium text-zinc-700"
               >
-                Nome
+                Nome*
               </label>
               <input
                 type="text"
@@ -115,7 +117,7 @@ export default function ContactForm() {
                 htmlFor="email"
                 className="block text-sm font-medium text-zinc-700"
               >
-                Email
+                Email*
               </label>
               <input
                 type="email"
@@ -132,7 +134,7 @@ export default function ContactForm() {
                 htmlFor="phone"
                 className="block text-sm font-medium text-zinc-700"
               >
-                Telefone
+                Telefone*
               </label>
               <input
                 type="tel"
@@ -150,7 +152,7 @@ export default function ContactForm() {
                 htmlFor="name"
                 className="block text-sm font-medium text-zinc-700"
               >
-                Cidade/Estado
+                Cidade/Estado*
               </label>
               <input
                 type="text"
@@ -167,7 +169,7 @@ export default function ContactForm() {
                 htmlFor="subject"
                 className="block text-sm font-medium text-zinc-700"
               >
-                Previsão de investimento
+                Previsão de investimento*
               </label>
               <div className="relative mt-1">
                 <select
@@ -186,6 +188,23 @@ export default function ContactForm() {
                   <ChevronDown className="h-5 w-5 text-zinc-500" />
                 </div>
               </div>
+            </div>
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-zinc-700"
+              >
+                Mensagem
+              </label>
+              <textarea
+                type="text"
+                id="message"
+                placeholder="Sua mensagem"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="mt-1 h-[150px] block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400"
+              />
             </div>
             <button
               type="submit"

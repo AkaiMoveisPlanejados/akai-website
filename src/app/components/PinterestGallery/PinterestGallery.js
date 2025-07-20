@@ -142,7 +142,7 @@ export default function PinterestGallery() {
 
         {/* Call to Action Button */}
         <div>
-          <a className="bg-zinc-800 text-sm whitespace-nowrap max-[768px]:w-90 max-[768px]:m-auto text-white font-bold py-3 px-8 rounded-lg hover:bg-zinc-700 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
+          <a className="bg-red-600 text-sm whitespace-nowrap max-[768px]:w-90 max-[768px]:m-auto text-white font-bold py-3 px-8 rounded-lg hover:bg-red-700 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
             QUERO UM PROJETO PERSONALIZADO
           </a>
         </div>
