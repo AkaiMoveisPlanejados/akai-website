@@ -205,21 +205,21 @@ export default function LandingPage() {
           </div>
           <div className="absolute inset-0 bg-black/50 z-10" />
           <div className="relative z-20 flex flex-col items-center justify-center h-full text-white">
-            <h1 className="min-[320px]:text-[26px] min-[768px]:text-[58px] font-bold">
+            <h1 className="min-[320px]:text-[26px] min-[768px]:text-[58px] font-bold text-shadow-lg text-center">
               APARTAMENTO COMPLETO
             </h1>
-            <p className="min-[320px]:text-[10px] min-[768px]:text-lg">
+            <p className="min-[320px]:text-[10px] min-[768px]:text-lg text-shadow-lg">
               Cozinha + Quarto Casal + Quarto Solteiro + Lavanderia + Home +
               Banheiro
             </p>
-            <h2 className="mt-2 min-[320px]:text-[18px] min-[768px]:text-[38px] font-bold">
+            <h2 className="mt-2 min-[320px]:text-[18px] min-[768px]:text-[38px] font-bold text-shadow-lg">
               MÓVEIS MODULADOS E PLANEJADOS
             </h2>
             <div className="min-[320px]:mt-2 min-[768px]:mt-4 flex items-center justify-center space-x-1">
-              <span className="self-start text-sm min-[768px]:text-lg font-regular">
+              <span className="self-start text-sm min-[768px]:text-lg font-regular text-shadow-lg">
                 A partir de R$
               </span>
-              <span className="text-4xl min-[768px]:text-5xl self-center font-bold text-red-400">
+              <span className="text-4xl min-[768px]:text-5xl self-center font-bold text-red-400 text-shadow-lg">
                 {" "}
                 18.500
               </span>
@@ -227,11 +227,11 @@ export default function LandingPage() {
             </div>
             <div className="min-[320px]:mt-6 min-[768px]:mt-6 flex items-center justify-center space-x-1">
               <span className="text-sm self-start font-bold">ou 18x de R$</span>
-              <span className="self-center text-4xl font-bold text-red-400">
+              <span className="self-center text-4xl font-bold text-red-400 text-shadow-lg">
                 1.099
               </span>
             </div>
-            <p className="text-[12px] text-center max-w-md">
+            <p className="text-[12px] text-center max-w-md text-shadow-lg">
               Valores referentes somente a parte modulada e planejada
             </p>
             <div className="mt-12 center">
