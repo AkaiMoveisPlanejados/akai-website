@@ -199,10 +199,9 @@ export default function ContactForm() {
               <textarea
                 type="text"
                 id="message"
-                placeholder="Sua mensagem"
+                placeholder="Nos conte um pouco das suas necessidades: quais ambientes pretende mobiliar, por onde prefere que entremos em contato(ligação, Whatsapp, e-mail.)"
                 value={formData.message}
                 onChange={handleChange}
-                required
                 className="mt-1 h-[150px] block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400"
               />
             </div>

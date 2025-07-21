@@ -127,14 +127,14 @@ export default function LandingPage() {
               </span>
               <span className="text-4xl min-[768px]:text-5xl self-center font-bold text-red-600 text-shadow-lg">
                 {" "}
-                18.500
+                18.400
               </span>
               <span className="self-end text-sm min-[768px]:text-lg font-regular">à vista</span>
             </div>
             <div className="min-[320px]:mt-6 min-[768px]:mt-6 flex items-center justify-center space-x-1">
               <span className="text-sm self-start font-bold">ou 18x de R$</span>
               <span className="self-center text-4xl font-bold text-red-600 text-shadow-lg">
-                1.099
+                1.111
               </span>
             </div>
             <p className="text-[12px] mt-4 text-center max-w-md text-shadow-lg max-[768px]:max-w-[300px]">
