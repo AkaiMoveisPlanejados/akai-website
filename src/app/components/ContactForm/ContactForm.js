@@ -90,7 +90,7 @@ export default function ContactForm() {
     <section id="contato" className="py-20 bg-zinc-50">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Fale Conosco
+          Solicite seu orçamento
         </h2>
         <div className="grid md:grid-cols-2 gap-12">
           {/* The form now has an onSubmit handler */}
@@ -217,13 +217,13 @@ export default function ContactForm() {
           </form>
           {/* The contact details and map remain on the right side */}
           <div className="space-y-6">
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start mt-2 space-x-4">
               <div className="bg-red-600 p-3 rounded-full">
                 <Phone className="text-white" size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold">Telefone</h3>
-                <p className="text-zinc-600">(051) 981150097</p>
+                <h3 className="text-lg font-semibold">Fale conosco</h3>
+                <p className="text-zinc-600">(051) 98115-0097</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">

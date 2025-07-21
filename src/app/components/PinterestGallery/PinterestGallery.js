@@ -40,7 +40,7 @@ export default function PinterestGallery() {
     },
     {
       imgSrc: "https://i.pinimg.com/736x/19/65/9a/19659a54b46eba263151be5bed1a592e.jpg",
-      pinterestUrl: "https://i.pinimg.com/736x/5d/04/3d/5d043d9fa623b86b06f141fcde893507.jpg",
+      pinterestUrl: "https://pin.it/4NXj0OoLH",
     },
     {
       imgSrc: "https://i.pinimg.com/736x/15/84/4c/15844c32830764e2190b5c192e066c83.jpg",

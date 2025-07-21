@@ -223,13 +223,6 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
         <div className="container mx-auto px-6 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Akai Móveis</h3>
-              <p className="text-zinc-400">
-                Transformando seus sonhos em realidade, com móveis planejados de
-                alta qualidade.
-              </p>
-            </div>
-            <div>
               <h4 className="font-semibold text-lg mb-4">Navegação</h4>
               <ul className="space-y-2">
                 {navLinks.map((link) => (
@@ -261,14 +254,11 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
             <div>
               <h4 className="font-semibold text-lg mb-4">Siga-nos</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-zinc-400 hover:text-white">
+                <a href="https://www.instagram.com/akai.moveis/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white">
                   <Instagram size={24} />
                 </a>
-                <a href="#" className="text-zinc-400 hover:text-white">
+                <a href="https://www.facebook.com/akai.moveis" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white">
                   <Facebook size={24} />
-                </a>
-                <a href="#" className="text-zinc-400 hover:text-white">
-                  <Youtube size={24} />
                 </a>
               </div>
             </div>
