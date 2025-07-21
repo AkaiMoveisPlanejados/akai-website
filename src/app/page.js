@@ -21,6 +21,7 @@ import GoogleReviews from "./components/GoogleReviews/GoogleReviews";
 import PlanejadosModulados from "./components/PlanejadosModulados/PlanejadosModulados";
 import PinterestGallery from "./components/PinterestGallery/PinterestGallery";
 import ContactForm from "./components/ContactForm/ContactForm";
+import QuemSomosImage from './assets/quemsomos.jpg';
 
 // import HeroBackground from '@/app/assets/images/hero.jpeg'; // Assuming you have a hero background component
 
@@ -162,12 +163,15 @@ export default function LandingPage() {
           <div className="container mx-auto px-4 py-16 lg:py-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Left Column: Image and Overlapping Text Box */}
-              <div className="relative h-[400px] md:h-[550px] lg:h-full">
+              <div className="relative h-[400px] md:h-[580px] lg:h-full">
                 {/* Background Image */}
-                <img
-                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop"
-                  alt="Modern bedroom interior with a well-made bed and elegant lighting"
-                  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg shadow-2xl"
+                <Image
+                  src={QuemSomosImage}
+                  alt="Projeto de Móveis Planejados"
+                  width={600}
+                  height={800}
+                  quality={100}
+                  className="absolute top-0 left-0 object-cover min-[768px]:w-full min-[768px]:h-full rounded-lg shadow-2xl"
                   onError={(e) => {
                     e.target.onerror = null;
                     e.target.src =
@@ -177,7 +181,7 @@ export default function LandingPage() {
               </div>
 
               {/* Right Column: Content */}
-              <div className="flex flex-col justify-center">
+              <div className="flex flex-col justify-center max-[768px]:mt-8">
                 <p className="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-2">
                   Quem Somos
                 </p>
@@ -197,8 +201,13 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-                  <a className="bg-red-600 text-sm text-center text-white font-bold py-3 px-8 rounded-lg hover:bg-red-700 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
-                    SOLICITAR ORÇAMENTO
+                  <a
+                    className="bg-red-600 flex items-center align-middle justify-center text-sm text-center text-white font-bold py-3 px-8 rounded-lg hover:bg-red-700 transition-colors duration-300 shadow-md cursor-pointer"
+                    href="https://www.instagram.com/akai.moveis/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ACESSE NOSSO INSTAGRAM <Instagram size={16} className="inline-block ml-2" />
                   </a>
                   <a className="bg-white text-sm text-center text-zinc-800 font-bold py-3 px-8 rounded-lg border-2 border-zinc-300 hover:bg-zinc-100 hover:border-zinc-400 transition-colors duration-300 cursor-pointer" href="#projetos">
                     CONHECER PROJETOS
