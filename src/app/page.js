@@ -241,7 +241,7 @@ Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.
               <h4 className="font-semibold text-lg mb-4">Contato</h4>
               <ul className="space-y-2 text-zinc-400">
                 <li className="flex items-center">
-                  <Phone size={16} className="mr-2" /> (051) 981150097
+                  <Phone size={16} className="mr-2" /> (051) 98115-0097
                 </li>
                 <li className="flex items-center">
                   <Mail size={16} className="mr-2" /> akaimoveiseplanejados@gmail.com
