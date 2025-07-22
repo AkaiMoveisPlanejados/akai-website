@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
 
-// Mock data for the dropdown. You can change this later.
 const subjects = [
   "Abaixo de 10 mil",
   "De 11 a 20 mil",
@@ -20,13 +19,11 @@ export default function ContactForm() {
     phone: '',
     message: '',
     city: '',
-    subject: subjects[0], // Set a default value for the dropdown
+    subject: subjects[0],
   });
 
-  // State to show submission status (e.g., "Enviando...", "Mensagem enviada!")
   const [status, setStatus] = useState('');
 
-  // Updates state when user types in an input field
   const handleChange = (e) => {
     const { id, value } = e.target;
 
@@ -59,7 +56,7 @@ export default function ContactForm() {
 
   // Handles the form submission
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent the browser from reloading the page
+    e.preventDefault();
     setStatus('Enviando...');
 
     try {
@@ -199,7 +196,7 @@ export default function ContactForm() {
               <textarea
                 type="text"
                 id="message"
-                placeholder="Nos conte um pouco das suas necessidades: quais ambientes pretende mobiliar, por onde prefere que entremos em contato(ligação, Whatsapp, e-mail.)"
+                placeholder="Nos conte um pouco das suas necessidades: quais ambientes pretende mobiliar, por onde prefere que entremos em contato (ligação, WhatsApp, e-mail)."
                 value={formData.message}
                 onChange={handleChange}
                 className="mt-1 h-[150px] block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400"

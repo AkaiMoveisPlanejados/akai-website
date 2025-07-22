@@ -1,6 +1,5 @@
+import Image from 'next/image';
 import React, { useState, useRef, useEffect } from 'react';
-
-// --- Helper Components ---
 
 // Star Icon Component
 const StarIcon = ({ className }) => (
@@ -9,23 +8,20 @@ const StarIcon = ({ className }) => (
   </svg>
 );
 
-// Verified Icon Component
-const VerifiedIcon = ({ className }) => (
-    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24" fill="currentColor">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15l-3.5-3.5 1.41-1.41L11 14.17l7.59-7.59L20 8l-9 9z" />
-    </svg>
-);
-
 // --- Main Review Card Component ---
 const ReviewCard = ({ review }) => (
-  // Use snap-center to align cards to the center of the container
   <div className="flex-shrink-0 mb-3 w-[280px] md:w-[320px] h-[300px] bg-white rounded-2xl shadow-md p-6 mx-2 flex flex-col snap-center">
     <div className="flex items-center mb-4">
-      <img 
-        src={review.avatar} 
-        alt={review.name} 
-        className="w-12 h-12 rounded-full mr-4" 
-        onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/48x48/EFEFEF/333?text=??' }}
+     <Image
+        src={review.avatar || 'https://placehold.co/48x48/EFEFEF/333?text=??'}
+        alt={review.name}
+        width={48}
+        height={48}
+        className="w-12 h-12 rounded-full mr-4"
+        onError={(e) => {
+          e.currentTarget.src = 'https://placehold.co/48x48/EFEFEF/333?text=??';
+        }}
+        unoptimized
       />
       <div className="flex-grow">
         <div className="flex items-center">

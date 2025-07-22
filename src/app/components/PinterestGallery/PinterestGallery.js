@@ -1,10 +1,8 @@
 import { Pinterest, ArrowRight } from 'lucide-react';
 import AkaiVermelho from '../../assets/akaiVermelho.jpg';
 import Image from 'next/image';
-// Main component to display the Pinterest projects section
+
 export default function PinterestGallery() {
-  // Updated data structure to include both image source and Pinterest link for each project.
-  // Replace these with your actual project data.
   const projects = [
     {
       imgSrc: "https://i.pinimg.com/736x/38/42/35/38423597b8e2a5a622d032bc32549cb1.jpg",
@@ -91,11 +89,6 @@ export default function PinterestGallery() {
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-16 w-full">
           {/* Profile Header */}
           <div className="flex items-center mb-4">
-            {/* <img
-              src={AkaiVermelho}
-              alt="NOMS DECOR profile"
-              className="w-10 h-10 rounded-full mr-3"
-            /> */}
             <Image
               src={AkaiVermelho}
               alt="NOMS DECOR profile"
@@ -116,11 +109,14 @@ export default function PinterestGallery() {
                 rel="noopener noreferrer"
                 className="block rounded-xl overflow-hidden"
               >
-                <img
+                <Image
                   src={project.imgSrc}
                   alt={`Projeto ${index + 1}`}
+                  width={300}
+                  height={400}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/300x400/fecaca/991b1b?text=Error'; }}
+                  unoptimized
                 />
               </a>
             ))}

@@ -1,10 +1,8 @@
 // File: app/api/reviews/route.js
 import { NextResponse } from 'next/server';
 
-// This function handles GET requests to /api/reviews
 export async function GET(request) {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
-  // IMPORTANT: Replace with your actual Google Place ID
   const placeId = 'ChIJhx31gjRvGZURNECVHA6IrZw'; 
 
   if (!apiKey || !placeId || placeId === 'YOUR_PLACE_ID') {
