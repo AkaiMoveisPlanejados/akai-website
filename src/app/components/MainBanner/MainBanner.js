@@ -2,6 +2,7 @@ import { WhatsAppIcon } from "@/app/utils/WhatsAppIcon";
 import Image from "next/image";
 import React from "react";
 import LogoImage from "../../assets/2.png";
+import { GTMEvent } from "@/app/utils/GTMEvent";
 
 export default function MainBanner() {
     return (
