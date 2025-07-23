@@ -55,7 +55,11 @@ export default function MainBanner() {
               Valores referentes somente as partes moduladas de um apartamento de 49m²
             </p>
             <div className="mt-12 text-center w-full min-[768px]:w-auto flex flex-col min-[768px]:flex-row items-center justify-center min-[768px]:space-x-4">
-              <a className="bg-white text-center text-center max-[768px]:w-[90%] max-[768px]:m-auto max-[768px]:mb-4 w-full min-[768px]:w-auto text-sm text-zinc-800 font-bold py-3 px-8 rounded-lg hover:bg-gray-200 transition-colors duration-300 shadow-md cursor-pointer" href="#contato">
+              <a
+                className="bg-white text-center text-center max-[768px]:w-[90%] max-[768px]:m-auto max-[768px]:mb-4 w-full min-[768px]:w-auto text-sm text-zinc-800 font-bold py-3 px-8 rounded-lg hover:bg-gray-200 transition-colors duration-300 shadow-md cursor-pointer"
+                href="#contato"
+                onClick={() => {GTMEvent('click', { action: 'Solicitar Orçamento | Primeiro Banner' })}}
+              >
                 SOLICITAR ORÇAMENTO
               </a>
               <a
@@ -63,6 +67,7 @@ export default function MainBanner() {
                 href="https://wa.me/5551981150097?text=Quero%20conhecer%20os%20projetos%20do%20apartamento%20completo"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => {GTMEvent('click', { action: 'Conhecer Projetos | WhatsApp' })}}
               >
                 CONHECER PROJETOS
                 <div className="ml-2">
