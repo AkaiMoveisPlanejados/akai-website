@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
+import { GTMEvent } from "@/app/utils/GTMEvent";
 
 const subjects = [
   "Abaixo de 10 mil",
@@ -26,6 +27,13 @@ export default function ContactForm() {
 
   const handleChange = (e) => {
     const { id, value } = e.target;
+
+    if (id === 'subject') {
+      GTMEvent({
+        event: 'input_change',
+        subject: value,
+      });
+    }
 
     if (id === 'phone') {
       // Remove all non-digit characters
@@ -105,6 +113,7 @@ export default function ContactForm() {
                 placeholder="Seu nome"
                 value={formData.name}
                 onChange={handleChange}
+                onClick={() => {GTMEvent('click', { action: 'Name Field Clicked' })}}
                 required
                 className="mt-1 block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400"
               />
@@ -122,6 +131,7 @@ export default function ContactForm() {
                 placeholder="email@gmail.com"
                 value={formData.email}
                 onChange={handleChange}
+                onClick={() => {GTMEvent('click', { action: 'Email Field Clicked' })}}
                 required
                 className="mt-1 block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400"
               />
@@ -139,6 +149,7 @@ export default function ContactForm() {
                 placeholder='(XX) XXXXX-XXXX'
                 value={formData.phone}
                 onChange={handleChange}
+                onClick={() => {GTMEvent('click', { action: 'Phone Field Clicked' })}}
                 maxLength="15" 
                 required
                 className="mt-1 block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-600 focus:border-red-600"
@@ -157,6 +168,7 @@ export default function ContactForm() {
                 placeholder="Sua cidade/estado"
                 value={formData.city}
                 onChange={handleChange}
+                onClick={() => {GTMEvent('click', { action: 'City Field Clicked' })}}
                 required
                 className="mt-1 block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400"
               />
@@ -173,6 +185,7 @@ export default function ContactForm() {
                   id="subject"
                   value={formData.subject}
                   onChange={handleChange}
+                  onClick={() => {GTMEvent('click', { action: 'Subject Field Clicked' })}}
                   className="appearance-none block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400 bg-white pr-10"
                 >
                   {subjects.map((subject) => (
@@ -199,12 +212,15 @@ export default function ContactForm() {
                 placeholder="Nos conte um pouco das suas necessidades: quais ambientes pretende mobiliar, por onde prefere que entremos em contato (ligação, WhatsApp, e-mail)."
                 value={formData.message}
                 onChange={handleChange}
+                onClick={() => {GTMEvent('click', { action: 'Message Field Clicked' })}}
                 className="mt-1 h-[150px] block w-full px-4 py-3 border border-zinc-300 rounded-md shadow-sm focus:ring-red-400 focus:border-red-400"
               />
             </div>
             <button
               type="submit"
               className="cursor-pointer w-full bg-red-600 text-white font-bold py-3 px-6 rounded-md hover:bg-red-900 transition-colors"
+              onClick={() => {GTMEvent('click', { action: 'Send Message Button Clicked' })}}
+              id="send-message-button"
             >
               Enviar Mensagem
             </button>
@@ -217,23 +233,23 @@ export default function ContactForm() {
               <div className="bg-red-600 p-3 rounded-full">
                 <Phone className="text-white" size={24} />
               </div>
-              <div>
+              <div onClick={() => {GTMEvent('click', { action: 'Phone Clicked' })}}>
                 <h3 className="text-lg font-semibold">Fale conosco</h3>
                 <p className="text-zinc-600">(051) 98115-0097</p>
               </div>
             </div>
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4" onClick={() => {GTMEvent('click', { action: 'Email Clicked' })}}>
               <div className="bg-red-600 p-3 rounded-full">
                 <Mail className="text-white" size={24} />
               </div>
-              <div>
+              <div onClick={() => {GTMEvent('click', { action: 'Email Field Clicked' })}}>
                 <h3 className="text-lg font-semibold">Email</h3>
                 <p className="text-zinc-600 max-w-[250px] max-[768px]:truncate">
                   akaimoveiseplanejados@gmail.com.br
                 </p>
               </div>
             </div>
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4" onClick={() => {GTMEvent('click', { action: 'Address Clicked' })}}>
               <div className="bg-red-600 p-3 rounded-full">
                 <MapPin className="text-white" size={24} />
               </div>
