@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Akai Móveis",
-  description: "Especialistas em móveis há mais de 15 anos. Oferecemos projetos gratuitos para ambientes planejados, com atendimento personalizado que entende suas necessidades. Facilitamos sua compra com parcelamento em até 18 vezes sem juros no cartão.",
+  description: "Especialistas em móveis há mais de 15 anos. Oferecemos projetos gratuitos para ambientes planejados, com atendimento personalizado que entende suas necessidades.",
 };
 
 export default function RootLayout({ children }) {
