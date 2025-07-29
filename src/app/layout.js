@@ -21,6 +21,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt">
       <head>
+        <meta
+          name="keywords"
+          content="móveis planejados, móveis sob medida, marcenaria, cozinha planejada, quarto planejado, armários planejados, móveis personalizados, projeto de móveis personalizados, móveis planejados alto padrão, móveis planejados modernos, móveis planejados SC, design de interiores, ambientes planejados, móveis planejados para apartamento, marcenaria sob medida, Akai Móveis, Akai Móveis Planejados, Akai Marcenaria, Akai Planejados, móveis planejados campeche, móveis planejados rio tavares, móveis planejados lagoa da conceição, móveis planejados sul da ilha, móveis planejados em floripa, marcenaria artesanal"
+        />
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1005001799"></script>
         <script
