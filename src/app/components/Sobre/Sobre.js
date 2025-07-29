@@ -31,9 +31,9 @@ export default function Sobre() {
                 <p className="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-2">
                   Quem Somos
                 </p>
-                <h1 className="text-3xl md:text-5xl font-bold text-zinc-800 mb-6">
+                <h2 className="text-3xl md:text-5xl font-bold text-zinc-800 mb-6">
                   Especialistas em móveis há mais de 15 anos 
-                </h1>
+                </h2>
                 <p className="text-zinc-600 leading-relaxed mb-2">
                   Desde 2009 em Sapucaia do Sul, somos especialistas em móveis planejados e modulados, oferecendo soluções completas para transformar sua casa com estilo e funcionalidade. Trabalhamos também com móveis em série, como colchões, estofados, salas de jantar, banheiros, homes e muito mais.
                 </p>

@@ -3,9 +3,9 @@ import * as React from 'react';
 export const EmailTemplate = ({ name, email, phone, city, message, subject }) => (
   <div style={{ fontFamily: 'sans-serif', padding: '20px', backgroundColor: '#f9f9f9' }}>
     <div style={{ maxWidth: '600px', margin: 'auto', backgroundColor: 'white', border: '1px solid #ddd', borderRadius: '8px', padding: '30px' }}>
-      <h1 style={{ color: '#333', borderBottom: '1px solid #ddd', paddingBottom: '10px' }}>
+      <h2 style={{ color: '#333', borderBottom: '1px solid #ddd', paddingBottom: '10px' }}>
         Nova Mensagem de Contato
-      </h1>
+      </h2>
       <p style={{ fontSize: '16px', color: '#555' }}>
         Você recebeu uma nova mensagem através do formulário do site Akai Móveis.
       </p>

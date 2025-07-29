@@ -39,9 +39,9 @@ export default function PlanejadosModulados() {
     <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-            <h1 className="text-2xl md:text-3xl font-extrabold text-zinc-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-zinc-900 mb-4">
                 Planejados x Modulados: Qual a melhor opção para você?
-            </h1>
+            </h2>
             <p className="max-w-3xl mx-auto text-zinc-600 leading-relaxed">
                 Na hora de mobiliar um ambiente, é comum surgir a dúvida: planejados ou modulados? Cada solução tem suas vantagens, e a escolha ideal depende do seu espaço, orçamento e necessidades.
             </p>
