@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/next-script-for-ga */
+﻿/* eslint-disable @next/next/next-script-for-ga */
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import structuredData from "./data/akai-structured-data.json";
@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Akai MÃ³veis",
+  title: "Akai Móveis",
   description:
-    "Especialistas em mÃ³veis hÃ¡ mais de 15 anos. Oferecemos projetos gratuitos para ambientes planejados, com atendimento personalizado que entende suas necessidades.",
+    "Especialistas em móveis há mais de 15 anos. Oferecemos projetos gratuitos para ambientes planejados, com atendimento personalizado que entende suas necessidades.",
 };
 
 export default function RootLayout({ children }) {
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta
           name="keywords"
-          content="mÃ³veis planejados, mÃ³veis sob medida, marcenaria, cozinha planejada, quarto planejado, armÃ¡rios planejados, mÃ³veis personalizados, projeto de mÃ³veis personalizados, mÃ³veis planejados alto padrÃ£o, mÃ³veis planejados modernos, mÃ³veis planejados RS, design de interiores, ambientes planejados, mÃ³veis planejados para apartamento, marcenaria sob medida, Akai MÃ³veis, Akai MÃ³veis Planejados, Akai Marcenaria, Akai Planejados, mÃ³veis planejados, mÃ³veis planejados, mÃ³veis planejados, mÃ³veis planejados, mÃ³veis planejados, marcenaria artesanal"
+          content="móveis planejados, móveis sob medida, marcenaria, cozinha planejada, quarto planejado, armários planejados, móveis personalizados, projeto de móveis personalizados, móveis planejados alto padrão, móveis planejados modernos, móveis planejados RS, design de interiores, ambientes planejados, móveis planejados para apartamento, marcenaria sob medida, Akai Móveis, Akai Móveis Planejados, Akai Marcenaria, Akai Planejados, móveis planejados, móveis planejados, móveis planejados, móveis planejados, móveis planejados, marcenaria artesanal"
         />
         <script
           type="application/ld+json"
@@ -87,3 +87,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

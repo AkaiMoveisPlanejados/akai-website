@@ -1,4 +1,4 @@
-{
+﻿{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -260,3 +260,4 @@
     { "@type": "Review", "@id": "https://www.akaimoveis.com.br/#review-gabriela-seixas", "itemReviewed": { "@id": "https://www.akaimoveis.com.br/#store" }, "author": { "@type": "Person", "name": "Gabriela Seixas" }, "reviewBody": "Incrível, eles fizeram a cozinha do jeitinho que eu tinha imaginado e ficou muito melhor do que eu esperava, recomendo 100%.", "datePublished": "2024-08-01" }
   ]
 }
+
