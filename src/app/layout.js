@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import structuredData from "./data/akai-structured-data.json";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Akai Móveis",
-  description: "Especialistas em móveis há mais de 15 anos. Oferecemos projetos gratuitos para ambientes planejados, com atendimento personalizado que entende suas necessidades.",
+  title: "Akai MÃ³veis",
+  description:
+    "Especialistas em mÃ³veis hÃ¡ mais de 15 anos. Oferecemos projetos gratuitos para ambientes planejados, com atendimento personalizado que entende suas necessidades.",
 };
 
 export default function RootLayout({ children }) {
@@ -23,7 +25,13 @@ export default function RootLayout({ children }) {
       <head>
         <meta
           name="keywords"
-          content="móveis planejados, móveis sob medida, marcenaria, cozinha planejada, quarto planejado, armários planejados, móveis personalizados, projeto de móveis personalizados, móveis planejados alto padrão, móveis planejados modernos, móveis planejados RS, design de interiores, ambientes planejados, móveis planejados para apartamento, marcenaria sob medida, Akai Móveis, Akai Móveis Planejados, Akai Marcenaria, Akai Planejados, móveis planejados, móveis planejados, móveis planejados, móveis planejados, móveis planejados, marcenaria artesanal"
+          content="mÃ³veis planejados, mÃ³veis sob medida, marcenaria, cozinha planejada, quarto planejado, armÃ¡rios planejados, mÃ³veis personalizados, projeto de mÃ³veis personalizados, mÃ³veis planejados alto padrÃ£o, mÃ³veis planejados modernos, mÃ³veis planejados RS, design de interiores, ambientes planejados, mÃ³veis planejados para apartamento, marcenaria sob medida, Akai MÃ³veis, Akai MÃ³veis Planejados, Akai Marcenaria, Akai Planejados, mÃ³veis planejados, mÃ³veis planejados, mÃ³veis planejados, mÃ³veis planejados, mÃ³veis planejados, marcenaria artesanal"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
         />
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1005001799"></script>
@@ -44,7 +52,7 @@ export default function RootLayout({ children }) {
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-5D7VWGG9');`
+            })(window,document,'script','dataLayer','GTM-5D7VWGG9');`,
           }}
         />
         {/* Meta Pixel Code */}
@@ -64,13 +72,16 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <noscript><img height="1" width="1" style={{display:"none"}}
-        src="https://www.facebook.com/tr?id=1686648795328693&ev=PageView&noscript=1"
-        /></noscript>
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1686648795328693&ev=PageView&noscript=1"
+          />
+        </noscript>
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
