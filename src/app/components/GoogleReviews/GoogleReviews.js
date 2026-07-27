@@ -69,8 +69,10 @@ export default function GoogleReviews() {
           throw new Error(errorData.error || 'Failed to fetch reviews');
         }
         const data = await response.json();
-        setReviews(data);
-        if (data.length <= 1) setIsAtEnd(true);
+        // a rota agora devolve { rating, total, reviews }
+        const lista = Array.isArray(data) ? data : data.reviews || [];
+        setReviews(lista);
+        if (lista.length <= 1) setIsAtEnd(true);
       } catch (err) {
         setError(err.message);
       } finally {
