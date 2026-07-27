@@ -3,13 +3,14 @@ import { NextResponse } from 'next/server';
 
 // Cache de 6 horas: a Places API é cobrada por chamada, e nota e número de
 // avaliações mudam devagar. Sem isso, cada visita ao site vira uma cobrança.
-const CACHE_SEGUNDOS = 60 * 60 * 6;
+// Precisa ser um literal — o Next não aceita variável nem expressão aqui.
+export const revalidate = 21600;
+
+const CACHE_SEGUNDOS = 21600;
 
 // Valores de segurança, usados se a API falhar ou não estiver configurada.
 // Conferidos no Google Business Profile em 27/07/2026.
 const PADRAO = { rating: 4.8, total: 126 };
-
-export const revalidate = CACHE_SEGUNDOS;
 
 export async function GET(request) {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
