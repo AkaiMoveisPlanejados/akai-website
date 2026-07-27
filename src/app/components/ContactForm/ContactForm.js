@@ -235,7 +235,9 @@ export default function ContactForm() {
               </div>
               <div onClick={() => {GTMEvent('click', { action: 'Phone Clicked' })}}>
                 <h3 className="text-lg font-semibold">Fale conosco</h3>
-                <p className="text-zinc-600">(051) 98115-0097</p>
+                <a href="tel:+5551981150097" className="text-zinc-600 block">
+                  (51) 98115-0097
+                </a>
               </div>
             </div>
             <div className="flex items-start space-x-4" onClick={() => {GTMEvent('click', { action: 'Email Clicked' })}}>
@@ -244,9 +246,12 @@ export default function ContactForm() {
               </div>
               <div onClick={() => {GTMEvent('click', { action: 'Email Field Clicked' })}}>
                 <h3 className="text-lg font-semibold">Email</h3>
-                <p className="text-zinc-600 max-w-[250px] max-[768px]:truncate">
-                  akaimoveiseplanejados@gmail.com.br
-                </p>
+                <a
+                  href="mailto:akaimoveiseplanejados@gmail.com"
+                  className="text-zinc-600 max-w-[250px] max-[768px]:truncate block"
+                >
+                  akaimoveiseplanejados@gmail.com
+                </a>
               </div>
             </div>
             <div className="flex items-start space-x-4" onClick={() => {GTMEvent('click', { action: 'Address Clicked' })}}>

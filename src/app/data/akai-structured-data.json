@@ -4,10 +4,14 @@
     {
       "@type": "Organization",
       "@id": "https://www.akaimoveis.com.br/#organization",
-      "name": "Akai Móveis",
+      "name": "Akai Móveis e Ambientes Planejados",
       "url": "https://www.akaimoveis.com.br/",
-      "logo": { "@id": "https://www.akaimoveis.com.br/#logo" },
-      "image": { "@id": "https://www.akaimoveis.com.br/#primary-image" },
+      "logo": {
+        "@id": "https://www.akaimoveis.com.br/#logo"
+      },
+      "image": {
+        "@id": "https://www.akaimoveis.com.br/#primary-image"
+      },
       "email": "akaimoveiseplanejados@gmail.com",
       "telephone": "+55-51-98115-0097",
       "sameAs": [
@@ -15,8 +19,11 @@
         "https://www.instagram.com/akai.moveis/",
         "https://br.pinterest.com/akaimoveiseplanejados/"
       ],
-      "foundingDate": "2009",
+      "foundingDate": "2009-11-12",
       "knowsAbout": [
+        "móveis sob medida",
+        "cozinhas moduladas",
+        "cozinhas planejadas",
         "móveis planejados",
         "móveis modulados",
         "ambientes planejados",
@@ -29,42 +36,148 @@
         "estofados",
         "salas de jantar"
       ],
-      "location": { "@id": "https://www.akaimoveis.com.br/#store" }
+      "location": {
+        "@id": "https://www.akaimoveis.com.br/#store"
+      }
     },
     {
       "@type": "FurnitureStore",
       "@id": "https://www.akaimoveis.com.br/#store",
-      "name": "Akai Móveis",
+      "name": "Akai Móveis e Ambientes Planejados",
       "url": "https://www.akaimoveis.com.br/",
-      "parentOrganization": { "@id": "https://www.akaimoveis.com.br/#organization" },
-      "logo": { "@id": "https://www.akaimoveis.com.br/#logo" },
-      "image": { "@id": "https://www.akaimoveis.com.br/#primary-image" },
-      "description": "Especialistas em móveis há mais de 15 anos. Oferecemos projetos gratuitos para ambientes planejados, com atendimento personalizado que entende suas necessidades.",
+      "parentOrganization": {
+        "@id": "https://www.akaimoveis.com.br/#organization"
+      },
+      "logo": {
+        "@id": "https://www.akaimoveis.com.br/#logo"
+      },
+      "image": {
+        "@id": "https://www.akaimoveis.com.br/#primary-image"
+      },
+      "description": "Especialistas em cozinhas planejadas e moduladas em Sapucaia do Sul desde 2009. Projeto e orçamento gratuitos, equipe própria de montagem e móveis 100% MDF.",
       "email": "akaimoveiseplanejados@gmail.com",
       "telephone": "+55-51-98115-0097",
       "priceRange": "$$",
-      "address": { "@id": "https://www.akaimoveis.com.br/#address" },
-      "geo": { "@id": "https://www.akaimoveis.com.br/#geo" },
+      "address": {
+        "@id": "https://www.akaimoveis.com.br/#address"
+      },
+      "geo": {
+        "@id": "https://www.akaimoveis.com.br/#geo"
+      },
       "contactPoint": [
-        { "@id": "https://www.akaimoveis.com.br/#contact-customer-service" },
-        { "@id": "https://www.akaimoveis.com.br/#contact-sales" },
-        { "@id": "https://www.akaimoveis.com.br/#contact-whatsapp" }
+        {
+          "@id": "https://www.akaimoveis.com.br/#contact-customer-service"
+        },
+        {
+          "@id": "https://www.akaimoveis.com.br/#contact-sales"
+        },
+        {
+          "@id": "https://www.akaimoveis.com.br/#contact-whatsapp"
+        },
+        {
+          "@id": "https://www.akaimoveis.com.br/#contact-store"
+        }
       ],
-      "hasOfferCatalog": { "@id": "https://www.akaimoveis.com.br/#catalog" },
-      "review": [
-        { "@id": "https://www.akaimoveis.com.br/#review-stefanny-silva" },
-        { "@id": "https://www.akaimoveis.com.br/#review-fabio-yukio" },
-        { "@id": "https://www.akaimoveis.com.br/#review-jessica-costa" },
-        { "@id": "https://www.akaimoveis.com.br/#review-claudio-eliezer" },
-        { "@id": "https://www.akaimoveis.com.br/#review-gabriela-seixas" }
+      "hasOfferCatalog": {
+        "@id": "https://www.akaimoveis.com.br/#catalog"
+      },
+      "sameAs": [
+        "https://www.facebook.com/akai.moveis",
+        "https://www.instagram.com/akai.moveis/",
+        "https://br.pinterest.com/akaimoveiseplanejados/"
+      ],
+      "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJhx31gjRvGZURNECVHA6IrZw",
+      "currenciesAccepted": "BRL",
+      "paymentAccepted": "Cartão de crédito, Financiamento",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "14:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "14:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "00:00",
+          "closes": "00:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sapucaia do Sul",
+          "addressRegion": "RS"
+        },
+        {
+          "@type": "City",
+          "name": "Esteio",
+          "addressRegion": "RS"
+        },
+        {
+          "@type": "City",
+          "name": "Canoas",
+          "addressRegion": "RS"
+        },
+        {
+          "@type": "City",
+          "name": "São Leopoldo",
+          "addressRegion": "RS"
+        },
+        {
+          "@type": "City",
+          "name": "Novo Hamburgo",
+          "addressRegion": "RS"
+        },
+        {
+          "@type": "City",
+          "name": "Porto Alegre",
+          "addressRegion": "RS"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Região Metropolitana de Porto Alegre"
+        }
       ]
     },
     {
       "@type": "WebSite",
       "@id": "https://www.akaimoveis.com.br/#website",
       "url": "https://www.akaimoveis.com.br/",
-      "name": "Akai Móveis",
-      "publisher": { "@id": "https://www.akaimoveis.com.br/#organization" },
+      "name": "Akai Móveis e Ambientes Planejados",
+      "publisher": {
+        "@id": "https://www.akaimoveis.com.br/#organization"
+      },
       "inLanguage": "pt-BR"
     },
     {
@@ -73,11 +186,21 @@
       "url": "https://www.akaimoveis.com.br/",
       "name": "Akai Móveis - Especialistas em Móveis Planejados",
       "description": "Especialistas em móveis há mais de 15 anos em Sapucaia do Sul. Projetos gratuitos para ambientes planejados e modulados com parcelamento em até 18x.",
-      "isPartOf": { "@id": "https://www.akaimoveis.com.br/#website" },
-      "about": { "@id": "https://www.akaimoveis.com.br/#organization" },
-      "mainEntity": { "@id": "https://www.akaimoveis.com.br/#store" },
-      "primaryImageOfPage": { "@id": "https://www.akaimoveis.com.br/#primary-image" },
-      "breadcrumb": { "@id": "https://www.akaimoveis.com.br/#breadcrumb" },
+      "isPartOf": {
+        "@id": "https://www.akaimoveis.com.br/#website"
+      },
+      "about": {
+        "@id": "https://www.akaimoveis.com.br/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://www.akaimoveis.com.br/#store"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.akaimoveis.com.br/#primary-image"
+      },
+      "breadcrumb": {
+        "@id": "https://www.akaimoveis.com.br/#breadcrumb"
+      },
       "inLanguage": "pt-BR"
     },
     {
@@ -134,13 +257,27 @@
       "availableLanguage": "pt-BR"
     },
     {
+      "@type": "ContactPoint",
+      "@id": "https://www.akaimoveis.com.br/#contact-store",
+      "contactType": "loja física",
+      "telephone": "+55-51-3474-1820",
+      "email": "akaimoveiseplanejados@gmail.com",
+      "availableLanguage": "pt-BR"
+    },
+    {
       "@type": "OfferCatalog",
       "@id": "https://www.akaimoveis.com.br/#catalog",
       "name": "Serviços e Produtos Akai Móveis",
       "itemListElement": [
-        { "@id": "https://www.akaimoveis.com.br/#catalog-planned" },
-        { "@id": "https://www.akaimoveis.com.br/#catalog-modular" },
-        { "@id": "https://www.akaimoveis.com.br/#catalog-series" }
+        {
+          "@id": "https://www.akaimoveis.com.br/#catalog-planned"
+        },
+        {
+          "@id": "https://www.akaimoveis.com.br/#catalog-modular"
+        },
+        {
+          "@id": "https://www.akaimoveis.com.br/#catalog-series"
+        }
       ]
     },
     {
@@ -148,8 +285,12 @@
       "@id": "https://www.akaimoveis.com.br/#catalog-planned",
       "name": "Móveis Planejados",
       "itemListElement": [
-        { "@id": "https://www.akaimoveis.com.br/#offer-planned-furniture" },
-        { "@id": "https://www.akaimoveis.com.br/#offer-free-project" }
+        {
+          "@id": "https://www.akaimoveis.com.br/#offer-planned-furniture"
+        },
+        {
+          "@id": "https://www.akaimoveis.com.br/#offer-free-project"
+        }
       ]
     },
     {
@@ -160,7 +301,9 @@
         "@id": "https://www.akaimoveis.com.br/#service-planned-furniture",
         "name": "Móveis Planejados",
         "description": "Medidas totalmente personalizadas, produção sob medida com máximo aproveitamento do espaço e design exclusivo.",
-        "provider": { "@id": "https://www.akaimoveis.com.br/#store" }
+        "provider": {
+          "@id": "https://www.akaimoveis.com.br/#store"
+        }
       }
     },
     {
@@ -171,7 +314,9 @@
         "@id": "https://www.akaimoveis.com.br/#service-free-project",
         "name": "Projetos Gratuitos",
         "description": "Oferecemos projetos gratuitos para ambientes planejados com atendimento personalizado.",
-        "provider": { "@id": "https://www.akaimoveis.com.br/#store" }
+        "provider": {
+          "@id": "https://www.akaimoveis.com.br/#store"
+        }
       }
     },
     {
@@ -179,8 +324,12 @@
       "@id": "https://www.akaimoveis.com.br/#catalog-modular",
       "name": "Móveis Modulados",
       "itemListElement": [
-        { "@id": "https://www.akaimoveis.com.br/#offer-modular-furniture" },
-        { "@id": "https://www.akaimoveis.com.br/#offer-complete-apartment" }
+        {
+          "@id": "https://www.akaimoveis.com.br/#offer-modular-furniture"
+        },
+        {
+          "@id": "https://www.akaimoveis.com.br/#offer-complete-apartment"
+        }
       ]
     },
     {
@@ -191,7 +340,9 @@
         "@id": "https://www.akaimoveis.com.br/#service-modular-furniture",
         "name": "Móveis Modulados",
         "description": "Medidas padronizadas com excelente custo-benefício, entrega rápida e agilidade na montagem.",
-        "provider": { "@id": "https://www.akaimoveis.com.br/#store" }
+        "provider": {
+          "@id": "https://www.akaimoveis.com.br/#store"
+        }
       }
     },
     {
@@ -212,18 +363,53 @@
       "@id": "https://www.akaimoveis.com.br/#catalog-series",
       "name": "Móveis em Série",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Colchões" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Estofados" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Salas de jantar" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Banheiros" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Homes" } }
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Colchões"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Estofados"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Salas de jantar"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Banheiros"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Homes"
+          }
+        }
       ]
     },
     {
       "@type": "BreadcrumbList",
       "@id": "https://www.akaimoveis.com.br/#breadcrumb",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.akaimoveis.com.br/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://www.akaimoveis.com.br/"
+        }
       ]
     },
     {
@@ -234,30 +420,177 @@
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
       "numberOfItems": 17,
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "item": { "@type": "CreativeWork", "name": "Projeto 1", "url": "https://pin.it/7iXjvJxI7", "image": "https://i.pinimg.com/736x/38/42/35/38423597b8e2a5a622d032bc32549cb1.jpg" } },
-        { "@type": "ListItem", "position": 2, "item": { "@type": "CreativeWork", "name": "Projeto 2", "url": "https://pin.it/8YZE27Kkh", "image": "https://i.pinimg.com/736x/31/bb/5b/31bb5b1484cdcdfdf863f5dd19ddbdf4.jpg" } },
-        { "@type": "ListItem", "position": 3, "item": { "@type": "CreativeWork", "name": "Projeto 3", "url": "https://pin.it/kxQCqog54", "image": "https://i.pinimg.com/736x/ce/c4/2f/cec42f47046e04962342c4facdeed07e.jpg" } },
-        { "@type": "ListItem", "position": 4, "item": { "@type": "CreativeWork", "name": "Projeto 4", "url": "https://pin.it/6rEInO2qx", "image": "https://i.pinimg.com/736x/ec/c2/90/ecc2908a888e94a352114f3bb223de1b.jpg" } },
-        { "@type": "ListItem", "position": 5, "item": { "@type": "CreativeWork", "name": "Projeto 5", "url": "https://pin.it/2RWCGYs7V", "image": "https://i.pinimg.com/736x/53/c3/53/53c3535305915572adcbd0f9987a5065.jpg" } },
-        { "@type": "ListItem", "position": 6, "item": { "@type": "CreativeWork", "name": "Projeto 6", "url": "https://pin.it/2rEFd4qBp", "image": "https://i.pinimg.com/736x/06/d7/40/06d74039fa8634b8cc0d78a76830cf6e.jpg" } },
-        { "@type": "ListItem", "position": 7, "item": { "@type": "CreativeWork", "name": "Projeto 7", "url": "https://pin.it/2PECfRa8z", "image": "https://i.pinimg.com/736x/a8/2f/94/a82f940463c287137bc730c2ea081700.jpg" } },
-        { "@type": "ListItem", "position": 8, "item": { "@type": "CreativeWork", "name": "Projeto 8", "url": "https://pin.it/1kovOQQvG", "image": "https://i.pinimg.com/736x/5d/04/3d/5d043d9fa623b86b06f141fcde893507.jpg" } },
-        { "@type": "ListItem", "position": 9, "item": { "@type": "CreativeWork", "name": "Projeto 9", "url": "https://pin.it/4NXj0OoLH", "image": "https://i.pinimg.com/736x/19/65/9a/19659a54b46eba263151be5bed1a592e.jpg" } },
-        { "@type": "ListItem", "position": 10, "item": { "@type": "CreativeWork", "name": "Projeto 10", "url": "https://pin.it/46YuJjtTR", "image": "https://i.pinimg.com/736x/15/84/4c/15844c32830764e2190b5c192e066c83.jpg" } },
-        { "@type": "ListItem", "position": 11, "item": { "@type": "CreativeWork", "name": "Projeto 11", "url": "https://pin.it/6rljuxnlZ", "image": "https://i.pinimg.com/736x/36/68/11/366811a95b8b7b752260ce177c847465.jpg" } },
-        { "@type": "ListItem", "position": 12, "item": { "@type": "CreativeWork", "name": "Projeto 12", "url": "https://pin.it/61quoPALS", "image": "https://i.pinimg.com/736x/54/c0/8e/54c08ebfd533ee33945879ef7ff068bb.jpg" } },
-        { "@type": "ListItem", "position": 13, "item": { "@type": "CreativeWork", "name": "Projeto 13", "url": "https://pin.it/5tAZ7mWcI", "image": "https://i.pinimg.com/736x/d1/39/ce/d139cefafe76c96a00c1c9507ba8145f.jpg" } },
-        { "@type": "ListItem", "position": 14, "item": { "@type": "CreativeWork", "name": "Projeto 14", "url": "https://pin.it/1SFqj4rnS", "image": "https://i.pinimg.com/736x/c1/a0/32/c1a0323fafd1e9361776e8dc4853278d.jpg" } },
-        { "@type": "ListItem", "position": 15, "item": { "@type": "CreativeWork", "name": "Projeto 15", "url": "https://pin.it/sgD8IHbRL", "image": "https://i.pinimg.com/736x/ed/f0/af/edf0af40567f9674f6c3f3543abf6e13.jpg" } },
-        { "@type": "ListItem", "position": 16, "item": { "@type": "CreativeWork", "name": "Projeto 16", "url": "https://pin.it/6Yi7vmKjh", "image": "https://i.pinimg.com/736x/cc/2d/1c/cc2d1c58c443b7296b4d659d35e6a24b.jpg" } },
-        { "@type": "ListItem", "position": 17, "item": { "@type": "CreativeWork", "name": "Projeto 17", "url": "https://pin.it/52XBkoTIc", "image": "https://i.pinimg.com/736x/2f/94/f5/2f94f5f8ef3b372d481dde9c21512997.jpg" } }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 1",
+            "url": "https://pin.it/7iXjvJxI7",
+            "image": "https://i.pinimg.com/736x/38/42/35/38423597b8e2a5a622d032bc32549cb1.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 2",
+            "url": "https://pin.it/8YZE27Kkh",
+            "image": "https://i.pinimg.com/736x/31/bb/5b/31bb5b1484cdcdfdf863f5dd19ddbdf4.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 3",
+            "url": "https://pin.it/kxQCqog54",
+            "image": "https://i.pinimg.com/736x/ce/c4/2f/cec42f47046e04962342c4facdeed07e.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 4",
+            "url": "https://pin.it/6rEInO2qx",
+            "image": "https://i.pinimg.com/736x/ec/c2/90/ecc2908a888e94a352114f3bb223de1b.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 5",
+            "url": "https://pin.it/2RWCGYs7V",
+            "image": "https://i.pinimg.com/736x/53/c3/53/53c3535305915572adcbd0f9987a5065.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 6",
+            "url": "https://pin.it/2rEFd4qBp",
+            "image": "https://i.pinimg.com/736x/06/d7/40/06d74039fa8634b8cc0d78a76830cf6e.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 7",
+            "url": "https://pin.it/2PECfRa8z",
+            "image": "https://i.pinimg.com/736x/a8/2f/94/a82f940463c287137bc730c2ea081700.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 8",
+            "url": "https://pin.it/1kovOQQvG",
+            "image": "https://i.pinimg.com/736x/5d/04/3d/5d043d9fa623b86b06f141fcde893507.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 9",
+            "url": "https://pin.it/4NXj0OoLH",
+            "image": "https://i.pinimg.com/736x/19/65/9a/19659a54b46eba263151be5bed1a592e.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 10",
+            "url": "https://pin.it/46YuJjtTR",
+            "image": "https://i.pinimg.com/736x/15/84/4c/15844c32830764e2190b5c192e066c83.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 11",
+            "url": "https://pin.it/6rljuxnlZ",
+            "image": "https://i.pinimg.com/736x/36/68/11/366811a95b8b7b752260ce177c847465.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 12",
+            "url": "https://pin.it/61quoPALS",
+            "image": "https://i.pinimg.com/736x/54/c0/8e/54c08ebfd533ee33945879ef7ff068bb.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 13",
+            "url": "https://pin.it/5tAZ7mWcI",
+            "image": "https://i.pinimg.com/736x/d1/39/ce/d139cefafe76c96a00c1c9507ba8145f.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 14",
+            "url": "https://pin.it/1SFqj4rnS",
+            "image": "https://i.pinimg.com/736x/c1/a0/32/c1a0323fafd1e9361776e8dc4853278d.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 15",
+            "url": "https://pin.it/sgD8IHbRL",
+            "image": "https://i.pinimg.com/736x/ed/f0/af/edf0af40567f9674f6c3f3543abf6e13.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 16",
+            "url": "https://pin.it/6Yi7vmKjh",
+            "image": "https://i.pinimg.com/736x/cc/2d/1c/cc2d1c58c443b7296b4d659d35e6a24b.jpg"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Projeto 17",
+            "url": "https://pin.it/52XBkoTIc",
+            "image": "https://i.pinimg.com/736x/2f/94/f5/2f94f5f8ef3b372d481dde9c21512997.jpg"
+          }
+        }
       ]
-    },
-    { "@type": "Review", "@id": "https://www.akaimoveis.com.br/#review-stefanny-silva", "itemReviewed": { "@id": "https://www.akaimoveis.com.br/#store" }, "author": { "@type": "Person", "name": "Stefanny Silva" }, "reviewBody": "Super indico! Fizemos nossa cozinha em 2024, gostamos tanto que em 2026 retornamos para fazer os outros cômodos do apartamento. Preço justo, boas condições de pagamento, atendimento nota 10!", "datePublished": "2024-10-01" },
-    { "@type": "Review", "@id": "https://www.akaimoveis.com.br/#review-fabio-yukio", "itemReviewed": { "@id": "https://www.akaimoveis.com.br/#store" }, "author": { "@type": "Person", "name": "Fábio Yukio" }, "reviewBody": "Tive um problema com minha mesa do escritório, acionei a AKAI e mandaram 2 técnicos muito qualificados e prestativos. O preço cobrado foi super justo e executado com rapidez.", "datePublished": "2024-08-01" },
-    { "@type": "Review", "@id": "https://www.akaimoveis.com.br/#review-jessica-costa", "itemReviewed": { "@id": "https://www.akaimoveis.com.br/#store" }, "author": { "@type": "Person", "name": "Jéssica Costa" }, "reviewBody": "Atendimento diferenciado, eu que procurava moveis para meu apto, tinha me decepcionado com atendimentos de outras lojas, ate que encontrei o instagram da Akai e tive um atendimento de excelência do início ao fim.", "datePublished": "2024-02-01" },
-    { "@type": "Review", "@id": "https://www.akaimoveis.com.br/#review-claudio-eliezer", "itemReviewed": { "@id": "https://www.akaimoveis.com.br/#store" }, "author": { "@type": "Person", "name": "Claudio Eliezer" }, "reviewBody": "Loja Top! Tayna e o Joe do Projeto e o pessoal da montagem excelentes profissionais!! Atenderam todas nossas expectativas!", "datePublished": "2023-11-01" },
-    { "@type": "Review", "@id": "https://www.akaimoveis.com.br/#review-gabriela-seixas", "itemReviewed": { "@id": "https://www.akaimoveis.com.br/#store" }, "author": { "@type": "Person", "name": "Gabriela Seixas" }, "reviewBody": "Incrível, eles fizeram a cozinha do jeitinho que eu tinha imaginado e ficou muito melhor do que eu esperava, recomendo 100%.", "datePublished": "2024-08-01" }
+    }
   ]
 }
-

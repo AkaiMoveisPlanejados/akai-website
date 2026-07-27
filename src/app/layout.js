@@ -13,20 +13,40 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://www.akaimoveis.com.br";
+const TITLE =
+  "Cozinhas Planejadas e Moduladas em Sapucaia do Sul | Akai Móveis";
+const DESCRIPTION =
+  "Cozinhas planejadas e moduladas em Sapucaia do Sul desde 2009. Projeto e orçamento gratuitos, equipe própria de montagem e móveis 100% MDF. Até 18x sem juros.";
+
 export const metadata = {
-  title: "Akai Móveis",
-  description:
-    "Especialistas em móveis há mais de 15 anos. Oferecemos projetos gratuitos para ambientes planejados, com atendimento personalizado que entende suas necessidades.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: SITE_URL,
+    siteName: "Akai Móveis e Ambientes Planejados",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [
+      {
+        url: "/images/hero.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Cozinha planejada executada pela Akai Móveis em Sapucaia do Sul",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt">
+    <html lang="pt-BR">
       <head>
-        <meta
-          name="keywords"
-          content="móveis planejados, móveis sob medida, marcenaria, cozinha planejada, quarto planejado, armários planejados, móveis personalizados, projeto de móveis personalizados, móveis planejados alto padrão, móveis planejados modernos, móveis planejados RS, design de interiores, ambientes planejados, móveis planejados para apartamento, marcenaria sob medida, Akai Móveis, Akai Móveis Planejados, Akai Marcenaria, Akai Planejados, móveis planejados, móveis planejados, móveis planejados, móveis planejados, móveis planejados, marcenaria artesanal"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
