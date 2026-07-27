@@ -80,6 +80,24 @@ O telefone (51) 3474-1146 aparece no Solutudo e está **incorreto**.
 
 ---
 
+# Formas de pagamento
+
+- Cartão de crédito (até 18x sem juros)
+- Cartão de débito
+- Pix
+- Dinheiro
+- Financiamento pela cooperativa **Cresol**, em até 60 parcelas, mediante
+  aprovação de crédito
+- Convênio **Credmil** (credmil.net.br), gestão de convênios do RS, para
+  clientes de empresas e associações conveniadas
+
+Pagamentos à vista têm **8% de desconto**.
+
+O Google Business Profile ainda não tem os atributos de pagamento
+preenchidos — vale cadastrar para reforçar o SEO local.
+
+---
+
 # Horário de funcionamento
 
 Segunda a sexta: 09:00 às 12:00 e 14:00 às 19:00
@@ -142,14 +160,25 @@ renovado. Criar lembrete no início de julho de todo ano.
 Podem ser comunicados livremente porque são fatos:
 
 - Desde 2009
-- Projeto e orçamento gratuitos
+- Orçamento gratuito
 - Equipe própria de montagem
-- Móveis 100% MDF
 - Parcelamento em até 18x sem juros no cartão
+- 8% de desconto à vista
 - Financiamento em até 60 parcelas, mediante aprovação
 - 4,8 de nota no Google com 126 avaliações
 - Retirada na loja e entrega
 - Entrada acessível para cadeira de rodas
+
+## Cuidado ao comunicar
+
+**"100% MDF" vale apenas para os planejados.** Nos modulados o material
+varia conforme a linha e o fornecedor: há opções 100% MDF e opções com porta
+em MDF e caixa em MDP. Comunicar "100% MDF" de forma genérica é promessa que
+não se sustenta em parte do que a loja vende.
+
+**"Projeto gratuito" precisa de contexto.** O orçamento por medidas enviadas
+pelo cliente é gratuito. A visita técnica de medição, feita após a aprovação,
+é cobrada e o valor varia conforme a distância.
 
 Ver 01-identidade-da-marca.md para o que **não** pode ser afirmado.
 

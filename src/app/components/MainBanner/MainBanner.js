@@ -42,14 +42,14 @@ export default function MainBanner() {
               </span>
               <span className="text-4xl min-[768px]:text-5xl self-center font-bold text-red-600 text-shadow-lg">
                 {" "}
-                18.400
+                19.990
               </span>
               <span className="self-end text-sm min-[768px]:text-lg font-regular">à vista</span>
             </div>
             <div className="min-[320px]:mt-6 min-[768px]:mt-6 flex items-center justify-center space-x-1">
               <span className="text-sm self-start font-bold">ou 18x de R$</span>
               <span className="self-center text-4xl font-bold text-red-600 text-shadow-lg">
-                1.111
+                1.207,13
               </span>
             </div>
             <p className="text-[12px] mt-4 text-center max-w-md text-shadow-lg max-[768px]:max-w-[300px]">
@@ -77,6 +77,26 @@ export default function MainBanner() {
               </a>
             </div>
           </div>
+          <a
+            href="#sobre"
+            aria-label="Ver mais conteúdo"
+            className="absolute bottom-6 left-1/2 z-30 -translate-x-1/2 rounded-full p-2 text-white/80 transition-colors duration-300 hover:text-white motion-safe:animate-bounce"
+            onClick={() => {GTMEvent('click', { action: 'Seta de rolagem | Primeiro Banner' })}}
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+          </a>
         </section>
     )
 };

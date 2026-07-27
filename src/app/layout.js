@@ -2,6 +2,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import structuredData from "./data/akai-structured-data.json";
+import { faq } from "./data/faq";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +15,29 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_URL = "https://www.akaimoveis.com.br";
+
+// FAQPage montado a partir de data/faq.js, o mesmo arquivo que a seção de
+// perguntas renderiza — assim o texto marcado nunca diverge do texto visível.
+const schema = {
+  ...structuredData,
+  "@graph": [
+    ...structuredData["@graph"],
+    {
+      "@type": "FAQPage",
+      "@id": `${SITE_URL}/#faq`,
+      inLanguage: "pt-BR",
+      mainEntity: faq.map((item, i) => ({
+        "@type": "Question",
+        "@id": `${SITE_URL}/#faq-${i + 1}`,
+        name: item.pergunta,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.resposta.join(" "),
+        },
+      })),
+    },
+  ],
+};
 const TITLE =
   "Cozinhas Planejadas e Moduladas em Sapucaia do Sul | Akai Móveis";
 const DESCRIPTION =
@@ -53,7 +77,7 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
+            __html: JSON.stringify(schema),
           }}
         />
         {/* Google tag (gtag.js) */}

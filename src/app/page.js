@@ -4,6 +4,7 @@ import GoogleReviews from "./components/GoogleReviews/GoogleReviews";
 import PlanejadosModulados from "./components/PlanejadosModulados/PlanejadosModulados";
 import PinterestGallery from "./components/PinterestGallery/PinterestGallery";
 import ContactForm from "./components/ContactForm/ContactForm";
+import FAQ from "./components/FAQ/FAQ";
 import MainBanner from "./components/MainBanner/MainBanner";
 import Sobre from "./components/Sobre/Sobre";
 import Footer from "./components/Footer/Footer";
@@ -18,6 +19,7 @@ export default function LandingPage() {
         <PlanejadosModulados />
         <PinterestGallery />
         <GoogleReviews />
+        <FAQ />
         <ContactForm />
       </main>
       <Footer />

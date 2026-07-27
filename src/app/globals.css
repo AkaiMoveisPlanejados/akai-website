@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* FAQ: gira a seta quando a pergunta abre.
+   Em CSS puro: as utilidades de rotate do Tailwind v4 conflitam com as
+   variáveis internas dele neste projeto. */
+.faq-chevron {
+  transition: transform 300ms ease;
+  transform-origin: center;
+}
+details[open] > summary .faq-chevron {
+  transform: rotate(180deg);
+}
