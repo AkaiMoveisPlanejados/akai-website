@@ -25,6 +25,9 @@ export const metadata = {
   description: DESCRIPTION,
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
+  verification: {
+    google: "v2yAMA1wlnQPun3SJuStHnhspxPipRjAvQYcMe8uSCY",
+  },
   openGraph: {
     type: "website",
     locale: "pt_BR",
@@ -102,6 +105,16 @@ export default function RootLayout({ children }) {
         </noscript>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5D7VWGG9"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
+          />
+        </noscript>
         {children}
       </body>
     </html>
