@@ -386,16 +386,6 @@ export const projetos = [
       'Balcão de apoio com frente ripada em tom claro, combinado a armários em cinza e azul. Revestimento branco tipo metrô no rodabancada, com fita de LED sob os armários superiores.',
   },
   {
-    id: 'mod-cozinha-peninsula-ripada',
-    categoria: 'cozinhas',
-    tipo: 'modulada',
-    imagens: [{ src: '/projetos/akai-mod-cozinha-peninsula-ripada.jpg', largura: 1440, altura: 1800 }],
-    fabricante: true,
-    titulo: 'Cozinha modulada com península ripada',
-    descricao:
-      'Layout em U fechado por uma península com frente ripada em madeira clara, que separa a cozinha da sala e serve de balcão. Armários em cinza e azul, revestimento branco tipo metrô, nichos abertos amadeirados e torre com portas de vidro na entrada.',
-  },
-  {
     id: 'mod-cozinha-em-l-sidebyside',
     categoria: 'cozinhas',
     tipo: 'modulada',
