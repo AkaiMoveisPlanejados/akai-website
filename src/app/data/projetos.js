@@ -15,10 +15,10 @@ export const categorias = [
   },
   {
     id: 'quartos',
-    tituloLinha: 'Dormitórios, closets e roupeiros',
+    tituloLinha: 'Roupeiros, guarda-roupas planejados e closets',
     nome: 'Quartos',
     descricao:
-      'Dormitórios, closets e roupeiros que aproveitam cada canto do quarto, inclusive os espaços que costumam ficar perdidos. Roupeiros de canto, armários sobre a cama, criados-mudos suspensos, bancadas de estudo e divisórias ripadas para separar o closet sem fechar o ambiente.',
+      'Roupeiros e guarda-roupas planejados, closets e dormitórios que aproveitam cada canto do quarto, inclusive os espaços que costumam ficar perdidos. Roupeiro de canto, armários sobre a cama, criados-mudos suspensos, bancadas de estudo e divisórias ripadas para separar o closet sem fechar o ambiente.',
   },
   {
     id: 'banheiros',

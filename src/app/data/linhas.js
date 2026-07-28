@@ -179,21 +179,21 @@ export const linhas = [
     slug: "dormitorios-planejados",
     categoria: "quartos",
     tipo: "planejada",
-    nome: "Dormitórios e closets planejados",
+    nome: "Roupeiros e closets planejados",
     ambiente: "dormitório",
-    h1: "Dormitórios, closets e roupeiros planejados",
-    title: "Dormitórios e Closets Planejados em Sapucaia do Sul | Akai",
+    h1: "Roupeiro e guarda-roupa planejado, closet e dormitório sob medida",
+    title: "Roupeiro e Guarda-Roupa Planejado em Sapucaia do Sul | Akai",
     description:
-      "Dormitórios, closets e roupeiros planejados sob medida em Sapucaia do Sul. Roupeiro de canto, armário sobre a cama e closet, em 100% MDF. Projeto gratuito.",
+      "Roupeiro e guarda-roupa planejado sob medida em Sapucaia do Sul, além de closet e dormitório completo. Roupeiro de canto e armário sobre a cama, em 100% MDF.",
     intro: [
       "No quarto, o espaço desperdiçado quase nunca está no meio do ambiente: está no canto entre duas paredes, na faixa acima da cama e na altura que sobra entre o topo do guarda-roupa e o teto.",
-      "É aí que o dormitório planejado se diferencia de um guarda-roupa de loja. A marcenaria contorna a cama, fecha o canto e sobe até onde o teto permite, transformando esses vãos em espaço de guarda de verdade.",
+      "É aí que o guarda-roupa planejado se diferencia do guarda-roupa de loja, que vem em medida fixa. A marcenaria contorna a cama, fecha o canto e sobe até onde o teto permite, transformando esses vãos em espaço de guarda de verdade.",
     ],
     secoes: [
       {
         titulo: "Soluções que aparecem na maioria dos projetos",
         texto: [
-          "O roupeiro de canto elimina o espaço morto onde duas paredes se encontram — normalmente o pedaço mais desperdiçado do quarto. Os armários sobre a cama aproveitam a parede da cabeceira, que costuma ficar vazia. Os criados-mudos suspensos liberam o chão, o que facilita a limpeza e deixa o quarto visualmente mais leve.",
+          "O guarda-roupa de canto elimina o espaço morto onde duas paredes se encontram — normalmente o pedaço mais desperdiçado do quarto. Os armários sobre a cama aproveitam a parede da cabeceira, que costuma ficar vazia. Os criados-mudos suspensos liberam o chão, o que facilita a limpeza e deixa o quarto visualmente mais leve.",
           "Quando sobra uma parede livre, ela vira bancada de estudo ou de trabalho, com gaveteiro de apoio embaixo e painel para a TV acima.",
         ],
       },
@@ -215,7 +215,7 @@ export const linhas = [
     checklist: {
       titulo: "O que costuma entrar",
       itens: [
-        "Roupeiro de canto, que fecha o espaço morto entre duas paredes",
+        "Roupeiro de canto planejado, que fecha o espaço morto entre duas paredes",
         "Armários sobre a cama, aproveitando a parede da cabeceira",
         "Criados-mudos suspensos, com ou sem nicho iluminado",
         "Bancada de estudo ou trabalho na parede livre",
@@ -258,14 +258,14 @@ export const linhas = [
     slug: "dormitorios-modulados",
     categoria: "quartos",
     tipo: "modulada",
-    nome: "Dormitórios modulados",
+    nome: "Roupeiros e dormitórios modulados",
     ambiente: "dormitório",
-    h1: "Dormitórios modulados em Sapucaia do Sul",
-    title: "Dormitórios Modulados em Sapucaia do Sul | Akai Móveis",
+    h1: "Roupeiro e guarda-roupa modulado em Sapucaia do Sul",
+    title: "Roupeiro e Guarda-Roupa Modulado em Sapucaia do Sul | Akai",
     description:
-      "Dormitórios modulados em Sapucaia do Sul: roupeiro, armários sobre a cama e criados-mudos em módulos padronizados, com entrega mais rápida e melhor preço.",
+      "Roupeiro e guarda-roupa modulado em Sapucaia do Sul: módulos de medidas padronizadas, entrega mais rápida e melhor preço que o sob medida.",
     intro: [
-      "O dormitório modulado monta o quarto a partir de módulos de medidas padronizadas: roupeiro, armários sobre a cama, criados-mudos e, quando cabe, bancada de apoio.",
+      "O dormitório modulado monta o quarto a partir de módulos de medidas padronizadas: guarda-roupa, armários sobre a cama, criados-mudos e, quando cabe, bancada de apoio.",
       "É a linha que costuma resolver melhor quando o quarto tem formato regular, sem canto quebrado nem viga atravessando a parede — que é o caso da maioria dos quartos de apartamento.",
     ],
     secoes: [
@@ -294,7 +294,7 @@ export const linhas = [
     checklist: {
       titulo: "O que dá para escolher",
       itens: [
-        "Roupeiro alto ou roupeiro de canto, conforme a parede disponível",
+        "Roupeiro alto ou de canto, conforme a parede disponível",
         "Armários sobre a cama, aproveitando a parede da cabeceira",
         "Criados-mudos com gavetas, de um lado ou dos dois",
         "Painel ripado de cabeceira, com ou sem fita de LED",
