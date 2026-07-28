@@ -25,8 +25,9 @@ export function generateStaticParams() {
   return linhas.map((l) => ({ slug: l.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const linha = porSlug(params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const linha = porSlug(slug);
   if (!linha) return {};
 
   return {
@@ -82,8 +83,9 @@ function Foto({ projeto, imagem, prioridade }) {
   );
 }
 
-export default function PaginaDaLinha({ params }) {
-  const linha = porSlug(params.slug);
+export default async function PaginaDaLinha({ params }) {
+  const { slug } = await params;
+  const linha = porSlug(slug);
   if (!linha) notFound();
 
   const fotos = fotosDa(linha);
