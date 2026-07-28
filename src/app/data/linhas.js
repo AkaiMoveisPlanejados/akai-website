@@ -38,6 +38,14 @@ export const linhas = [
           "Cozinha grande usa o sob medida de outro jeito: bancada em L ou ilha para separar o preparo do convívio, torre de forno alinhada com a altura dos armários e cristaleira iluminada como ponto de destaque.",
         ],
       },
+      {
+        titulo: "Revestimento em BP: por que a superfície aguenta",
+        texto: [
+          "Os painéis são revestidos em BP — laminado melamínico de baixa pressão, em que o papel decorativo é fundido ao painel por calor e pressão. A superfície fica selada: não absorve respingo de gordura ou molho, mantém a cor com o tempo e aguenta bem o risco do dia a dia, que numa cozinha é constante.",
+          "Não precisa acreditar na nossa palavra. Quando vier à loja, peça para ver o teste da chave: a gente passa uma chave na superfície do BP na sua frente, para você ver como ele se comporta.",
+          "Mas o revestimento protege a superfície, não o miolo do painel — e é por isso que a borda importa tanto. É pelo corte que a água entra e faz o móvel inchar. As nossas recebem fita de PVC, que resiste à umidade e ao impacto e não descola como a fita de papel, usada em móveis de linha mais barata.",
+        ],
+      },
     ],
     checklist: {
       titulo: "O que entra no projeto",
@@ -109,6 +117,14 @@ export const linhas = [
           "Nos modulados o material varia conforme a linha e o fornecedor: há opções 100% MDF e opções que combinam portas em MDF com caixas em MDP.",
           "Essa combinação não é uma versão econômica. O MDF permite usinagem e frisos, o que o torna melhor para portas; o MDP suporta melhor peso e flexão em prateleiras longas e resiste mais à umidade que o MDF comum. Para cozinha, muitos fabricantes consideram essa a composição tecnicamente mais adequada.",
           "Seja qual for a linha escolhida, informamos exatamente qual é a composição antes de você fechar o pedido.",
+        ],
+      },
+      {
+        titulo: "Pergunte pelo revestimento e pela fita de borda",
+        texto: [
+          "Em várias linhas de modulados os painéis são revestidos em BP — laminado melamínico de baixa pressão, em que o papel decorativo é fundido ao painel por calor e pressão. A superfície fica selada: não absorve respingo, mantém a cor e aguenta bem o risco do dia a dia.",
+          "É o item que mais separa dois móveis que parecem iguais na loja. Ao comparar orçamentos de linhas moduladas, pergunte sempre qual é o revestimento e qual fita de borda está incluída — porque o revestimento protege a superfície, mas é pela borda, no corte do painel, que a água entra e faz a peça inchar.",
+          "Quando vier à loja, peça para ver o teste da chave: passamos uma chave na superfície do BP na sua frente, para você ver como ele se comporta.",
         ],
       },
     ],
@@ -183,6 +199,13 @@ export const linhas = [
           "Por dentro, a divisão é escolhida a partir do que você guarda: proporção entre cabideiro e prateleira, gavetas para peças dobradas, gavetas rasas inclinadas para calçados e iluminação em LED no cabideiro, que resolve o problema de escolher roupa em armário escuro.",
         ],
       },
+      {
+        titulo: "O acabamento que segura o uso diário",
+        texto: [
+          "Porta de roupeiro é a peça de marcenaria que mais abre e fecha na casa, e a que fica mais tempo à vista. Por isso os painéis são revestidos em BP — laminado melamínico de baixa pressão, fundido ao painel por calor e pressão, que deixa a superfície selada, resistente ao risco do dia a dia e estável na cor com o passar dos anos.",
+          "As bordas recebem fita de PVC, que aguenta o impacto de anos de abre e fecha sem descolar — diferente da fita de papel, usada em móveis de linha mais barata.",
+        ],
+      },
     ],
     checklist: {
       titulo: "O que costuma entrar",
@@ -255,6 +278,13 @@ export const linhas = [
           "A partir daí entram as escolhas: cor das portas, modelo do puxador, painel ripado como cabeceira, nichos abertos e iluminação em LED.",
         ],
       },
+      {
+        titulo: "O que olhar além do preço",
+        texto: [
+          "Dois quartos modulados podem parecer idênticos na loja e envelhecer de formas bem diferentes. A diferença costuma estar no revestimento e na borda.",
+          "Em várias linhas os painéis são revestidos em BP — laminado melamínico de baixa pressão, com a superfície selada, que resiste ao risco e mantém a cor. E as bordas com fita de PVC aguentam o impacto do abre e fecha sem descolar, o que a fita de papel não faz. Ao comparar propostas, pergunte sempre por esses dois itens.",
+        ],
+      },
     ],
     checklist: {
       titulo: "O que dá para escolher",
@@ -323,7 +353,8 @@ export const linhas = [
       {
         titulo: "Ambiente úmido pede atenção ao acabamento",
         texto: [
-          "Banheiro combina respingo constante com vapor, o que exige atenção às bordas do painel. É pelo corte que a água entra e faz a peça inchar, e é por isso que usamos fita de borda em PVC, que resiste à umidade e não descola como a fita de papel.",
+          "A superfície dos painéis é revestida em BP — laminado melamínico de baixa pressão, em que o papel decorativo é fundido ao painel por calor e pressão. Ela fica selada: não absorve respingo, aguenta o produto de limpeza do dia a dia e mantém a cor mesmo com o vapor constante do banho.",
+          "Só que o revestimento protege a superfície, não o miolo. Banheiro combina respingo constante com vapor, o que exige atenção às bordas do painel: é pelo corte que a água entra e faz a peça inchar, e é por isso que usamos fita de borda em PVC, que resiste à umidade e não descola como a fita de papel.",
           "Onde o espaço é curto, o gabinete suspenso ajuda duas vezes: libera o chão para a limpeza e evita que a base do móvel fique em contato direto com a água que escorre.",
         ],
       },
@@ -397,6 +428,13 @@ export const linhas = [
         texto: [
           "Fitas de LED embutidas no recuo do painel, sob a bancada do rack ou entre as réguas de um ripado criam iluminação indireta e mudam o clima da sala sem depender da luz do teto.",
           "Em cristaleiras e nichos, o LED tem função dupla: ilumina o que está exposto e transforma o móvel em ponto de destaque do ambiente.",
+        ],
+      },
+      {
+        titulo: "Superfície grande é onde o acabamento aparece",
+        texto: [
+          "Painel de TV e rack são peças de superfície contínua e bem visível, muitas vezes iluminadas de raspão pelo LED — o tipo de luz que denuncia qualquer imperfeição no acabamento.",
+          "Por isso os painéis são revestidos em BP, laminado melamínico de baixa pressão fundido ao painel por calor e pressão. A superfície fica selada e uniforme, resiste ao risco e mantém a cor com o tempo. As bordas recebem fita de PVC, que não descola como a de papel.",
         ],
       },
     ],
