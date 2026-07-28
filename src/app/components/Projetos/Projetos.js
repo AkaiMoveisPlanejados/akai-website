@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { categorias, projetos } from "@/app/data/projetos";
-import { GTMEvent } from "@/app/utils/GTMEvent";
+import { GTMEvent, evento } from "@/app/utils/GTMEvent";
 
 // O lucide-react removeu os ícones de marca, então o do Pinterest vai inline.
 const IconePinterest = ({ size = 16 }) => (
@@ -35,7 +35,7 @@ function Visor({ projeto, ativo }) {
 
   const ir = (passo) => {
     setI((n) => (n + passo + fotos.length) % fotos.length);
-    GTMEvent("ver_projeto", {
+    evento("ver_projeto", {
       projeto: projeto.titulo,
       acao: "foto do carrossel interno",
     });
@@ -179,7 +179,7 @@ function Carrossel({ projetos: lista, atualId, aoEscolher, visivel }) {
                 type="button"
                 onClick={() => {
                   aoEscolher(p.id);
-                  GTMEvent("ver_projeto", {
+                  evento("ver_projeto", {
                     projeto: p.titulo,
                     acao: "miniatura",
                   });
@@ -270,7 +270,7 @@ export default function Projetos() {
                 aria-controls={`painel-${c.id}`}
                 onClick={() => {
                   setCategoria(c.id);
-                  GTMEvent("ver_ambiente", { ambiente: c.nome });
+                  evento("ver_ambiente", { ambiente: c.nome });
                 }}
                 className={`rounded-full px-5 py-2.5 text-sm font-bold transition-colors duration-300 sm:px-7 ${
                   ativo

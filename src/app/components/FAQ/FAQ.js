@@ -2,7 +2,7 @@
 
 import { ChevronDown } from "lucide-react";
 import { faq } from "@/app/data/faq";
-import { GTMEvent } from "@/app/utils/GTMEvent";
+import { GTMEvent, evento } from "@/app/utils/GTMEvent";
 
 export default function FAQ() {
   return (
@@ -26,7 +26,7 @@ export default function FAQ() {
               onToggle={(e) => {
                 // só no abrir; fechar não diz nada
                 if (e.currentTarget.open)
-                  GTMEvent("abrir_faq", { pergunta: item.pergunta });
+                  evento("abrir_faq", { pergunta: item.pergunta });
               }}
             >
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4 text-left">

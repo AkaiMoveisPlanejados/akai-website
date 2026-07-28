@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
-import { GTMEvent } from "@/app/utils/GTMEvent";
+import { GTMEvent, evento } from "@/app/utils/GTMEvent";
 
 const subjects = [
   "Abaixo de 10 mil",
@@ -233,9 +233,16 @@ export default function ContactForm() {
               <div className="bg-red-600 p-3 rounded-full">
                 <Phone className="text-white" size={24} />
               </div>
-              <div onClick={() => {GTMEvent('click', { action: 'Phone Clicked' })}}>
+              <div>
                 <h3 className="text-lg font-semibold">Fale conosco</h3>
-                <a href="tel:+5551981150097" className="text-zinc-600 block">
+                <a
+                  href="tel:+5551981150097"
+                  onClick={() => {
+                    GTMEvent('click', { action: 'Phone Clicked' });
+                    evento('click_telefone', { origem: 'Bloco de contato' });
+                  }}
+                  className="text-zinc-600 block"
+                >
                   (51) 98115-0097
                 </a>
               </div>
@@ -267,7 +274,10 @@ export default function ContactForm() {
                   href="https://www.google.com/maps/dir/?api=1&destination=Akai%20M%C3%B3veis%20e%20Ambientes%20Planejados&destination_place_id=ChIJhx31gjRvGZURNECVHA6IrZw"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => {GTMEvent('click', { action: 'Como chegar | Rota' })}}
+                  onClick={() => {
+                    GTMEvent('click', { action: 'Como chegar | Rota' });
+                    evento('click_como_chegar', { origem: 'Bloco de contato' });
+                  }}
                   className="mt-1 inline-block text-sm font-semibold text-red-600 underline-offset-4 hover:underline"
                 >
                   Como chegar
