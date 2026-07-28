@@ -9,23 +9,6 @@ function Footer() {
         <footer className="bg-neutral-900 text-white">
         <div className="container mx-auto px-6 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Páginas por ambiente. São o caminho pelo qual o Google chega a
-                cada uma delas — sem link interno, uma página só existe no sitemap. */}
-            <div className="md:col-span-2">
-              <h4 className="font-semibold text-lg mb-4">Móveis por ambiente</h4>
-              <ul className="grid gap-2 sm:grid-cols-2">
-                {linhas.map((l) => (
-                  <li key={l.slug}>
-                    <Link
-                      href={`/${l.slug}`}
-                      className="text-zinc-400 hover:text-white"
-                    >
-                      {l.nome}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
             <div>
               <h4 className="font-semibold text-lg mb-4">Navegação</h4>
               <ul className="space-y-2">
@@ -63,6 +46,23 @@ function Footer() {
                   <Facebook size={24} />
                 </a>
               </div>
+            </div>
+            {/* Páginas por ambiente. São o caminho pelo qual o Google chega a
+                cada uma delas — sem link interno, uma página só existe no sitemap. */}
+            <div className="md:col-span-2">
+              <h4 className="font-semibold text-lg mb-4">Móveis por ambiente</h4>
+              <ul className="grid gap-2 sm:grid-cols-2">
+                {linhas.map((l) => (
+                  <li key={l.slug}>
+                    <Link
+                      href={`/${l.slug}`}
+                      className="text-zinc-400 hover:text-white"
+                    >
+                      {l.nome}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
           <div className="mt-12 border-t border-zinc-700 pt-6 text-center text-zinc-400 text-sm">
