@@ -143,7 +143,6 @@ ${listaDeProjetos}
 - Móveis planejados em 100% MDF
 - Fita de borda em PVC
 - Parcelamento em até 18x sem juros no cartão
-- 8% de desconto para pagamento à vista
 - Financiamento em até 60 parcelas, mediante aprovação de crédito
 
 ## Formas de pagamento

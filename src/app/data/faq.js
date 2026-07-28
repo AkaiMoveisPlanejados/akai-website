@@ -62,7 +62,7 @@ export const faq = [
   {
     pergunta: "Quais são as formas de pagamento?",
     resposta: [
-      "Aceitamos cartão de crédito, cartão de débito, Pix e dinheiro. No cartão de crédito, o parcelamento vai até 18x sem juros, e pagamentos à vista têm 8% de desconto.",
+      "Aceitamos cartão de crédito, cartão de débito, Pix e dinheiro. No cartão de crédito, o parcelamento vai até 18x sem juros.",
       "Para prazos maiores, trabalhamos com financiamento pela cooperativa Cresol, em até 60 parcelas — sujeito a análise e aprovação de crédito.",
       "Também aceitamos o convênio Credmil, uma opção para quem trabalha em empresa ou associação conveniada e prefere pagar por esse sistema.",
     ],
