@@ -56,13 +56,13 @@ export const projetos = [
       'Marcenaria em tom off-white acetinado, sem puxadores aparentes, com armários até o teto para aproveitar toda a altura da parede. Bancada clara com cooktop e cuba embutidos, e iluminação linear embutida no forro.',
   },
   {
-    id: 'cozinha-corredor-duas-cubas',
+    id: 'cozinha-corredor-linha-unica',
     categoria: 'cozinhas',
     tipo: 'planejada',
     imagens: [{ src: '/projetos/proj_02.jpg' }],
-    titulo: 'Cozinha corredor com duas cubas',
+    titulo: 'Cozinha corredor em linha única',
     descricao:
-      'Layout em linha única que aproveita toda a extensão da parede, com duas cubas e cooktop na mesma bancada. Os armários superiores acompanham a janela sem bloquear a entrada de luz natural.',
+      'Layout em linha única que aproveita toda a extensão da parede, com cooktop embutido na bancada. Os armários superiores acompanham a janela sem bloquear a entrada de luz natural.',
   },
   {
     id: 'cozinha-cinza-ripado',
