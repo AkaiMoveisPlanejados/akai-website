@@ -67,7 +67,8 @@ export default function Sobre() {
             <p className="text-zinc-600 leading-relaxed mb-3">
               O projeto e o orçamento são gratuitos, e a montagem é feita pela
               nossa própria equipe, não por terceiros. Parcelamos em até 18x sem
-              juros no cartão.
+              juros no cartão, e financiamos em até 60 parcelas pela cooperativa
+              Cresol, mediante aprovação de crédito.
             </p>
             <p className="text-zinc-600 leading-relaxed mb-3">
               Além das cozinhas, também fazemos dormitórios, banheiros,
