@@ -362,39 +362,29 @@
       "name": "Móveis em Série",
       "itemListElement": [
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Colchões"
-          }
+          "@type": "OfferCatalog",
+          "name": "Colchões",
+          "@id": "https://www.akaimoveis.com.br/#catalog-series-colchoes"
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Estofados"
-          }
+          "@type": "OfferCatalog",
+          "name": "Estofados",
+          "@id": "https://www.akaimoveis.com.br/#catalog-series-estofados"
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Salas de jantar"
-          }
+          "@type": "OfferCatalog",
+          "name": "Salas de jantar",
+          "@id": "https://www.akaimoveis.com.br/#catalog-series-salas-de-jantar"
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Banheiros"
-          }
+          "@type": "OfferCatalog",
+          "name": "Banheiros",
+          "@id": "https://www.akaimoveis.com.br/#catalog-series-banheiros"
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Product",
-            "name": "Homes"
-          }
+          "@type": "OfferCatalog",
+          "name": "Homes",
+          "@id": "https://www.akaimoveis.com.br/#catalog-series-homes"
         }
       ]
     },
