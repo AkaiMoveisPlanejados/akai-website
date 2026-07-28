@@ -56,12 +56,13 @@ export default function Sobre() {
               Quem Somos
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-zinc-800 mb-6">
-              Especialistas em cozinhas planejadas e moduladas desde 2009
+              Loja de móveis em Sapucaia do Sul desde 2009
             </h2>
             <p className="text-zinc-600 leading-relaxed mb-3">
-              A Akai é especializada em cozinhas — planejadas e moduladas — em
-              Sapucaia do Sul. Atendemos também Esteio, Canoas, São Leopoldo,
-              Novo Hamburgo e Porto Alegre.
+              A Akai é uma loja de móveis em Sapucaia do Sul, especializada em
+              cozinhas planejadas e moduladas. Atendemos toda a região
+              metropolitana de Porto Alegre, incluindo Esteio, Canoas, São
+              Leopoldo, Novo Hamburgo e a capital.
             </p>
             <p className="text-zinc-600 leading-relaxed mb-3">
               O projeto e o orçamento são gratuitos, e a montagem é feita pela
@@ -74,8 +75,8 @@ export default function Sobre() {
               estofados, colchões e salas de jantar.
             </p>
             <p className="text-zinc-600 leading-relaxed mb-4">
-              Somos uma loja de bairro, de atendimento próximo, em rua tranquila
-              e com estacionamento fácil.
+              Somos uma loja de móveis de bairro, de atendimento próximo, em rua
+              tranquila e com estacionamento fácil.
             </p>
 
             {/* Prova social — atualiza sozinha conforme o Google */}

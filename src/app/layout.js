@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 const SITE_URL = "https://www.akaimoveis.com.br";
 
 const TITLE =
-  "Cozinhas Planejadas e Moduladas em Sapucaia do Sul | Akai Móveis";
+  "Loja de Móveis e Cozinhas Planejadas em Sapucaia do Sul | Akai";
 const DESCRIPTION =
-  "Cozinhas planejadas e moduladas em Sapucaia do Sul desde 2009. Projeto e orçamento gratuitos, equipe própria de montagem e móveis 100% MDF. Até 18x sem juros.";
+  "Loja de móveis em Sapucaia do Sul desde 2009, especializada em cozinhas planejadas e moduladas. Projeto e orçamento gratuitos, montagem por equipe própria e 100% MDF.";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
