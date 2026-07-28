@@ -17,7 +17,12 @@ export default function CtaWhats({ mensagem, origem, variante = "principal" }) {
       href={`https://wa.me/5551981150097?text=${encodeURIComponent(mensagem)}`}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={() => GTMEvent("click", { action: `${origem} | WhatsApp` })}
+      onClick={() =>
+        GTMEvent("click", {
+          action: `${origem} | WhatsApp`,
+          whatsapp_origem: origem,
+        })
+      }
       className={estilo}
     >
       <WhatsAppIcon size={20} />

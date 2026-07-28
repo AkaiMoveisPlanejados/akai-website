@@ -263,6 +263,15 @@ export default function ContactForm() {
                 <p className="text-zinc-600">
                   R. Otaviano Silveira, 545 - Centro, Sapucaia do Sul - RS, 93214-500
                 </p>
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Akai%20M%C3%B3veis%20e%20Ambientes%20Planejados&destination_place_id=ChIJhx31gjRvGZURNECVHA6IrZw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => {GTMEvent('click', { action: 'Como chegar | Rota' })}}
+                  className="mt-1 inline-block text-sm font-semibold text-red-600 underline-offset-4 hover:underline"
+                >
+                  Como chegar
+                </a>
               </div>
             </div>
             <div className="h-64 w-full rounded-lg overflow-hidden mt-8">

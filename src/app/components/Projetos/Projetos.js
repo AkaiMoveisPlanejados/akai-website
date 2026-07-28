@@ -35,7 +35,10 @@ function Visor({ projeto, ativo }) {
 
   const ir = (passo) => {
     setI((n) => (n + passo + fotos.length) % fotos.length);
-    GTMEvent("click", { action: `Projetos | Foto de ${projeto.titulo}` });
+    GTMEvent("ver_projeto", {
+      projeto: projeto.titulo,
+      acao: "foto do carrossel interno",
+    });
   };
 
   const botao =
@@ -176,7 +179,10 @@ function Carrossel({ projetos: lista, atualId, aoEscolher, visivel }) {
                 type="button"
                 onClick={() => {
                   aoEscolher(p.id);
-                  GTMEvent("click", { action: `Projetos | ${p.titulo}` });
+                  GTMEvent("ver_projeto", {
+                    projeto: p.titulo,
+                    acao: "miniatura",
+                  });
                 }}
                 aria-pressed={ativo}
                 title={p.titulo}
@@ -264,7 +270,7 @@ export default function Projetos() {
                 aria-controls={`painel-${c.id}`}
                 onClick={() => {
                   setCategoria(c.id);
-                  GTMEvent("click", { action: `Projetos | Filtro ${c.nome}` });
+                  GTMEvent("ver_ambiente", { ambiente: c.nome });
                 }}
                 className={`rounded-full px-5 py-2.5 text-sm font-bold transition-colors duration-300 sm:px-7 ${
                   ativo
@@ -333,7 +339,12 @@ export default function Projetos() {
             href="https://wa.me/5551981150097?text=Quero%20um%20projeto%20gratuito%20para%20minha%20casa"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => GTMEvent("click", { action: "Projetos | WhatsApp" })}
+            onClick={() =>
+              GTMEvent("click", {
+                action: "Projetos | WhatsApp",
+                whatsapp_origem: "Galeria de projetos",
+              })
+            }
             className="rounded-lg bg-red-600 px-8 py-3 text-sm font-bold text-white shadow-md transition-colors duration-300 hover:bg-red-700"
           >
             QUERO MEU PROJETO GRATUITO

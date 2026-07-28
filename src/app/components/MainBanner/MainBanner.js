@@ -68,7 +68,7 @@ export default function MainBanner() {
                 href="https://wa.me/5551981150097?text=Quero%20conhecer%20os%20projetos%20do%20apartamento%20completo"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => {GTMEvent('click', { action: 'Conhecer Projetos | WhatsApp' })}}
+                onClick={() => {GTMEvent('click', { action: 'Conhecer Projetos | WhatsApp', whatsapp_origem: 'Banner principal' })}}
               >
                 CONHECER PROJETOS
                 <div className="ml-2">

@@ -1,5 +1,8 @@
+"use client";
+
 import { ChevronDown } from "lucide-react";
 import { faq } from "@/app/data/faq";
+import { GTMEvent } from "@/app/utils/GTMEvent";
 
 export default function FAQ() {
   return (
@@ -17,7 +20,15 @@ export default function FAQ() {
 
         <div className="divide-y divide-zinc-200 border-t border-b border-zinc-200">
           {faq.map((item, i) => (
-            <details key={i} className="group py-5">
+            <details
+              key={i}
+              className="group py-5"
+              onToggle={(e) => {
+                // só no abrir; fechar não diz nada
+                if (e.currentTarget.open)
+                  GTMEvent("abrir_faq", { pergunta: item.pergunta });
+              }}
+            >
               <summary className="flex cursor-pointer list-none items-start justify-between gap-4 text-left">
                 <h3 className="text-base md:text-lg font-semibold text-zinc-900">
                   {item.pergunta}
@@ -41,6 +52,12 @@ export default function FAQ() {
             href="https://wa.me/5551981150097?text=Tenho%20uma%20d%C3%BAvida%20sobre%20m%C3%B3veis%20planejados"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              GTMEvent("click", {
+                action: "FAQ | WhatsApp",
+                whatsapp_origem: "Perguntas frequentes",
+              })
+            }
             className="inline-block rounded-lg bg-red-600 px-8 py-3 text-sm font-bold text-white shadow-md transition-colors duration-300 hover:bg-red-700"
           >
             TIRAR MINHA DÚVIDA NO WHATSAPP
