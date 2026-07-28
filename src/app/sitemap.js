@@ -19,5 +19,11 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     })),
+    {
+      url: `${SITE_URL}/licenca-de-imagens`,
+      lastModified: agora,
+      changeFrequency: "yearly",
+      priority: 0.2,
+    },
   ];
 }

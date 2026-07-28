@@ -409,6 +409,8 @@ export const projetos = [
     tipo: 'modulada',
     imagens: [{ src: '/projetos/akai-mod-cozinha-em-l-offwhite.jpg', largura: 1440, altura: 1800 }],
     fabricante: true,
+    credito: 'Caloma',
+   
     titulo: 'Cozinha modulada em L off-white',
     descricao:
       'Layout em L com portas off-white e perfil cinza como puxador embutido, sobre revestimento marmorizado cinza. À direita, torre alta prevendo o vão da geladeira, e um aéreo com porta basculante de vidro sobre a bancada.',

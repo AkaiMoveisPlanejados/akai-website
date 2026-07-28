@@ -49,6 +49,35 @@ export const grafoGlobal = [
   ...servicos,
 ];
 
+// Metadados de licença, que o Google usa no selo de licenciamento do Google
+// Imagens. Só declaramos direito autoral e licença sobre as fotos que são
+// nossas: nas cedidas por fornecedor os direitos são deles, e a Akai tem
+// autorização de uso mas não pode licenciar para terceiros.
+const licenca = (p) => {
+  if (!p.fabricante) {
+    return {
+      creditText: "Akai Móveis e Ambientes Planejados",
+      copyrightNotice: "© Akai Móveis e Ambientes Planejados",
+      copyrightHolder: { "@id": `${SITE_URL}/#organization` },
+      license: `${SITE_URL}/licenca-de-imagens`,
+      acquireLicensePage: `${SITE_URL}/licenca-de-imagens`,
+    };
+  }
+  if (p.credito) {
+    return {
+      creditText: `${p.credito} — imagem cedida à Akai Móveis`,
+      copyrightNotice: `© ${p.credito}`,
+      acquireLicensePage: `${SITE_URL}/licenca-de-imagens`,
+    };
+  }
+  // fornecedor não identificado: creditamos o que sabemos e paramos aí, em vez
+  // de declarar um direito autoral que não é nosso só para calar o aviso
+  return {
+    creditText: "Imagem cedida por fornecedor parceiro",
+    acquireLicensePage: `${SITE_URL}/licenca-de-imagens`,
+  };
+};
+
 // Uma foto do portfólio. `base` é o @id da página que a exibe, para que a
 // mesma foto não colida quando aparecer na home e na página do ambiente.
 const imagemDoProjeto = (p, base) => {
@@ -60,6 +89,7 @@ const imagemDoProjeto = (p, base) => {
   }[p.categoria];
 
   return {
+    ...licenca(p),
     "@type": "ImageObject",
     "@id": `${base}-${p.id}`,
     name: p.titulo,
@@ -69,6 +99,7 @@ const imagemDoProjeto = (p, base) => {
       ? {
           associatedMedia: p.imagens.slice(1).map((img) => ({
             "@type": "ImageObject",
+            ...licenca(p),
             contentUrl: `${SITE_URL}${img.src}`,
             ...(img.legenda ? { caption: img.legenda } : {}),
           })),
