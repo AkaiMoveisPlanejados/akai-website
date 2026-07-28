@@ -91,7 +91,9 @@ O telefone (51) 3474-1146 aparece no Solutudo e está **incorreto**.
 - Convênio **Credmil** (credmil.net.br), gestão de convênios do RS, para
   clientes de empresas e associações conveniadas
 
-Pagamentos à vista têm **8% de desconto**.
+> **Não publicar:** desconto para pagamento à vista não deve ser mencionado no
+> site, no llms.txt, no dado estruturado nem em posts. Decisão do Rafael em
+> 28/07/2026. Se a condição existir, fica para a negociação na loja.
 
 O Google Business Profile ainda não tem os atributos de pagamento
 preenchidos — vale cadastrar para reforçar o SEO local.
@@ -163,7 +165,6 @@ Podem ser comunicados livremente porque são fatos:
 - Orçamento gratuito
 - Equipe própria de montagem
 - Parcelamento em até 18x sem juros no cartão
-- 8% de desconto à vista
 - Financiamento em até 60 parcelas, mediante aprovação
 - 4,8 de nota no Google com 126 avaliações
 - Retirada na loja e entrega
