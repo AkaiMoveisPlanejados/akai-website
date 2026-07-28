@@ -20,10 +20,10 @@ export const linhas = [
     tipo: "planejada",
     nome: "Cozinhas planejadas",
     ambiente: "cozinha",
-    h1: "Cozinhas planejadas em Sapucaia do Sul",
-    title: "Cozinhas Planejadas em Sapucaia do Sul | Akai Móveis",
+    h1: "Cozinha planejada e armários de cozinha sob medida",
+    title: "Cozinha Planejada e Armários de Cozinha em Sapucaia do Sul | Akai",
     description:
-      "Cozinhas planejadas sob medida em Sapucaia do Sul, em 100% MDF com fita de borda em PVC. Projeto e orçamento gratuitos, montagem por equipe própria e até 18x sem juros.",
+      "Cozinhas planejadas e armários de cozinha sob medida em Sapucaia do Sul, em 100% MDF com fita de borda em PVC. Projeto e orçamento gratuitos, montagem por equipe própria e até 18x sem juros.",
     intro: [
       "Cozinha planejada é a cozinha desenhada a partir das medidas do seu ambiente, e não escolhida dentro de um catálogo de tamanhos prontos. É isso que permite subir a marcenaria até o teto, resolver o canto onde duas paredes se encontram e contornar o que já existe no local — a viga baixa, o quadro de luz, o cano que não pode sair do lugar.",
       "É a nossa especialidade desde 2009. Nos planejados trabalhamos com 100% MDF e fita de borda em PVC, que é a parte do móvel por onde a água entra e faz o painel inchar quando a fita é de papel.",
@@ -39,7 +39,7 @@ export const linhas = [
       {
         titulo: "Onde o sob medida faz mais diferença",
         texto: [
-          "Cozinha pequena é onde o planejado se paga mais rápido, porque é onde cada centímetro perdido pesa. O armário que vai até o teto transforma o vão morto em armário de coisas de pouco uso. O canto em L, que num móvel de medida fixa vira um buraco inacessível, recebe uma solução que abre.",
+          "Cozinha pequena é onde o planejado se paga mais rápido, porque é onde cada centímetro perdido pesa. O armário de cozinha que vai até o teto transforma o vão morto em espaço para as coisas de pouco uso. O canto em L, que num móvel de medida fixa vira um buraco inacessível, recebe uma solução que abre.",
           "Cozinha grande usa o sob medida de outro jeito: bancada em L ou ilha para separar o preparo do convívio, torre de forno alinhada com a altura dos armários e cristaleira iluminada como ponto de destaque.",
         ],
       },
@@ -103,7 +103,7 @@ export const linhas = [
     h1: "Cozinhas moduladas em Sapucaia do Sul",
     title: "Cozinhas Moduladas em Sapucaia do Sul | Akai Móveis",
     description:
-      "Cozinhas moduladas em Sapucaia do Sul: módulos de medidas padronizadas, entrega mais rápida e melhor custo-benefício. Projeto gratuito e até 18x sem juros.",
+      "Cozinhas moduladas e armários de cozinha em Sapucaia do Sul: módulos de medidas padronizadas, entrega mais rápida e melhor custo-benefício. Projeto gratuito e até 18x sem juros.",
     intro: [
       "A cozinha modulada é montada a partir de módulos de medidas padronizadas, combinados conforme o espaço disponível. Como as peças já são produzidas em série, ela custa menos que o sob medida e chega mais rápido.",
       "Você continua escolhendo bastante coisa: a cor, o puxador, quais módulos entram e como eles se organizam na parede. O que não muda são as medidas de cada módulo — e é essa a diferença real entre as duas linhas.",
