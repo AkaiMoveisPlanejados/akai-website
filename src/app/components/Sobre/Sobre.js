@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Instagram, Star } from 'lucide-react';
 import Image from 'next/image';
-import QuemSomosImage from '../../assets/quemsomos.jpg';
 
 // Valores conferidos no Google Business Profile em 27/07/2026. Ficam no HTML
 // desde o primeiro carregamento (bom para indexação) e são substituídos pelos
@@ -40,17 +39,14 @@ export default function Sobre() {
           <div className="relative h-[400px] md:h-[580px] lg:h-full">
             {/* Background Image */}
             <Image
-              src={QuemSomosImage}
-              alt="Cozinha planejada executada pela Akai Móveis em Sapucaia do Sul"
-              width={600}
-              height={800}
-              quality={100}
-              className="absolute top-0 left-0 object-cover min-[768px]:w-full min-[768px]:h-full rounded-lg shadow-2xl"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src =
-                  "https://placehold.co/600x700/333333/ffffff?text=Ambiente+Moderno";
-              }}
+              src="/projetos/akai-cozinha-nichos-iluminados.jpg"
+              alt="Cozinha planejada com nichos iluminados e cristaleiras — Akai Móveis, Sapucaia do Sul"
+              width={1600}
+              height={1066}
+              quality={90}
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="absolute top-0 left-0 h-full w-full object-cover rounded-lg shadow-2xl"
             />
           </div>
 

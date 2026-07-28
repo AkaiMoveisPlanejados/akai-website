@@ -35,3 +35,13 @@ body {
 details[open] > summary .faq-chevron {
   transform: rotate(180deg);
 }
+
+/* Esconde a barra de rolagem do carrossel de projetos.
+   A navegação fica pelas setas e pelo gesto de arrastar. */
+.sem-barra-rolagem {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.sem-barra-rolagem::-webkit-scrollbar {
+  display: none;
+}

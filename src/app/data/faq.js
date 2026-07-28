@@ -37,17 +37,18 @@ export const faq = [
   {
     pergunta: "Vocês trabalham com MDF ou MDP?",
     resposta: [
-      "Nos móveis planejados, trabalhamos com 100% MDF.",
-      "Nos modulados, o material varia conforme a linha e o fornecedor escolhidos: há opções 100% MDF e opções que combinam portas em MDF com caixas em MDP.",
-      "Antes de fechar, informamos exatamente qual é a composição da linha que você escolheu. O MDF é mais denso e resistente à umidade; o MDP tem custo menor e cumpre bem sua função em várias aplicações.",
+      "Nos móveis planejados, trabalhamos com 100% MDF. Nos modulados, o material varia conforme a linha e o fornecedor: há opções 100% MDF e opções que combinam portas em MDF com caixas em MDP.",
+      "Os dois materiais têm vantagens diferentes. O MDF é formado por fibras prensadas em uma camada maciça e uniforme, o que permite usinagem, frisos e curvas — por isso é a melhor escolha para portas e peças com detalhe. O MDP é feito de partículas em três camadas, suporta melhor peso e flexão em prateleiras longas e resiste mais à umidade que o MDF comum, porque as partículas incham preenchendo os espaços internos antes de a peça engrossar.",
+      "Por isso, a combinação de portas em MDF com caixa em MDP não é uma versão econômica: para cozinha, é a composição que muitos fabricantes consideram tecnicamente mais adequada.",
+      "Seja qual for a linha, informamos exatamente qual é a composição antes de você fechar o pedido.",
     ],
   },
   {
     pergunta: "Que acabamento vocês usam? O que faz o móvel durar mais?",
     resposta: [
-      "Nos planejados e em várias linhas de modulados, os painéis são revestidos em BP — laminado melamínico de baixa pressão, em que o papel decorativo é fundido ao painel por calor e pressão. O resultado é uma superfície selada, que resiste à umidade, mantém a cor com o tempo e aguenta bem o risco do dia a dia.",
+      "Nos planejados e em várias linhas de modulados, os painéis são revestidos em BP — laminado melamínico de baixa pressão, em que o papel decorativo é fundido ao painel por calor e pressão. A superfície fica selada: não absorve respingo, mantém a cor com o tempo e aguenta bem o risco do dia a dia.",
       "Não precisa acreditar na nossa palavra: quando vier à loja, peça para ver o teste da chave. A gente passa uma chave na superfície do BP na sua frente, para você ver como ele se comporta.",
-      "As bordas recebem fita de PVC, e esse detalhe importa mais do que parece: a borda é a parte que mais sofre — batida de cadeira, pano molhado, abrir e fechar todo dia. A fita de PVC resiste à umidade e ao impacto e não descola nem incha como a fita de papel, usada em móveis de linha mais barata.",
+      "Mas o revestimento protege a superfície, não o miolo do painel — e é por isso que a borda importa tanto. É por ali, no corte, que a água entra e faz o móvel inchar. As nossas recebem fita de PVC, que resiste à umidade e ao impacto e não descola como a fita de papel, usada em móveis de linha mais barata.",
       "É por isso que dois móveis parecidos na loja envelhecem de formas muito diferentes. Ao comparar orçamentos, pergunte sempre qual é o revestimento e qual fita de borda está incluída.",
     ],
   },

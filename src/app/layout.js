@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import structuredData from "./data/akai-structured-data.json";
 import { faq } from "./data/faq";
+import { projetos } from "./data/projetos";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +23,67 @@ const schema = {
   ...structuredData,
   "@graph": [
     ...structuredData["@graph"],
+    {
+      // Portfólio. Aponta para imagens do próprio domínio — até 27/07/2026
+      // este nó listava CreativeWork hospedado no Pinterest, o que declarava
+      // ao Google que os projetos da Akai eram conteúdo de terceiro.
+      "@type": "ItemList",
+      "@id": `${SITE_URL}/#projetos`,
+      name: "Nossos Projetos",
+      description:
+        "Ambientes planejados e modulados executados pela Akai Móveis em Sapucaia do Sul e região.",
+      numberOfItems: projetos.length,
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      itemListElement: projetos.map((p, i) => {
+        // termo do ambiente + tipo, para associar cada foto às palavras-chave
+        // principais: "cozinha planejada" e "cozinha modulada"
+        const ambiente = {
+          cozinhas: "cozinha",
+          quartos: "dormitório",
+          banheiros: "banheiro",
+          salas: "sala",
+        }[p.categoria];
+        const termo = `${ambiente} ${p.tipo}`;
+
+        return {
+          "@type": "ListItem",
+          position: i + 1,
+          item: {
+            "@type": "ImageObject",
+            "@id": `${SITE_URL}/#projeto-${p.id}`,
+            name: p.titulo,
+            description: p.descricao,
+            contentUrl: `${SITE_URL}${p.imagens[0].src}`,
+            // projetos com mais de uma foto do mesmo ambiente
+            ...(p.imagens.length > 1
+              ? {
+                  associatedMedia: p.imagens.slice(1).map((img) => ({
+                    "@type": "ImageObject",
+                    contentUrl: `${SITE_URL}${img.src}`,
+                    ...(img.legenda ? { caption: img.legenda } : {}),
+                  })),
+                }
+              : {}),
+            representativeOfPage: false,
+            keywords: [
+              termo,
+              p.tipo === "modulada" ? "móveis modulados" : "móveis planejados",
+              "Sapucaia do Sul",
+            ].join(", "),
+            about: {
+              "@id": `${SITE_URL}/#service-${
+                p.tipo === "modulada" ? "modular" : "planned"
+              }-furniture`,
+            },
+            // só declaramos autoria nas fotos de projetos executados pela Akai;
+            // as cedidas por fornecedores ficam sem creator
+            ...(p.fabricante
+              ? {}
+              : { creator: { "@id": `${SITE_URL}/#organization` } }),
+          },
+        };
+      }),
+    },
     {
       "@type": "FAQPage",
       "@id": `${SITE_URL}/#faq`,

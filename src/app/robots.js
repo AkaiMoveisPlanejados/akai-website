@@ -11,5 +11,6 @@ export default function robots() {
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,
+    // llms.txt fica em /llms.txt — resumo da empresa para crawlers de IA
   };
 }

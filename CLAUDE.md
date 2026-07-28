@@ -96,6 +96,28 @@ Textos em português do Brasil. `lang="pt-BR"`.
 
 Rode `npm run build` antes de commitar — o build valida o JSON-LD por importação.
 
+**Build e dev não convivem.** Os dois escrevem em `.next` com formatos
+incompatíveis. Rodar `build` e depois subir o `dev` sobre a mesma pasta faz o
+servidor devolver 404 nos chunks do React: a página renderiza mas não hidrata, e
+nenhum clique funciona. Pare o dev antes de buildar e apague `.next` antes de
+voltar ao dev.
+
+**Confira o exit code do build, não o texto.** O Next imprime
+`✓ Compiled successfully` mesmo quando falha depois, e as linhas de erro começam
+com `⨯`, sem a palavra "Error" — um `grep` por "Error" deixa passar. Use
+`npm run build; echo $?`.
+
+**Nunca deixe pasta de cache ou backup dentro do projeto.** O Tailwind v4
+escaneia o diretório inteiro procurando classes. Ao ler chunks binários de um
+`.next` renomeado, ele estoura com `RangeError: Invalid code point` e **aborta a
+geração do CSS sem falhar o build** — o site sai com 3 KB de CSS em vez de 34 KB
+e nenhuma utility funciona. Mova esse tipo de pasta para fora da raiz.
+
+Sintoma para reconhecer: várias coisas não relacionadas param de funcionar ao
+mesmo tempo (`hidden` não esconde, dimensões não aplicam, `transform` ignora
+`!important`). Antes de investigar cada uma, confira o tamanho do CSS gerado em
+`.next/static/css/`. Abaixo de ~10 KB, é isto.
+
 ---
 
 ## Prioridades ao sugerir melhorias
