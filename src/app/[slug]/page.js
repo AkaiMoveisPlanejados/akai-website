@@ -14,7 +14,7 @@ import LogoImage from "@/app/assets/2.png";
 import Footer from "@/app/components/Footer/Footer";
 import BotoesFlutuantes from "@/app/components/BotoesFlutuantes/BotoesFlutuantes";
 import CtaWhats from "@/app/components/Linha/CtaWhats";
-import { linhas, porSlug } from "@/app/data/linhas";
+import { linhas, porSlug, ATUALIZADO_EM } from "@/app/data/linhas";
 import { projetos } from "@/app/data/projetos";
 import { schemaLinha, SITE_URL } from "@/app/data/schema";
 
@@ -89,6 +89,10 @@ export default function PaginaDaLinha({ params }) {
   const fotos = fotosDa(linha);
   const irma = porSlug(linha.irma.slug);
   const mensagem = `Olá! Vi a página de ${linha.nome.toLowerCase()} no site e quero um projeto gratuito.`;
+  const dataPorExtenso = new Date(`${ATUALIZADO_EM}T12:00:00`).toLocaleDateString(
+    "pt-BR",
+    { day: "numeric", month: "long", year: "numeric" }
+  );
 
   return (
     <div className="bg-white font-sans text-zinc-800">
@@ -158,6 +162,14 @@ export default function PaginaDaLinha({ params }) {
                 Orçamento inicial gratuito, a partir das medidas que você enviar.
               </p>
             </div>
+
+            {/* data à vista: quem lê — pessoa ou IA — quer saber se o texto
+                ainda vale */}
+            <p className="mt-8 text-sm text-zinc-400">
+              Conteúdo revisado em{" "}
+              <time dateTime={ATUALIZADO_EM}>{dataPorExtenso}</time> pela equipe
+              da Akai Móveis, em Sapucaia do Sul.
+            </p>
           </div>
         </section>
 

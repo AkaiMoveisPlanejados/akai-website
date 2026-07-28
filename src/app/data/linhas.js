@@ -8,6 +8,11 @@
 // criaria páginas concorrendo entre si pelo mesmo termo, que é justamente o que
 // essas páginas existem para evitar.
 
+// Data da última revisão do conteúdo. É informação que as recomendações de GEO
+// pedem à vista — a IA e o leitor querem saber se o texto ainda vale. Mexeu no
+// texto de uma página, atualize a data dela.
+export const ATUALIZADO_EM = '2026-07-28';
+
 export const linhas = [
   {
     slug: "cozinhas-planejadas",

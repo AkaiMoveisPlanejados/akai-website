@@ -9,6 +9,7 @@
 import estatico from "./akai-structured-data.json";
 import { faq } from "./faq";
 import { projetos } from "./projetos";
+import { ATUALIZADO_EM } from "./linhas";
 
 export const SITE_URL = "https://www.akaimoveis.com.br";
 
@@ -184,6 +185,8 @@ export const schemaLinha = (linha, fotos) => {
         url: `${url}`,
         name: linha.title,
         description: linha.description,
+        datePublished: ATUALIZADO_EM,
+        dateModified: ATUALIZADO_EM,
         isPartOf: { "@id": `${SITE_URL}/#website` },
         about: { "@id": servico },
         mainEntity: { "@id": `${url}#servico` },

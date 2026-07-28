@@ -5,15 +5,18 @@
 
 import Home from "./components/Home/Home";
 import { schemaHome } from "./data/schema";
+import { buscarAvaliacoes } from "./data/avaliacoes";
 
-export default function Page() {
+export default async function Page() {
+  const avaliacoes = await buscarAvaliacoes();
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaHome()) }}
       />
-      <Home />
+      <Home avaliacoes={avaliacoes} />
     </>
   );
 }

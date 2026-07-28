@@ -10,7 +10,7 @@ import Sobre from "@/app/components/Sobre/Sobre";
 import Footer from "@/app/components/Footer/Footer";
 import BotoesFlutuantes from "@/app/components/BotoesFlutuantes/BotoesFlutuantes";
 
-export default function Home() {
+export default function Home({ avaliacoes }) {
   return (
     <div className="bg-white font-sans text-zinc-800">
       <main className="min-h-screen">
@@ -18,7 +18,7 @@ export default function Home() {
         <Sobre />
         <PlanejadosModulados />
         <Projetos />
-        <GoogleReviews />
+        <GoogleReviews iniciais={avaliacoes} />
         <FAQ />
         <ContactForm />
       </main>

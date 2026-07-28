@@ -50,9 +50,13 @@ const ReviewCard = ({ review }) => (
 
 
 // --- Carousel Component ---
-export default function GoogleReviews() {
-  const [reviews, setReviews] = useState([]);
-  const [loading, setLoading] = useState(true);
+export default function GoogleReviews({ iniciais }) {
+  // As avaliações chegam prontas do servidor, para o texto sair no HTML. Se
+  // vierem vazias — API fora do ar, chave ausente — o navegador ainda tenta
+  // buscar, que era o comportamento anterior.
+  const temIniciais = Boolean(iniciais?.reviews?.length);
+  const [reviews, setReviews] = useState(iniciais?.reviews || []);
+  const [loading, setLoading] = useState(!temIniciais);
   const [error, setError] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAtStart, setIsAtStart] = useState(true);
@@ -61,6 +65,7 @@ export default function GoogleReviews() {
 
   // Fetch reviews from the API route
   useEffect(() => {
+    if (temIniciais) return;
     const fetchReviews = async () => {
       try {
         const response = await fetch('/api/reviews');
