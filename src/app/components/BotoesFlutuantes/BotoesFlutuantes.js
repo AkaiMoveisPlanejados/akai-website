@@ -1,11 +1,12 @@
 'use client';
 
-// Botões que acompanham a rolagem, no canto inferior direito.
+// Botões que acompanham a rolagem, no canto inferior direito: WhatsApp para
+// contato e Instagram para quem quer ver mais projetos.
 //
-// No celular eles ficam menores (44px, o mínimo confortável para o dedo) e mais
-// próximos do canto: a tela é pequena e o que está embaixo do botão costuma ser
-// justamente a foto ou o texto que a pessoa foi ver. No desktop sobra espaço,
-// então voltam ao tamanho cheio.
+// No celular os dois caem para 44px — o mínimo confortável para o dedo — e
+// encostam mais no canto. A tela é pequena e o que fica embaixo do botão costuma
+// ser justamente a foto ou o texto que a pessoa foi ver. No desktop sobra
+// espaço, então voltam aos 64px.
 //
 // O clique no Instagram já é medido pela tag instagram_click do contêiner, que
 // dispara em qualquer link para www.instagram.com.
