@@ -6,8 +6,9 @@
 // quando o FAQ ou o portfólio mudarem.
 
 import { faq } from "@/app/data/faq";
-import { projetos, categorias } from "@/app/data/projetos";
+import { projetos } from "@/app/data/projetos";
 import { comparativo } from "@/app/data/comparativo";
+import { linhas } from "@/app/data/linhas";
 
 const SITE_URL = "https://www.akaimoveis.com.br";
 
@@ -16,20 +17,30 @@ export function GET() {
   const moduladas = projetos.filter((p) => p.tipo === "modulada").length;
   const planejadas = projetos.filter((p) => p.tipo === "planejada").length;
 
-  const listaDeProjetos = categorias
-    .map((c) => {
-      const doGrupo = projetos.filter((p) => p.categoria === c.id);
+  // Agrupado pelo mesmo recorte das páginas dedicadas — ambiente somado ao tipo
+  // — para que cada projeto apareça uma vez só e junto do endereço que o mostra.
+  const listaDeProjetos = linhas
+    .map((l) => {
+      const doGrupo = projetos.filter(
+        (p) => p.categoria === l.categoria && p.tipo === l.tipo
+      );
       const itens = doGrupo
         .map(
           (p) =>
-            `- **${p.titulo}** (${p.tipo}): ${p.descricao}${
+            `- **${p.titulo}**: ${p.descricao}${
               p.fabricante ? " [imagem cedida pelo fabricante]" : ""
             }`
         )
         .join("\n");
-      return `### ${c.tituloLinha}\n\n${c.descricao}\n\n${itens}`;
+      return `### ${l.nome}\n\nPágina: ${SITE_URL}/${l.slug}\n\n${l.intro.join(
+        " "
+      )}\n\n${itens}`;
     })
     .join("\n\n");
+
+  const listaDePaginas = linhas
+    .map((l) => `- [${l.nome}](${SITE_URL}/${l.slug}): ${l.description}`)
+    .join("\n");
 
   const texto = `# Akai Móveis e Ambientes Planejados
 
@@ -86,6 +97,10 @@ ${comparativo.planejados.map((f) => `- ${f}`).join("\n")}
 ${comparativo.modulados.map((f) => `- ${f}`).join("\n")}
 
 ${comparativo.fecho}
+
+## Páginas por ambiente
+
+${listaDePaginas}
 
 ## Projetos publicados
 

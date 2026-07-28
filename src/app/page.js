@@ -1,29 +1,19 @@
-"use client";
+// Página inicial. É um componente de servidor cuja única função é injetar o
+// JSON-LD da home; a interface fica em components/Home, que é client.
+// Antes o schema era injetado no layout, o que fazia todas as páginas do site
+// declararem o WebPage e o FAQPage da home.
 
-import GoogleReviews from "./components/GoogleReviews/GoogleReviews";
-import PlanejadosModulados from "./components/PlanejadosModulados/PlanejadosModulados";
-import Projetos from "./components/Projetos/Projetos";
-import ContactForm from "./components/ContactForm/ContactForm";
-import FAQ from "./components/FAQ/FAQ";
-import MainBanner from "./components/MainBanner/MainBanner";
-import Sobre from "./components/Sobre/Sobre";
-import Footer from "./components/Footer/Footer";
-import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton/WhatsAppFloatingButton";
+import Home from "./components/Home/Home";
+import { schemaHome } from "./data/schema";
 
-export default function LandingPage() {
+export default function Page() {
   return (
-    <div className="bg-white font-sans text-zinc-800">
-      <main className="min-h-screen">
-        <MainBanner />
-        <Sobre />
-        <PlanejadosModulados />
-        <Projetos />
-        <GoogleReviews />
-        <FAQ />
-        <ContactForm />
-      </main>
-      <Footer />
-      <WhatsAppFloatingButton />
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaHome()) }}
+      />
+      <Home />
+    </>
   );
 }

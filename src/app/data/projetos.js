@@ -128,6 +128,34 @@ export const projetos = [
       'A mesma cozinha antes e depois da reforma. No lugar dos armários de madeira escura e da bancada antiga, entrou marcenaria em cinza fosco até o teto, bancada em granito claro e layout em L que aproveita as duas paredes. As janelas em arco deram lugar a esquadrias retas, com pastilhas no rodabancada e trilho de spots no lugar da luminária central.',
   },
 
+  {
+    id: 'cozinha-cinza-lavanderia-acoplada',
+    categoria: 'cozinhas',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/akai-cozinha-cinza-lavanderia.jpg', largura: 1440, altura: 1920 }],
+    titulo: 'Cozinha com lavanderia acoplada',
+    descricao:
+      'Cozinha linear que incorpora a lavanderia na mesma bancada, com a máquina de lavar embutida na marcenaria. Armários superiores em duas alturas, combinando off-white e cinza escuro, com fita de LED iluminando a bancada de granito preto e revestimento 3D branco no rodabancada.',
+  },
+  {
+    id: 'cozinha-offwhite-adega-amadeirada',
+    categoria: 'cozinhas',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/akai-cozinha-offwhite-adega.jpg', largura: 1440, altura: 1440 }],
+    titulo: 'Cozinha off-white com nichos para taças',
+    descricao:
+      'Marcenaria off-white com puxadores tipo concha em dourado e forno embutido na altura da bancada. Na ponta, uma torre amadeirada com nichos iluminados para taças fecha a composição e serve de apoio, com fita de LED acompanhando a lateral inteira.',
+  },
+  {
+    id: 'cozinha-confeitaria-balcao-central',
+    categoria: 'cozinhas',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/akai-cozinha-confeitaria-balcao.jpg', largura: 1440, altura: 1440 }],
+    titulo: 'Espaço de confeitaria com balcão central',
+    descricao:
+      'Projeto para espaço de confeitaria, com balcão central de bancada em granito preto e frente iluminada por LED. Ao fundo, bancada de trabalho corrida, nichos abertos para exposição e torre com forno combinado embutido — a mesma marcenaria usada em cozinha residencial, dimensionada para uso profissional.',
+  },
+
   // ---------- QUARTOS ----------
   {
     id: 'dormitorio-roupeiro-canto-branco',
@@ -166,6 +194,18 @@ export const projetos = [
       'Closet delimitado por painéis ripados em madeira escura, que separam o ambiente sem uso de porta. Internamente, prateleiras, cabideiro e sapateira em gavetas aramadas, com iluminação embutida no forro.',
   },
 
+  {
+    id: 'dormitorio-cabeceira-ripada-roupeiro',
+    categoria: 'quartos',
+    tipo: 'planejada',
+    imagens: [
+      { src: '/projetos/akai-dormitorio-cabeceira-ripada-1.jpg', largura: 3024, altura: 4032 },
+      { src: '/projetos/akai-dormitorio-cabeceira-ripada-2.jpg', largura: 3024, altura: 4032 },
+    ],
+    titulo: 'Dormitório de casal com cabeceira ripada',
+    descricao:
+      'Cabeceira ripada em tom areia que percorre a parede inteira e continua como criado-mudo com gavetas, integrado à marcenaria. Na parede oposta, roupeiro de quatro portas até o teto, com nichos abertos junto à cama e fita de LED embutida na sanca.',
+  },
   {
     id: 'quarto-cabeceira-estofada',
     categoria: 'quartos',
@@ -217,6 +257,34 @@ export const projetos = [
   },
 
   {
+    id: 'banheiro-duas-cubas-gabinete-escuro',
+    categoria: 'banheiros',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/akai-banheiro-duas-cubas-preto.jpg', largura: 1440, altura: 1800 }],
+    titulo: 'Banheiro de casal com duas cubas',
+    descricao:
+      'Gabinete suspenso em tom escuro com bancada de granito preto e duas cubas esculpidas no próprio tampo, sem emenda. Acima, dois espelhos de moldura preta com cantos arredondados e iluminação de LED por trás, que ilumina o rosto sem ofuscar.',
+  },
+  {
+    id: 'banheiro-branco-espelheira-tres-portas',
+    categoria: 'banheiros',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/akai-banheiro-branco-espelheira.jpg', largura: 1440, altura: 1920 }],
+    titulo: 'Banheiro compacto com espelheira de três portas',
+    descricao:
+      'Solução para banheiro estreito: gabinete de gavetas com tampo branco e cuba de apoio oval, e uma espelheira de três portas que ocupa toda a parede acima. Uma prateleira estreita avança sobre a caixa acoplada, aproveitando o espaço que costuma ficar vazio.',
+  },
+  {
+    id: 'banheiro-espelheira-bancada-granito',
+    categoria: 'banheiros',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/akai-banheiro-espelheira-granito.jpg', largura: 1440, altura: 1920 }],
+    titulo: 'Banheiro com espelheira e bancada em granito',
+    descricao:
+      'Bancada em granito preto que se estende sobre a caixa acoplada e vira prateleira, com cuba de apoio branca e gabinete de gavetas em branco. A espelheira de portas espelhadas cobre a parede inteira e amplia a sensação de espaço no ambiente.',
+  },
+
+  {
     id: 'lavabo-cuba-branca-dourada',
     categoria: 'banheiros',
     tipo: 'planejada',
@@ -264,6 +332,25 @@ export const projetos = [
     descricao:
       'Painel de TV emoldurado por marcenaria clara, com iluminação embutida no recuo. O ripado em madeira escura ocupa a parede lateral e recebe fitas de LED verticais entre as réguas.',
   },
+  {
+    id: 'home-painel-divisoria-ripada',
+    categoria: 'salas',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/akai-home-painel-divisoria-ripada.jpg', largura: 1080, altura: 1440 }],
+    titulo: 'Home com divisória ripada iluminada',
+    descricao:
+      'Painel branco suspenso para a TV sobre rack alongado, com um nicho amadeirado iluminado correndo por toda a extensão. Na lateral, uma divisória ripada em madeira clara separa o ambiente e recebe fitas de LED verticais entre as réguas, repetidas na sanca do teto.',
+  },
+  {
+    id: 'hall-espelho-redondo-aparador',
+    categoria: 'salas',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/akai-hall-espelho-redondo.jpg', largura: 1440, altura: 1920 }],
+    titulo: 'Hall de entrada com espelho redondo e aparador',
+    descricao:
+      'Entrada resolvida em pouco espaço: espelho redondo grande contornado por LED, aparador suspenso amadeirado com gaveta e nicho aberto, e uma prateleira superior iluminada. Ao lado, painel ripado em madeira delimita a passagem sem fechar o ambiente.',
+  },
+
   {
     id: 'sala-painel-tv-adega',
     categoria: 'salas',
@@ -320,6 +407,26 @@ export const projetos = [
     titulo: 'Cozinha modulada com torre e portas espelhadas',
     descricao:
       'Cozinha ampla em L, com armários off-white e detalhes em cinza. A torre lateral recebe portas espelhadas com perfil, que ampliam a sensação de espaço, e a bancada é em granito preto.',
+  },
+  {
+    id: 'mod-cozinha-peninsula-ripada',
+    categoria: 'cozinhas',
+    tipo: 'modulada',
+    imagens: [{ src: '/projetos/akai-mod-cozinha-peninsula-ripada.jpg', largura: 1440, altura: 1800 }],
+    fabricante: true,
+    titulo: 'Cozinha modulada com península ripada',
+    descricao:
+      'Layout em U fechado por uma península com frente ripada em madeira clara, que separa a cozinha da sala e serve de balcão. Armários em cinza e azul, revestimento branco tipo metrô, nichos abertos amadeirados e torre com portas de vidro na entrada.',
+  },
+  {
+    id: 'mod-cozinha-em-l-offwhite',
+    categoria: 'cozinhas',
+    tipo: 'modulada',
+    imagens: [{ src: '/projetos/akai-mod-cozinha-em-l-offwhite.jpg', largura: 1440, altura: 1800 }],
+    fabricante: true,
+    titulo: 'Cozinha modulada em L off-white',
+    descricao:
+      'Layout em L com portas off-white e perfil cinza como puxador embutido, sobre revestimento marmorizado cinza. À direita, torre alta prevendo o vão da geladeira, e um aéreo com porta basculante de vidro sobre a bancada.',
   },
   {
     id: 'mod-dormitorio-solteiro',
