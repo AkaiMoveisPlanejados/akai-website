@@ -28,19 +28,19 @@ export const categorias = [
       'Gabinetes e painéis para banheiros e lavabos, planejados para o ponto hidráulico existente e para o tipo de cuba escolhido. Trabalhamos com gabinete suspenso, nichos abertos, espelheiras e armários aéreos, usando materiais adequados a ambientes úmidos.',
   },
   {
+    id: 'salas',
+    tituloLinha: 'Salas, homes e painéis de TV',
+    nome: 'Salas',
+    descricao:
+      'Painéis de TV, racks, cristaleiras e móveis para sala de estar e jantar, com iluminação em LED embutida e acabamento ripado quando o projeto pede. Também aproveitamos espaços difíceis, como o vão sob a escada, que costuma ser desperdiçado.',
+  },
+  {
     id: 'modulados',
     porTipo: 'modulada',
     tituloLinha: 'Móveis modulados',
     nome: 'Modulados',
     descricao:
       'Os modulados usam módulos de medidas padronizadas que se combinam conforme o espaço: custam menos que o sob medida, são entregues mais rápido e ainda permitem escolher cor, puxador e a composição dos módulos. Reunimos aqui cozinhas e dormitórios modulados para você ver o que essa linha entrega na prática, e comparar com os projetos planejados das outras abas.',
-  },
-  {
-    id: 'salas',
-    tituloLinha: 'Salas, homes e painéis de TV',
-    nome: 'Salas',
-    descricao:
-      'Painéis de TV, racks, cristaleiras e móveis para sala de estar e jantar, com iluminação em LED embutida e acabamento ripado quando o projeto pede. Também aproveitamos espaços difíceis, como o vão sob a escada, que costuma ser desperdiçado.',
   },
 ];
 
@@ -229,24 +229,6 @@ export const projetos = [
 
   // ---------- BANHEIROS ----------
   {
-    id: 'banheiro-verde-gabinete-amadeirado',
-    categoria: 'banheiros',
-    tipo: 'planejada',
-    imagens: [{ src: '/projetos/proj_05.jpg' }],
-    titulo: 'Banheiro verde com gabinete amadeirado',
-    descricao:
-      'Gabinete suspenso em tom amadeirado com tampo de madeira e cuba de apoio, combinado ao revestimento verde da parede. Armário aéreo com portas de abrir e prateleiras internas, para ganhar espaço de guarda.',
-  },
-  {
-    id: 'lavabo-espelho-oval',
-    categoria: 'banheiros',
-    tipo: 'planejada',
-    imagens: [{ src: '/projetos/proj_10.jpg' }],
-    titulo: 'Lavabo com painel amadeirado e espelho oval',
-    descricao:
-      'Painel amadeirado que percorre a parede e integra espelho oval, prateleiras e o tampo em pedra. Gabinete com nicho aberto na base e ripado de madeira complementando a parede lateral.',
-  },
-  {
     id: 'banheiro-marmore-cuba-esculpida',
     categoria: 'banheiros',
     tipo: 'planejada',
@@ -293,6 +275,25 @@ export const projetos = [
     titulo: 'Lavabo com bancada em pedra e cuba de apoio',
     descricao:
       'Bancada em pedra clara suspensa, com cuba de apoio redonda e torneira alta dourada. Ao fundo, painel ripado vazado com iluminação indireta; abaixo, gaveteiro amadeirado com puxador embutido.',
+  },
+
+  {
+    id: 'banheiro-verde-gabinete-amadeirado',
+    categoria: 'banheiros',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/proj_05.jpg' }],
+    titulo: 'Banheiro verde com gabinete amadeirado',
+    descricao:
+      'Gabinete suspenso em tom amadeirado com tampo de madeira e cuba de apoio, combinado ao revestimento verde da parede. Armário aéreo com portas de abrir e prateleiras internas, para ganhar espaço de guarda.',
+  },
+  {
+    id: 'lavabo-espelho-oval',
+    categoria: 'banheiros',
+    tipo: 'planejada',
+    imagens: [{ src: '/projetos/proj_10.jpg' }],
+    titulo: 'Lavabo com painel amadeirado e espelho oval',
+    descricao:
+      'Painel amadeirado que percorre a parede e integra espelho oval, prateleiras e o tampo em pedra. Gabinete com nicho aberto na base e ripado de madeira complementando a parede lateral.',
   },
 
   // ---------- SALAS ----------
