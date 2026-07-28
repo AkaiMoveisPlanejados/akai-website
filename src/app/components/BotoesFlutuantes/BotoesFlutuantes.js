@@ -35,7 +35,11 @@ function BotoesFlutuantes() {
         }
         className={`${base} bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-600`}
       >
-        <Instagram className="h-5 w-5 md:h-8 md:w-8" aria-hidden="true" />
+        <Instagram
+          strokeWidth={2.25}
+          className="h-7 w-7 md:h-10 md:w-10"
+          aria-hidden="true"
+        />
       </a>
 
       <a
