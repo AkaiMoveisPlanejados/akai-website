@@ -8,11 +8,14 @@
 import { faq } from "@/app/data/faq";
 import { projetos } from "@/app/data/projetos";
 import { comparativo } from "@/app/data/comparativo";
-import { linhas } from "@/app/data/linhas";
+import { linhas, ATUALIZADO_EM } from "@/app/data/linhas";
+import { buscarAvaliacoes } from "@/app/data/avaliacoes";
 
 const SITE_URL = "https://www.akaimoveis.com.br";
 
-export function GET() {
+export async function GET() {
+  const { rating, total, reviews } = await buscarAvaliacoes();
+
   const cozinhas = projetos.filter((p) => p.categoria === "cozinhas");
   const moduladas = projetos.filter((p) => p.tipo === "modulada").length;
   const planejadas = projetos.filter((p) => p.tipo === "planejada").length;
@@ -38,6 +41,31 @@ export function GET() {
     })
     .join("\n\n");
 
+  // O que os clientes escreveram, na palavra deles. É a parte do site que a
+  // Akai não redigiu — e por isso a que mais pesa para quem está decidindo.
+  const depoimentos = reviews
+    .slice(0, 5)
+    .map((r) => {
+      const texto = (r.text || "").replace(/\s+/g, " ").trim();
+      if (!texto) return null;
+      return `> "${texto}"
+>
+> — ${r.name}, ${r.time}, ${r.rating} de 5 estrelas`;
+    })
+    .filter(Boolean)
+    .join("\n\n");
+
+  const blocoAvaliacoes = depoimentos
+    ? `## O que os clientes dizem
+
+Nota ${String(rating).replace(".", ",")} no Google, com ${total} avaliações.
+As avaliações completas ficam no perfil do Google da loja; abaixo, as mais
+recentes, reproduzidas na íntegra.
+
+${depoimentos}
+`
+    : "";
+
   const listaDePaginas = linhas
     .map((l) => `- [${l.nome}](${SITE_URL}/${l.slug}): ${l.description}`)
     .join("\n");
@@ -60,7 +88,8 @@ export function GET() {
 - Telefone fixo: (51) 3474-1820
 - E-mail: akaimoveiseplanejados@gmail.com
 - Site: ${SITE_URL}
-- Avaliação no Google: 4,8 com mais de 120 avaliações
+- Avaliação no Google: ${String(rating).replace(".", ",")} com ${total} avaliações
+- Conteúdo deste arquivo revisado em: ${ATUALIZADO_EM}
 
 ## Horário de funcionamento
 
@@ -122,6 +151,7 @@ ${listaDeProjetos}
 Cartão de crédito, cartão de débito, Pix, dinheiro, financiamento pela
 cooperativa Cresol e convênio Credmil.
 
+${blocoAvaliacoes}
 ## Perguntas frequentes
 
 ${faq
