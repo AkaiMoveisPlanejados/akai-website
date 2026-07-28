@@ -10,7 +10,7 @@ import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import LogoImage from "@/app/assets/2.png";
 import Footer from "@/app/components/Footer/Footer";
-import WhatsAppFloatingButton from "@/app/components/WhatsAppFloatingButton/WhatsAppFloatingButton";
+import BotoesFlutuantes from "@/app/components/BotoesFlutuantes/BotoesFlutuantes";
 
 const SITE_URL = "https://www.akaimoveis.com.br";
 const TITLE = "Licença de uso das imagens | Akai Móveis";
@@ -155,7 +155,7 @@ export default function LicencaDeImagens() {
       </main>
 
       <Footer />
-      <WhatsAppFloatingButton />
+      <BotoesFlutuantes />
     </div>
   );
 }

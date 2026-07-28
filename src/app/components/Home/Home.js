@@ -8,7 +8,7 @@ import FAQ from "@/app/components/FAQ/FAQ";
 import MainBanner from "@/app/components/MainBanner/MainBanner";
 import Sobre from "@/app/components/Sobre/Sobre";
 import Footer from "@/app/components/Footer/Footer";
-import WhatsAppFloatingButton from "@/app/components/WhatsAppFloatingButton/WhatsAppFloatingButton";
+import BotoesFlutuantes from "@/app/components/BotoesFlutuantes/BotoesFlutuantes";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         <ContactForm />
       </main>
       <Footer />
-      <WhatsAppFloatingButton />
+      <BotoesFlutuantes />
     </div>
   );
 }

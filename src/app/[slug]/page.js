@@ -12,7 +12,7 @@ import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import LogoImage from "@/app/assets/2.png";
 import Footer from "@/app/components/Footer/Footer";
-import WhatsAppFloatingButton from "@/app/components/WhatsAppFloatingButton/WhatsAppFloatingButton";
+import BotoesFlutuantes from "@/app/components/BotoesFlutuantes/BotoesFlutuantes";
 import CtaWhats from "@/app/components/Linha/CtaWhats";
 import { linhas, porSlug } from "@/app/data/linhas";
 import { projetos } from "@/app/data/projetos";
@@ -321,7 +321,7 @@ export default function PaginaDaLinha({ params }) {
       </main>
 
       <Footer />
-      <WhatsAppFloatingButton />
+      <BotoesFlutuantes />
     </div>
   );
 }
