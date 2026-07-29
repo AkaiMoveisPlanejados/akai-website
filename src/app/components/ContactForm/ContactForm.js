@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Phone, Mail, MapPin, ChevronDown } from 'lucide-react';
 import { GTMEvent, evento } from "@/app/utils/GTMEvent";
 
@@ -12,16 +12,25 @@ const subjects = [
   "+ 50 mil",
 ];
 
+const vazio = {
+  name: '',
+  email: '',
+  phone: '',
+  message: '',
+  city: '',
+  subject: subjects[0],
+  // Isca: fica fora da tela, humano nunca preenche. Se vier com valor, o envio e
+  // descartado no servidor.
+  website: '',
+};
+
 export default function ContactForm() {
   // State to hold form data
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-    city: '',
-    subject: subjects[0],
-  });
+  const [formData, setFormData] = useState(vazio);
+
+  // Momento em que o formulario apareceu. O servidor usa para descartar envio
+  // feito em menos tempo do que alguem levaria para ler os campos.
+  const abertoEm = useRef(Date.now());
 
   const [status, setStatus] = useState('');
 
@@ -74,13 +83,14 @@ export default function ContactForm() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, abertoEm: abertoEm.current }),
       });
 
       if (response.ok) {
         setStatus(`Mensagem enviada com sucesso!`);
         // Clear the form after successful submission
-        setFormData({ name: '', email: '', phone: '', subject: subjects[0] });
+        setFormData(vazio);
+        abertoEm.current = Date.now();
       } else {
         const result = await response.json();
         setStatus(`Erro ao enviar mensagem: ${result.error || 'Tente novamente.'}`);
@@ -100,6 +110,23 @@ export default function ContactForm() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* The form now has an onSubmit handler */}
           <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Isca para automacao. Fora da tela, fora da ordem de tabulacao e
+                escondida de leitor de tela: so quem varre o HTML preenche. */}
+            <div
+              aria-hidden="true"
+              className="absolute -left-[9999px] h-px w-px overflow-hidden"
+            >
+              <label htmlFor="website">Website</label>
+              <input
+                type="text"
+                id="website"
+                name="website"
+                tabIndex={-1}
+                autoComplete="off"
+                value={formData.website}
+                onChange={handleChange}
+              />
+            </div>
             <div>
               <label
                 htmlFor="name"
