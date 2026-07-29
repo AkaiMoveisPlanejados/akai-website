@@ -190,7 +190,7 @@ export default function ContactForm() {
             </div>
             <div>
               <label
-                htmlFor="name"
+                htmlFor="city"
                 className="block text-sm font-medium text-zinc-700"
               >
                 Cidade/Estado*
