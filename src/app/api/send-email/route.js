@@ -40,10 +40,12 @@ const limiteEstourado = (ip) => {
   return registros.length > LIMITE_POR_IP;
 };
 
+// So URL explicita. A versao anterior pegava qualquer coisa com ".com" e barrava
+// cliente que repetia o proprio email na mensagem, ou escrevia "apto.com 2
+// quartos". Endereco de email no texto e comportamento normal de quem quer
+// contato — nao pode ser motivo de descarte.
 const temLink = (texto = '') =>
-  /https?:\/\/|www\.|\b[a-z0-9-]+\.(com|net|org|io|co|br|xyz|info|site|online)\b/i.test(
-    texto
-  );
+  /https?:\/\/\S+|\bwww\.[a-z0-9-]+\.[a-z]{2,}/i.test(texto);
 
 const pareceIngles = (texto = '') => {
   const palavras = texto.toLowerCase().match(/[a-z']+/g) || [];
@@ -64,8 +66,11 @@ const telefoneValido = (telefone = '') => {
 const emailValido = (email = '') =>
   /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(email) && email.length <= 254;
 
-// Devolve 200 para o que foi barrado. Se respondesse 400, a ferramenta do outro
-// lado aprenderia o que mudar e tentaria de novo.
+// Duas respostas diferentes, e a distincao importa mais que as regras em si.
+//
+// descartar(): para sinal de automacao — honeypot, tempo, link, idioma. Devolve
+// 200 fingindo sucesso, porque um 400 ensinaria a ferramenta do outro lado o que
+// mudar. Nao existe humano nesse caminho para ficar sem resposta.
 const descartar = (motivo, dados) => {
   console.warn('[contato] descartado:', motivo, {
     nome: dados?.name,
@@ -73,6 +78,12 @@ const descartar = (motivo, dados) => {
   });
   return NextResponse.json({ message: 'Email sent successfully!' }, { status: 200 });
 };
+
+// recusar(): para campo mal preenchido. Aqui quase sempre tem uma pessoa do outro
+// lado que errou o telefone e precisa saber disso. Silenciar aqui custa um lead:
+// a pessoa le "enviado com sucesso", vai embora e nunca e respondida.
+const recusar = (mensagem) =>
+  NextResponse.json({ error: mensagem }, { status: 400 });
 
 export async function POST(request) {
   try {
@@ -95,13 +106,20 @@ export async function POST(request) {
       return descartar(`rapido demais (${decorrido.toFixed(1)}s)`, body);
     }
 
+    // Daqui para baixo, erro de preenchimento volta visivel para a pessoa.
     if (!name?.trim() || !email?.trim() || !phone?.trim() || !city?.trim()) {
-      return descartar('campo obrigatorio vazio', body);
+      return recusar('Preencha nome, email, telefone e cidade.');
     }
 
-    if (!emailValido(email)) return descartar('email invalido', body);
-    if (!telefoneValido(phone)) return descartar('telefone invalido', body);
+    if (!emailValido(email)) {
+      return recusar('Confira o email: parece estar incompleto.');
+    }
 
+    if (!telefoneValido(phone)) {
+      return recusar('Confira o telefone: informe DDD e numero, como (51) 98115-0097.');
+    }
+
+    // Volta a ser descarte silencioso: sinal de automacao, nao erro de digitacao.
     if (temLink(message) || temLink(name) || temLink(city)) {
       return descartar('link na mensagem', body);
     }

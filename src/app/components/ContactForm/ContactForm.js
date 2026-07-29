@@ -93,7 +93,13 @@ export default function ContactForm() {
         abertoEm.current = Date.now();
       } else {
         const result = await response.json();
-        setStatus(`Erro ao enviar mensagem: ${result.error || 'Tente novamente.'}`);
+        // 400 e erro de preenchimento: a mensagem do servidor ja diz o que
+        // corrigir, entao vai sozinha. 500 e problema nosso.
+        setStatus(
+          response.status === 400 && result.error
+            ? result.error
+            : `Erro ao enviar mensagem: ${result.error || 'Tente novamente.'}`
+        );
       }
     } catch (error) {
       console.error("Fetch Error:", error);
