@@ -79,6 +79,7 @@ export const projetos = [
     id: 'cozinha-offwhite-adega-amadeirada',
     categoria: 'cozinhas',
     tipo: 'planejada',
+    cidade: 'Porto Alegre',
     imagens: [{ src: '/projetos/akai-cozinha-offwhite-adega.jpg', largura: 1440, altura: 1440 }],
     titulo: 'Cozinha off-white com nichos para taças',
     descricao:
@@ -88,6 +89,7 @@ export const projetos = [
     id: 'cozinha-cinza-lavanderia-acoplada',
     categoria: 'cozinhas',
     tipo: 'planejada',
+    cidade: 'Esteio',
     imagens: [{ src: '/projetos/akai-cozinha-cinza-lavanderia.jpg', largura: 1440, altura: 1920 }],
     titulo: 'Cozinha com lavanderia acoplada',
     descricao:
@@ -97,6 +99,7 @@ export const projetos = [
     id: 'cozinha-cinza-ripado',
     categoria: 'cozinhas',
     tipo: 'planejada',
+    cidade: 'Esteio',
     imagens: [{ src: '/projetos/proj_06.jpg' }],
     titulo: 'Cozinha cinza com painel ripado',
     descricao:
@@ -115,6 +118,7 @@ export const projetos = [
     id: 'cozinha-branca-em-l',
     categoria: 'cozinhas',
     tipo: 'planejada',
+    cidade: 'Esteio',
     imagens: [{ src: '/projetos/proj_12.jpg' }],
     titulo: 'Cozinha branca em L com bancada de granito',
     descricao:
@@ -124,6 +128,7 @@ export const projetos = [
     id: 'cozinha-confeitaria-balcao-central',
     categoria: 'cozinhas',
     tipo: 'planejada',
+    cidade: 'Gravataí',
     imagens: [{ src: '/projetos/akai-cozinha-confeitaria-balcao.jpg', largura: 1440, altura: 1440 }],
     titulo: 'Espaço de confeitaria com balcão central',
     descricao:
@@ -148,6 +153,7 @@ export const projetos = [
     id: 'cozinha-corredor-linha-unica',
     categoria: 'cozinhas',
     tipo: 'planejada',
+    cidade: 'Esteio',
     imagens: [{ src: '/projetos/proj_02.jpg' }],
     titulo: 'Cozinha corredor em linha única',
     descricao:
@@ -157,6 +163,8 @@ export const projetos = [
     id: 'cozinha-cristaleira-iluminada',
     categoria: 'cozinhas',
     tipo: 'planejada',
+    cidade: 'Passo de Torres',
+    estado: 'SC',
     imagens: [{ src: '/projetos/proj_07.jpg' }],
     titulo: 'Cozinha com cristaleira iluminada',
     descricao:
@@ -166,6 +174,7 @@ export const projetos = [
     id: 'cozinha-cinza-amadeirado-montagem',
     categoria: 'cozinhas',
     tipo: 'planejada',
+    cidade: 'Canoas',
     imagens: [{ src: '/projetos/proj_11.jpg' }],
     titulo: 'Cozinha cinza e amadeirada durante a montagem',
     descricao:
@@ -197,6 +206,7 @@ export const projetos = [
     id: 'dormitorio-cabeceira-ripada-roupeiro',
     categoria: 'quartos',
     tipo: 'planejada',
+    cidade: 'Esteio',
     imagens: [
       { src: '/projetos/akai-dormitorio-cabeceira-ripada-1.jpg', largura: 3024, altura: 4032 },
       { src: '/projetos/akai-dormitorio-cabeceira-ripada-2.jpg', largura: 3024, altura: 4032 },
@@ -209,6 +219,7 @@ export const projetos = [
     id: 'closet-divisoria-ripada',
     categoria: 'quartos',
     tipo: 'planejada',
+    cidade: 'Esteio',
     imagens: [{ src: '/projetos/proj_17.jpg' }],
     titulo: 'Closet com divisória ripada',
     descricao:
@@ -275,6 +286,7 @@ export const projetos = [
     id: 'banheiro-espelheira-bancada-granito',
     categoria: 'banheiros',
     tipo: 'planejada',
+    cidade: 'Porto Alegre',
     imagens: [{ src: '/projetos/akai-banheiro-espelheira-granito.jpg', largura: 1440, altura: 1920 }],
     titulo: 'Banheiro com espelheira e bancada em granito',
     descricao:
@@ -293,6 +305,7 @@ export const projetos = [
     id: 'banheiro-verde-gabinete-amadeirado',
     categoria: 'banheiros',
     tipo: 'planejada',
+    cidade: 'São Leopoldo',
     imagens: [{ src: '/projetos/proj_05.jpg' }],
     titulo: 'Banheiro verde com gabinete amadeirado',
     descricao:
@@ -302,6 +315,7 @@ export const projetos = [
     id: 'lavabo-espelho-oval',
     categoria: 'banheiros',
     tipo: 'planejada',
+    cidade: 'Capão da Canoa',
     imagens: [{ src: '/projetos/proj_10.jpg' }],
     titulo: 'Lavabo com painel amadeirado e espelho oval',
     descricao:
@@ -337,6 +351,7 @@ export const projetos = [
     id: 'hall-espelho-redondo-aparador',
     categoria: 'salas',
     tipo: 'planejada',
+    cidade: 'Alvorada',
     imagens: [{ src: '/projetos/akai-hall-espelho-redondo.jpg', largura: 1440, altura: 1920 }],
     titulo: 'Hall de entrada com espelho redondo e aparador',
     descricao:
@@ -364,6 +379,7 @@ export const projetos = [
     id: 'home-cristaleira-iluminada',
     categoria: 'salas',
     tipo: 'planejada',
+    cidade: 'Capão da Canoa',
     imagens: [{ src: '/projetos/proj_14.jpg' }],
     titulo: 'Home com cristaleira iluminada',
     descricao:
@@ -373,6 +389,7 @@ export const projetos = [
     id: 'painel-tv-ripado-led',
     categoria: 'salas',
     tipo: 'planejada',
+    cidade: 'Alvorada',
     imagens: [{ src: '/projetos/proj_04.jpg' }],
     titulo: 'Painel de TV com ripado e LED',
     descricao:
@@ -382,6 +399,7 @@ export const projetos = [
     id: 'movel-sob-escada',
     categoria: 'salas',
     tipo: 'planejada',
+    cidade: 'Sapucaia do Sul',
     imagens: [{ src: '/projetos/proj_09.jpg' }],
     titulo: 'Móvel sob a escada',
     descricao:
@@ -452,6 +470,7 @@ export const projetos = [
     id: 'mod-dormitorio-painel-ripado',
     categoria: 'quartos',
     tipo: 'modulada',
+    cidade: 'Sapucaia do Sul',
     imagens: [{ src: '/projetos/akai-mod-dormitorio-painel-ripado.jpg', largura: 1440, altura: 1800 }],
     titulo: 'Dormitório modulado com painel ripado e bancada',
     descricao:
@@ -470,6 +489,7 @@ export const projetos = [
     id: 'mod-dormitorio-solteiro',
     categoria: 'quartos',
     tipo: 'modulada',
+    cidade: 'Sapucaia do Sul',
     imagens: [{ src: '/projetos/akai-mod-dormitorio-solteiro.jpg', largura: 1414, altura: 1785 }],
     titulo: 'Dormitório modulado de solteiro',
     descricao:

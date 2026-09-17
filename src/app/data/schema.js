@@ -117,11 +117,11 @@ const imagemDoProjeto = (p, base) => {
       ? {
           contentLocation: {
             "@type": "Place",
-            name: `${p.cidade}, RS`,
+            name: `${p.cidade}, ${p.estado || "RS"}`,
             address: {
               "@type": "PostalAddress",
               addressLocality: p.cidade,
-              addressRegion: "RS",
+              addressRegion: p.estado || "RS",
               addressCountry: "BR",
             },
           },

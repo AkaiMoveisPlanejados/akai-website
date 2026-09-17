@@ -56,6 +56,17 @@ const fotosDa = (linha) =>
     (p) => p.categoria === linha.categoria && p.tipo === linha.tipo
   );
 
+// O rótulo da cidade nomeia o móvel: "Cozinha entregue em Esteio". A primeira
+// palavra do título já diz o que é, e quando não diz, cai no genérico.
+const MOVEIS = new Set([
+  "Cozinha", "Quarto", "Dormitório", "Banheiro", "Lavabo", "Closet",
+  "Home", "Hall", "Painel", "Móvel", "Sala",
+]);
+const movelDe = (p) => {
+  const primeira = p.titulo.split(" ")[0];
+  return MOVEIS.has(primeira) ? primeira : "Projeto";
+};
+
 // Fotos cedidas por fornecedores não podem afirmar execução pela Akai.
 const legenda = (p) =>
   p.fabricante
@@ -199,7 +210,7 @@ export default async function PaginaDaLinha({ params }) {
                       </h3>
                       {p.cidade && !p.fabricante && (
                         <p className="-mt-2 mb-3 text-sm font-semibold text-zinc-500">
-                          Projeto entregue em {p.cidade}
+                          {movelDe(p)} entregue em {p.cidade}
                         </p>
                       )}
                       <p className="leading-relaxed text-zinc-600">
