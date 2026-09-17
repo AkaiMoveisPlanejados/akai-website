@@ -7,6 +7,13 @@
 // Entra no texto alternativo, na página do ambiente e no schema. Foto cedida
 // por fabricante não leva cidade: o projeto não é nosso.
 
+// Data da última mexida no portfólio: entrou projeto, saiu foto, mudou cidade.
+// Alimenta o lastmod do sitemap e o dateModified das páginas que mostram
+// projeto. Antes disso o sitemap carimbava a data do build, então toda página
+// "mudava" a cada deploy — e um lastmod que sempre mente o Google passa a
+// ignorar.
+export const PORTFOLIO_ATUALIZADO_EM = '2026-09-17';
+
 export const categorias = [
   {
     id: 'cozinhas',

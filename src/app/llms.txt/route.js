@@ -6,7 +6,7 @@
 // quando o FAQ ou o portfólio mudarem.
 
 import { faq } from "@/app/data/faq";
-import { projetos } from "@/app/data/projetos";
+import { projetos, PORTFOLIO_ATUALIZADO_EM } from "@/app/data/projetos";
 import { comparativo } from "@/app/data/comparativo";
 import { linhas, ATUALIZADO_EM } from "@/app/data/linhas";
 import { buscarAvaliacoes } from "@/app/data/avaliacoes";
@@ -15,6 +15,21 @@ const SITE_URL = "https://www.akaimoveis.com.br";
 
 export async function GET() {
   const { rating, total, reviews } = await buscarAvaliacoes();
+
+  // Cidades onde os projetos publicados foram entregues. Sai dos dados e não de
+  // uma lista escrita à mão: é a pergunta que mais chega ("vocês atendem em
+  // X?") e a resposta só vale se for a contagem real.
+  const porCidade = new Map();
+  projetos
+    .filter((p) => p.cidade && !p.fabricante)
+    .forEach((p) => {
+      const chave = p.estado && p.estado !== "RS" ? `${p.cidade} (${p.estado})` : p.cidade;
+      porCidade.set(chave, (porCidade.get(chave) || 0) + 1);
+    });
+  const cidadesDeEntrega = [...porCidade.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "pt-BR"))
+    .map(([cidade, n]) => `- ${cidade}: ${n} ${n === 1 ? "projeto" : "projetos"}`)
+    .join("\n");
 
   const cozinhas = projetos.filter((p) => p.categoria === "cozinhas");
   const moduladas = projetos.filter((p) => p.tipo === "modulada").length;
@@ -92,6 +107,7 @@ ${depoimentos}
 - Site: ${SITE_URL}
 - Avaliação no Google: ${String(rating).replace(".", ",")} com ${total} avaliações
 - Conteúdo deste arquivo revisado em: ${ATUALIZADO_EM}
+- Portfólio atualizado em: ${PORTFOLIO_ATUALIZADO_EM}
 
 ## Horário de funcionamento
 
@@ -103,6 +119,13 @@ ${depoimentos}
 
 Sapucaia do Sul, Esteio, Canoas, São Leopoldo, Novo Hamburgo e Porto Alegre,
 além de outras cidades da região metropolitana de Porto Alegre.
+
+## Cidades onde há projeto entregue e publicado
+
+Contagem dos projetos que estão no site, pela cidade em que foram montados.
+Não é a área de atendimento — é onde já houve entrega comprovada:
+
+${cidadesDeEntrega}
 
 ## O que faz
 
@@ -175,6 +198,7 @@ ${faq
 - Instagram: https://www.instagram.com/akai.moveis/
 - Facebook: https://www.facebook.com/akai.moveis
 - Pinterest: https://br.pinterest.com/akaimoveiseplanejados/
+- Perfil no Google (endereço, mapa e avaliações): https://www.google.com/maps/place/?q=place_id:ChIJhx31gjRvGZURNECVHA6IrZw
 `;
 
   return new Response(texto, {

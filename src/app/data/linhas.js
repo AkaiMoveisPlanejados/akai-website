@@ -1,3 +1,7 @@
+// com extensão: o scripts/indexnow.mjs importa este arquivo como ESM puro no
+// Node, e lá o caminho sem `.js` não resolve.
+import { PORTFOLIO_ATUALIZADO_EM } from './projetos.js';
+
 // Páginas dedicadas por ambiente e tipo de móvel.
 //
 // Cada linha aqui vira uma página em /<slug>, entra no sitemap, no rodapé e no
@@ -12,6 +16,16 @@
 // pedem à vista — a IA e o leitor querem saber se o texto ainda vale. Mexeu no
 // texto de uma página, atualize a data dela.
 export const ATUALIZADO_EM = '2026-07-28';
+
+// Duas datas diferentes, de propósito. `revisadoEm` é quando uma pessoa releu o
+// texto daquela página — é o que aparece à vista e vai no datePublished. A data
+// que o sitemap e o dateModified usam é a mais recente entre essa e a do
+// portfólio, porque toda página de ambiente mostra projeto: mexeu no portfólio,
+// a página mudou de verdade.
+export const revisaoDe = (linha) => linha?.revisadoEm || ATUALIZADO_EM;
+
+export const atualizacaoDe = (linha) =>
+  [revisaoDe(linha), PORTFOLIO_ATUALIZADO_EM].sort().at(-1);
 
 export const linhas = [
   {

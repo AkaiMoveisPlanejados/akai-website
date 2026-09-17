@@ -9,7 +9,8 @@
 import estatico from "./akai-structured-data.json";
 import { faq } from "./faq";
 import { projetos } from "./projetos";
-import { ATUALIZADO_EM } from "./linhas";
+import { ATUALIZADO_EM, revisaoDe, atualizacaoDe } from "./linhas";
+import { PORTFOLIO_ATUALIZADO_EM } from "./projetos";
 
 export const SITE_URL = "https://www.akaimoveis.com.br";
 
@@ -169,7 +170,19 @@ export const schemaHome = () => ({
   "@context": "https://schema.org",
   "@graph": [
     ...grafoGlobal,
-    ...estatico["@graph"].filter((n) => DA_HOME.has(n["@id"])),
+    // A home também mostra o portfólio inteiro, então a data dela acompanha a
+    // do portfólio em vez de ficar congelada no JSON estático.
+    ...estatico["@graph"]
+      .filter((n) => DA_HOME.has(n["@id"]))
+      .map((n) =>
+        n["@type"] === "WebPage"
+          ? {
+              ...n,
+              datePublished: ATUALIZADO_EM,
+              dateModified: PORTFOLIO_ATUALIZADO_EM,
+            }
+          : n
+      ),
     listaDeFotos({
       id: `${SITE_URL}/#projetos`,
       nome: "Nossos Projetos",
@@ -200,8 +213,8 @@ export const schemaLinha = (linha, fotos) => {
         url: `${url}`,
         name: linha.title,
         description: linha.description,
-        datePublished: ATUALIZADO_EM,
-        dateModified: ATUALIZADO_EM,
+        datePublished: revisaoDe(linha),
+        dateModified: atualizacaoDe(linha),
         isPartOf: { "@id": `${SITE_URL}/#website` },
         about: { "@id": servico },
         mainEntity: { "@id": `${url}#servico` },
