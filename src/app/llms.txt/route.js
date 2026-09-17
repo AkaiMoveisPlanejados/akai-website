@@ -30,7 +30,9 @@ export async function GET() {
       const itens = doGrupo
         .map(
           (p) =>
-            `- **${p.titulo}**: ${p.descricao}${
+            `- **${p.titulo}**${
+              p.cidade && !p.fabricante ? ` (entregue em ${p.cidade})` : ""
+            }: ${p.descricao}${
               p.fabricante ? " [imagem cedida pelo fabricante]" : ""
             }`
         )

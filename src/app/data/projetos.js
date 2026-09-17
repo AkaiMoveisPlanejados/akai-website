@@ -1,9 +1,11 @@
 // Projetos executados pela Akai. Fonte única: alimenta a galeria da home,
 // os textos alternativos das imagens e o ItemList do schema.
 //
-// As descrições falam apenas do que é visível na foto. Não há cidade porque
-// essa informação ainda não foi levantada — quando for, basta adicionar o
-// campo `cidade` e ele entra na legenda e no SEO local automaticamente.
+// As descrições falam apenas do que é visível na foto.
+//
+// `cidade` é onde o projeto foi entregue, e só existe quando foi informada.
+// Entra no texto alternativo, na página do ambiente e no schema. Foto cedida
+// por fabricante não leva cidade: o projeto não é nosso.
 
 export const categorias = [
   {
@@ -57,6 +59,21 @@ export const projetos = [
     titulo: 'Cozinha com nichos iluminados e cristaleiras',
     descricao:
       'Marcenaria em tom natural com nichos abertos e fitas de LED embutidas nas prateleiras. As cristaleiras usam vidro canelado com perfil preto, e a bancada em pedra clara se estende como bancada de apoio com cantos arredondados.',
+  },
+  {
+    id: 'cozinha-peninsula-ripada-cascata',
+    categoria: 'cozinhas',
+    tipo: 'planejada',
+    cidade: 'São Leopoldo',
+    imagens: [
+      { src: '/projetos/akai-cozinha-peninsula-ripada-1.jpg', largura: 960, altura: 1280 },
+      { src: '/projetos/akai-cozinha-peninsula-ripada-2.jpg', largura: 1280, altura: 960 },
+      { src: '/projetos/akai-cozinha-peninsula-ripada-3.jpg', largura: 960, altura: 1280 },
+      { src: '/projetos/akai-cozinha-peninsula-ripada-4.jpg', largura: 960, altura: 1280 },
+    ],
+    titulo: 'Cozinha com península ripada e bancada em cascata',
+    descricao:
+      'Península que separa a cozinha da sala: do lado da sala, frente em madeira clara com trecho ripado e bancada em pedra branca que desce até o piso na ponta; do lado da cozinha, forno embutido e coluna de gavetas em tom escuro, com puxadores tipo concha em dourado. Cuba e cooktop ficam na própria península. Na parede do fundo, torre para a geladeira, nicho para o micro-ondas e fita de LED sob o nicho e sobre a janela.',
   },
   {
     id: 'cozinha-offwhite-adega-amadeirada',
@@ -301,6 +318,20 @@ export const projetos = [
     titulo: 'Sala com painel de TV e adega de parede',
     descricao:
       'Painel amadeirado de piso a teto para a TV, com rack baixo em tom areia sem puxadores. Ao lado, adega de parede com suportes metálicos sobre nicho iluminado, e jardineira embutida na marcenaria.',
+  },
+  {
+    id: 'home-painel-amadeirado-prateleira-led',
+    categoria: 'salas',
+    tipo: 'planejada',
+    cidade: 'Sapucaia do Sul',
+    imagens: [
+      { src: '/projetos/akai-home-painel-amadeirado-1.jpg', largura: 1200, altura: 1600 },
+      { src: '/projetos/akai-home-painel-amadeirado-2.jpg', largura: 1200, altura: 1600 },
+      { src: '/projetos/akai-home-painel-amadeirado-3.jpg', largura: 648, altura: 864 },
+    ],
+    titulo: 'Home com painel amadeirado do piso ao teto',
+    descricao:
+      'Painel amadeirado do piso ao teto na parede da TV, com trecho ripado na lateral e prateleira com fita de LED que ilumina a parede de cima. Embaixo, rack cinza-claro com puxadores dourados e nicho aberto para os aparelhos; ao lado, estante de nichos no mesmo tom do painel. O revestimento continua na parede vizinha e contorna a porta da cozinha.',
   },
   {
     id: 'hall-espelho-redondo-aparador',

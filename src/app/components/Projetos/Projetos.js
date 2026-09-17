@@ -23,7 +23,9 @@ const IconePinterest = ({ size = 16 }) => (
 const legenda = (p) =>
   p.fabricante
     ? `${p.titulo} — Akai Móveis`
-    : `${p.titulo} — projeto executado pela Akai Móveis`;
+    : `${p.titulo} — projeto executado pela Akai Móveis${
+        p.cidade ? ` em ${p.cidade}` : ""
+      }`;
 
 // Visor do projeto selecionado. Quando o projeto tem mais de uma foto do mesmo
 // ambiente, vira um carrossel próprio — é o caso dos antes e depois.

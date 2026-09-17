@@ -110,8 +110,23 @@ const imagemDoProjeto = (p, base) => {
     keywords: [
       `${ambiente} ${p.tipo}`,
       p.tipo === "modulada" ? "móveis modulados" : "móveis planejados",
-      "Sapucaia do Sul",
+      p.cidade || "Sapucaia do Sul",
     ].join(", "),
+    // onde o projeto foi entregue, quando sabemos
+    ...(p.cidade && !p.fabricante
+      ? {
+          contentLocation: {
+            "@type": "Place",
+            name: `${p.cidade}, RS`,
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: p.cidade,
+              addressRegion: "RS",
+              addressCountry: "BR",
+            },
+          },
+        }
+      : {}),
     about: {
       "@id": `${SITE_URL}/#service-${
         p.tipo === "modulada" ? "modular" : "planned"

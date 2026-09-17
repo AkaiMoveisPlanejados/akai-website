@@ -60,7 +60,9 @@ const fotosDa = (linha) =>
 const legenda = (p) =>
   p.fabricante
     ? `${p.titulo} — Akai Móveis`
-    : `${p.titulo} — projeto executado pela Akai Móveis`;
+    : `${p.titulo} — projeto executado pela Akai Móveis${
+        p.cidade ? ` em ${p.cidade}` : ""
+      }`;
 
 function Foto({ projeto, imagem, prioridade }) {
   return (
@@ -195,6 +197,11 @@ export default async function PaginaDaLinha({ params }) {
                       <h3 className="mb-3 text-xl font-bold text-zinc-900">
                         {p.titulo}
                       </h3>
+                      {p.cidade && !p.fabricante && (
+                        <p className="-mt-2 mb-3 text-sm font-semibold text-zinc-500">
+                          Projeto entregue em {p.cidade}
+                        </p>
+                      )}
                       <p className="leading-relaxed text-zinc-600">
                         {p.descricao}
                       </p>
