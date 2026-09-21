@@ -12,7 +12,7 @@
 // projeto. Antes disso o sitemap carimbava a data do build, então toda página
 // "mudava" a cada deploy — e um lastmod que sempre mente o Google passa a
 // ignorar.
-export const PORTFOLIO_ATUALIZADO_EM = '2026-09-17';
+export const PORTFOLIO_ATUALIZADO_EM = '2026-09-21';
 
 export const categorias = [
   {
@@ -66,6 +66,20 @@ export const projetos = [
     titulo: 'Cozinha com nichos iluminados e cristaleiras',
     descricao:
       'Marcenaria em tom natural com nichos abertos e fitas de LED embutidas nas prateleiras. As cristaleiras usam vidro canelado com perfil preto, e a bancada em pedra clara se estende como bancada de apoio com cantos arredondados.',
+  },
+  {
+    id: 'cozinha-peninsula-marmorizado',
+    categoria: 'cozinhas',
+    tipo: 'planejada',
+    cidade: 'Sapucaia do Sul',
+    imagens: [
+      { src: '/projetos/akai-cozinha-peninsula-marmorizado-1.jpg', largura: 1125, altura: 1500 },
+      { src: '/projetos/akai-cozinha-peninsula-marmorizado-2.jpg', largura: 1125, altura: 1500 },
+      { src: '/projetos/akai-cozinha-peninsula-marmorizado-3.jpg', largura: 1125, altura: 1500 },
+    ],
+    titulo: 'Cozinha com península e revestimento marmorizado',
+    descricao:
+      'Península em madeira clara que avança sobre a sala e serve de bancada para três banquetas, sem fechar a circulação. Do lado da cozinha, o tampo preto reúne cooktop e cuba, e o revestimento marmorizado sobe da bancada até os armários. Os aéreos em cinza fosco percorrem a parede inteira, com torre para a geladeira e nicho para o micro-ondas. Na ponta, nichos abertos em madeira guardam as taças. Três pendentes sobre a bancada e trilho de spots no teto.',
   },
   {
     id: 'cozinha-peninsula-ripada-cascata',
