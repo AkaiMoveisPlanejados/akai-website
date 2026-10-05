@@ -224,6 +224,21 @@ export const projetos = [
       'Closet aberto em tom natural, com prateleiras, cabideiro iluminado por LED linear e gavetas com puxadores cilíndricos. Na base, gavetas rasas inclinadas próprias para calçados.',
   },
   {
+    id: 'dormitorio-roupeiro-l-escrivaninha',
+    categoria: 'quartos',
+    tipo: 'planejada',
+    cidade: 'Esteio',
+    imagens: [
+      { src: '/projetos/akai-dormitorio-roupeiro-l-1.jpg', largura: 738, altura: 1599 },
+      { src: '/projetos/akai-dormitorio-roupeiro-l-2.jpg', largura: 738, altura: 1599 },
+      { src: '/projetos/akai-dormitorio-roupeiro-l-3.jpg', largura: 738, altura: 1599 },
+      { src: '/projetos/akai-dormitorio-roupeiro-l-4.jpg', largura: 738, altura: 1599 },
+    ],
+    titulo: 'Dormitório com roupeiro em L e escrivaninha',
+    descricao:
+      'Roupeiro em L do piso ao teto, com portas lisas, puxadores alongados e uma coluna amadeirada no acabamento. Na ponta do corredor de guarda-roupas, uma estante de nichos abertos em madeira. Ao lado da janela, painel ripado amadeirado com armário aéreo, e uma cômoda de quatro gavetas e uma porta que continua numa escrivaninha em madeira, para estudo ou home office.',
+  },
+  {
     id: 'dormitorio-cabeceira-ripada-roupeiro',
     categoria: 'quartos',
     tipo: 'planejada',
