@@ -12,7 +12,7 @@
 // projeto. Antes disso o sitemap carimbava a data do build, então toda página
 // "mudava" a cada deploy — e um lastmod que sempre mente o Google passa a
 // ignorar.
-export const PORTFOLIO_ATUALIZADO_EM = '2026-09-21';
+export const PORTFOLIO_ATUALIZADO_EM = '2026-10-05';
 
 export const categorias = [
   {
@@ -361,12 +361,14 @@ export const projetos = [
     cidade: 'Sapucaia do Sul',
     imagens: [
       { src: '/projetos/akai-home-painel-amadeirado-1.jpg', largura: 1200, altura: 1600 },
+      { src: '/projetos/akai-home-painel-amadeirado-4.jpg', largura: 1125, altura: 1500 },
+      { src: '/projetos/akai-home-painel-amadeirado-5.jpg', largura: 1125, altura: 1500 },
       { src: '/projetos/akai-home-painel-amadeirado-2.jpg', largura: 1200, altura: 1600 },
-      { src: '/projetos/akai-home-painel-amadeirado-3.jpg', largura: 648, altura: 864 },
+      { src: '/projetos/akai-home-painel-amadeirado-3.jpg', largura: 1125, altura: 1500 },
     ],
     titulo: 'Home com painel amadeirado do piso ao teto',
     descricao:
-      'Painel amadeirado do piso ao teto na parede da TV, com trecho ripado na lateral e prateleira com fita de LED que ilumina a parede de cima. Embaixo, rack cinza-claro com puxadores dourados e nicho aberto para os aparelhos; ao lado, estante de nichos no mesmo tom do painel. O revestimento continua na parede vizinha e contorna a porta da cozinha.',
+      'Painel amadeirado do piso ao teto na parede da TV, com prateleira e fita de LED que ilumina a parede de cima. Na lateral, o ripado esconde uma porta de correr: fechada, ela some no desenho das réguas. Embaixo da TV, rack cinza-claro com três gavetas, puxadores dourados e nicho aberto para os aparelhos; ao lado, estante de nichos no mesmo tom do painel. O revestimento continua na parede vizinha e contorna a porta da cozinha.',
   },
   {
     id: 'hall-espelho-redondo-aparador',
