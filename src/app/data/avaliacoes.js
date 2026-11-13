@@ -22,33 +22,37 @@ export async function buscarAvaliacoes() {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
   if (!apiKey) return PADRAO;
 
-  const url =
-    `https://maps.googleapis.com/maps/api/place/details/json` +
-    `?place_id=${PLACE_ID}&fields=name,rating,user_ratings_total,reviews` +
-    `&language=pt-BR&key=${apiKey}`;
+  // Places API (New). A Legacy não pode mais ser ativada em projeto novo
+  // desde out/2026. O field mask define a faixa de cobrança: pedir só o usado.
+  const url = `https://places.googleapis.com/v1/places/${PLACE_ID}?languageCode=pt-BR`;
 
   try {
-    const resposta = await fetch(url, { next: { revalidate: CACHE_SEGUNDOS } });
-    const dados = await resposta.json();
+    const resposta = await fetch(url, {
+      headers: {
+        'X-Goog-Api-Key': apiKey,
+        'X-Goog-FieldMask': 'rating,userRatingCount,reviews',
+      },
+      next: { revalidate: CACHE_SEGUNDOS },
+    });
+    const r = await resposta.json();
 
-    if (dados.status !== 'OK') {
-      console.error('Places API:', dados.status, dados.error_message || '');
+    if (!resposta.ok || r.error) {
+      console.error('Places API:', r.error?.status || resposta.status, r.error?.message || '');
       return PADRAO;
     }
 
-    const r = dados.result || {};
     return {
       rating: typeof r.rating === 'number' ? r.rating : PADRAO.rating,
       total:
-        typeof r.user_ratings_total === 'number'
-          ? r.user_ratings_total
+        typeof r.userRatingCount === 'number'
+          ? r.userRatingCount
           : PADRAO.total,
       reviews: (r.reviews || []).map((review) => ({
-        name: review.author_name,
-        avatar: review.profile_photo_url,
-        time: review.relative_time_description,
+        name: review.authorAttribution?.displayName,
+        avatar: review.authorAttribution?.photoUri,
+        time: review.relativePublishTimeDescription,
         rating: review.rating,
-        text: review.text,
+        text: review.text?.text || review.originalText?.text || '',
       })),
       fonte: 'google',
     };
