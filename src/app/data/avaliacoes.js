@@ -15,8 +15,8 @@ const PLACE_ID = 'ChIJhx31gjRvGZURNECVHA6IrZw';
 export const CACHE_SEGUNDOS = 21600;
 
 // Usados se a API falhar ou não estiver configurada, para o site não quebrar.
-// Conferidos no Google Business Profile em 27/07/2026.
-export const PADRAO = { rating: 4.8, total: 126, reviews: [], fonte: 'padrao' };
+// Conferidos no Google Business Profile em 13/11/2026.
+export const PADRAO = { rating: 4.8, total: 167, reviews: [], fonte: 'padrao' };
 
 export async function buscarAvaliacoes() {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;

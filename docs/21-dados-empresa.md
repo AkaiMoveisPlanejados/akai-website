@@ -52,7 +52,7 @@ Sapucaia do Sul — RS
 
 CEP 93214-500
 
-**Coordenadas:** -29.8315, -51.1467
+**Coordenadas:** -29.82125, -51.15338 (pino do Google; batem com o plus code abaixo)
 
 **Plus code:** 5RHW+GJ Centro, Sapucaia do Sul
 

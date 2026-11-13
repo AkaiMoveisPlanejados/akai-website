@@ -217,8 +217,8 @@
     {
       "@type": "GeoCoordinates",
       "@id": "https://www.akaimoveis.com.br/#geo",
-      "latitude": -29.8315,
-      "longitude": -51.1467
+      "latitude": -29.82125,
+      "longitude": -51.15338
     },
     {
       "@type": "ImageObject",
