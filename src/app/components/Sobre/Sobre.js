@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Instagram, Star } from 'lucide-react';
 import Image from 'next/image';
 
-// Valores conferidos no Google Business Profile em 27/07/2026. Ficam no HTML
+// Valores conferidos no Google Business Profile em 13/11/2026. Ficam no HTML
 // desde o primeiro carregamento (bom para indexação) e são substituídos pelos
 // números reais assim que /api/reviews responde.
-const AVALIACOES_PADRAO = { rating: 4.8, total: 126 };
+const AVALIACOES_PADRAO = { rating: 4.8, total: 167 };
 
 export default function Sobre() {
   const [avaliacoes, setAvaliacoes] = useState(AVALIACOES_PADRAO);
