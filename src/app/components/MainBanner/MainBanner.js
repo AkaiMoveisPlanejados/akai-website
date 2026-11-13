@@ -7,7 +7,7 @@ import { GTMEvent } from "@/app/utils/GTMEvent";
 export default function MainBanner() {
     return (
         <section
-          className="relative h-screen bg-cover bg-top"
+          className="relative min-h-screen bg-cover bg-top"
           style={{
             backgroundImage: `linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 99%, rgba(237, 221, 83, 0) 100%),
     url('/images/hero.jpeg')`,
@@ -25,17 +25,17 @@ export default function MainBanner() {
             />
           </div>
           <div className="absolute inset-0 bg-black/50 z-10" />
-          <div className="relative z-20 flex flex-col items-center justify-center h-full text-white">
-            <h1 className="min-[320px]:text-[26px] min-[768px]:text-[58px] font-bold text-shadow-lg text-center">
+          <div className="relative z-20 flex flex-col items-center justify-center min-h-screen pt-24 pb-20 text-white">
+            <p className="min-[320px]:text-[26px] min-[768px]:text-[58px] font-bold text-shadow-lg text-center">
               APARTAMENTO COMPLETO
-            </h1>
+            </p>
             <p className="min-[320px]:text-[10px] min-[768px]:text-lg max-[768px]:max-w-[300px] text-center text-shadow-lg">
               Cozinha (lavanderia acoplada) + Quarto Casal + Quarto Solteiro + Lavanderia + Home +
               Banheiro
             </p>
-            <h2 className="mt-2 min-[320px]:text-[18px] min-[768px]:text-[38px] font-bold text-shadow-lg">
+            <h1 className="mt-2 px-4 min-[320px]:text-[18px] min-[768px]:text-[38px] font-bold text-shadow-lg text-center text-balance">
               MÓVEIS MODULADOS E PLANEJADOS
-            </h2>
+            </h1>
             <div className="min-[320px]:mt-2 min-[768px]:mt-4 flex items-center justify-center space-x-1">
               <span className="self-start text-sm min-[768px]:text-lg font-regular text-shadow-lg">
                 A partir de R$
