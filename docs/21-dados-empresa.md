@@ -80,6 +80,12 @@ O telefone (51) 3474-1146 aparece no Solutudo e está **incorreto**.
 
 ---
 
+# Chave do Google (avaliações do site)
+
+A busca das avaliações (`src/app/data/avaliacoes.js`) usa a **Places API (New)** com a chave `GOOGLE_PLACES_API_KEY` (Secret na Vercel). Desde 13/11/2026 a chave fica no projeto **My Maps Project**, na conta Google pessoal do Rafael, restrita à Places API (New) e com cota de **30 GetPlaceRequest por dia** (abaixo das 1.000 grátis por mês). A chave anterior estava num projeto sem faturamento e parou com `REQUEST_DENIED`.
+
+---
+
 # Formas de pagamento
 
 - Cartão de crédito (até 18x sem juros)
